@@ -479,6 +479,20 @@ ninja.data = [{
           window.open("https://scholar.google.com/citations?user=ZzHAiHkAAAAJ", "_blank");
         },
       },{
+        id: 'social-arxiv',
+        title: 'arXiv',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://arxiv.org/a/dolean_v_1.html", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/victorita-dolean-61b22b2b8", "_blank");
+        },
+      },{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
