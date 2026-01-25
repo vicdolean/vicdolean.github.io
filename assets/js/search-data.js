@@ -479,13 +479,6 @@ ninja.data = [{
           window.open("https://scholar.google.com/citations?user=ZzHAiHkAAAAJ", "_blank");
         },
       },{
-        id: 'social-arxiv',
-        title: 'arXiv',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://arxiv.org/a/dolean_v_1.html", "_blank");
-        },
-      },{
         id: 'social-linkedin',
         title: 'LinkedIn',
         section: 'Socials',
