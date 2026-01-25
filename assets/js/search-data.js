@@ -472,13 +472,6 @@ ninja.data = [{
           window.open("mailto:%76.%64%6F%6C%65%61%6E.%6D%61%69%6E%69@%74%75%65.%6E%6C", "_blank");
         },
       },{
-        id: 'social-work',
-        title: 'Work',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.tue.nl/en/research/researchers/victorita-dolean-maini", "_blank");
-        },
-      },{
         id: 'social-scholar',
         title: 'Google Scholar',
         section: 'Socials',
@@ -498,6 +491,20 @@ ninja.data = [{
         section: 'Socials',
         handler: () => {
           window.open("https://www.linkedin.com/in/victorita-dolean-61b22b2b8", "_blank");
+        },
+      },{
+        id: 'social-work',
+        title: 'Work',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.tue.nl/en/research/researchers/victorita-dolean-maini1", "_blank");
+        },
+      },{
+        id: 'social-custom_social',
+        title: 'Custom_social',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.tue.nl/en/research/researchers/victorita-dolean-maini2", "_blank");
         },
       },{
       id: 'light-theme',
