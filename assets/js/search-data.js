@@ -497,14 +497,7 @@ ninja.data = [{
         title: 'Work',
         section: 'Socials',
         handler: () => {
-          window.open("https://www.tue.nl/en/research/researchers/victorita-dolean-maini1", "_blank");
-        },
-      },{
-        id: 'social-custom_social',
-        title: 'Custom_social',
-        section: 'Socials',
-        handler: () => {
-          window.open("https://www.tue.nl/en/research/researchers/victorita-dolean-maini2", "_blank");
+          window.open("https://www.tue.nl/en/research/researchers/victorita-dolean-maini", "_blank");
         },
       },{
       id: 'light-theme',
