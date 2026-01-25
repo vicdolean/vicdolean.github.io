@@ -2,10 +2,15 @@
 # the socials will be displayed in the order they are defined here
 # for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
 email: v.dolean.maini@tue.nl # your email address
+work_url: https://www.tue.nl/en/research/researchers/victorita-dolean-maini # work page URL
 scholar_userid: ZzHAiHkAAAAJ # your Google Scholar ID
 arxiv_id: dolean_v_1 # your arXiv author ID
 linkedin_username: victorita-dolean-61b22b2b8 # your LinkedIn user name
-custom_social: # can be any name here other than the ones already defined in the jekyll-socials plugin
-  logo: fa-solid fa-briefcase # can be png, svg, jpg
-  title: TUE
-  url: https://www.tue.nl/en/research/researchers/victorita-dolean-maini
+# custom_social: # can be any name here other than the ones already defined in the jekyll-socials plugin
+#   logo: fa-solid fa-briefcase # can be png, svg, jpg
+#   title: TUE
+#   url: https://www.tue.nl/en/research/researchers/victorita-dolean-maini
+# custom_social: # can be any name here other than the ones already defined in the jekyll-socials plugin
+#   logo: toto.jpg # can be png, svg, jpg
+#   title: TUE
+#   url: https://www.tue.nl/en/research/researchers/victorita-dolean-maini
