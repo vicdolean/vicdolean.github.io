@@ -493,6 +493,13 @@ ninja.data = [{
           window.open("https://www.linkedin.com/in/victorita-dolean-61b22b2b8", "_blank");
         },
       },{
+        id: 'social-custom_social',
+        title: 'Custom_social',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.tue.nl/en/research/researchers/victorita-dolean-maini", "_blank");
+        },
+      },{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
