@@ -10,7 +10,7 @@ custom_social: # can be any name here other than the ones already defined in the
   logo: fa-solid fa-briefcase # can be png, svg, jpg
   title: TUE
   url: https://www.tue.nl/en/research/researchers/victorita-dolean-maini2
-custom_social: # can be any name here other than the ones already defined in the jekyll-socials plugin
-  logo: toto.jpg # can be png, svg, jpg
-  title: TUE
-  url: https://www.tue.nl/en/research/researchers/victorita-dolean-maini3
+# custom_social: # can be any name here other than the ones already defined in the jekyll-socials plugin
+#   logo: logo-TUE.jpg # can be png, svg, jpg
+#   title: TUE
+#   url: https://www.tue.nl/en/research/researchers/victorita-dolean-maini3
