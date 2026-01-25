@@ -472,6 +472,13 @@ ninja.data = [{
           window.open("mailto:%76.%64%6F%6C%65%61%6E.%6D%61%69%6E%69@%74%75%65.%6E%6C", "_blank");
         },
       },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=ZzHAiHkAAAAJ", "_blank");
+        },
+      },{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
