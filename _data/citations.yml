@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-03-04'
+  last_updated: '2026-03-20'
 papers:
   ZzHAiHkAAAAJ:-f6ydRqryjwC:
     citations: 7
@@ -34,7 +34,7 @@ papers:
     title: Are Deep Learning Based Hybrid PDE Solvers Reliable? Why Training Paradigms and Update Strategies Matter
     year: '2026'
   ZzHAiHkAAAAJ:3MwzVuqRcA0C:
-    citations: 26
+    citations: 27
     title: Overlapping Schwarz methods with GenEO coarse spaces for indefinite and nonself-adjoint problems
     year: '2022'
   ZzHAiHkAAAAJ:3fE2CSJIrl8C:
@@ -122,11 +122,11 @@ papers:
     title: Natural domain decomposition algorithms for the solution of time-harmonic elastic waves
     year: '2020'
   ZzHAiHkAAAAJ:EUQCXRtRnyEC:
-    citations: 135
+    citations: 137
     title: 'Nonlinear preconditioning: How to use a nonlinear Schwarz method to precondition Newton''s method'
     year: '2016'
   ZzHAiHkAAAAJ:G36d5HCDkJYC:
-    citations: 3
+    citations: 4
     title: Robust methods for multiscale coarse approximations of diffusion models in perforated domains
     year: '2024'
   ZzHAiHkAAAAJ:Gb6Hms-Uo9kC:
@@ -202,11 +202,11 @@ papers:
     title: Why can classical Schwarz methods applied to hyperbolic systems converge even without overlap?
     year: '2006'
   ZzHAiHkAAAAJ:N6_Y7JlWxwsC:
-    citations: 1
+    citations: 2
     title: Local feature filtering for scalable and well-conditioned domain-decomposed random feature methods
     year: '2026'
   ZzHAiHkAAAAJ:NMxIlDl6LWMC:
-    citations: 297
+    citations: 298
     title: Abstract robust coarse spaces for systems of PDEs via generalized eigenproblems in the overlaps
     year: '2014'
   ZzHAiHkAAAAJ:NU-BerS4NX4C:
@@ -217,16 +217,20 @@ papers:
     citations: 10
     title: "Optimized Schwarz methods for curl-curl time-harmonic Maxwell\u2019s equations"
     year: '2014'
+  ZzHAiHkAAAAJ:Nnq8S6OXqDYC:
+    citations: 0
+    title: Fast Multiscale PDE Solvers via Multilevel Domain Decomposition and Random Features
+    year: Unknown Year
   ZzHAiHkAAAAJ:NtCmTCuxid4C:
     citations: 81
     title: Detection of simulated brain strokes using microwave tomography
     year: '2019'
   ZzHAiHkAAAAJ:Nufq_to8ts0C:
-    citations: 6
+    citations: 9
     title: 'ELM-FBPINN: efficient finite-basis physics-informed neural networks'
     year: '2024'
   ZzHAiHkAAAAJ:Nw_I7GeUguwC:
-    citations: 116
+    citations: 121
     title: Multilevel domain decomposition-based architectures for physics-informed neural networks
     year: '2024'
   ZzHAiHkAAAAJ:O3NaXMp0MMsC:
@@ -314,7 +318,7 @@ papers:
     title: Several ways to achieve robustness when solving wave propagation problems
     year: '2023'
   ZzHAiHkAAAAJ:X5YyAB84Iw4C:
-    citations: 33
+    citations: 34
     title: Finite basis physics-informed neural networks as a Schwarz domain decomposition method
     year: '2022'
   ZzHAiHkAAAAJ:XDrR66g3YHsC:
@@ -338,7 +342,7 @@ papers:
     title: "M\xE9thodes de type Galerkin discontinu pour la r\xE9solution num\xE9rique des \xE9quations de Maxwell en r\xE9gime fr\xE9quentiel"
     year: '2006'
   ZzHAiHkAAAAJ:YPNY0knpFBYC:
-    citations: 47
+    citations: 48
     title: Microwave tomographic imaging of cerebrovascular accidents by using high-performance computing
     year: '2019'
   ZzHAiHkAAAAJ:YsMSGLbcyi4C:
@@ -590,7 +594,7 @@ papers:
     title: Deriving a new domain decomposition method for the Stokes equations using the Smith factorization
     year: '2009'
   ZzHAiHkAAAAJ:ukw-9cB-YDkC:
-    citations: 11
+    citations: 12
     title: Analysis of parallel Schwarz algorithms for time-harmonic problems using block Toeplitz matrices
     year: '2022'
   ZzHAiHkAAAAJ:vV6vV6tmYwMC:
@@ -611,8 +615,8 @@ papers:
     year: '2022'
   ZzHAiHkAAAAJ:wBLCggQE-ToC:
     citations: 1
-    title: Two-level nonlinear preconditioning methods for flood models posed on perforated domains
-    year: '2024'
+    title: Nonlinear Multilevel Solution Strategies for Diffusive Wave Flood Models in Perforated Domains
+    year: '2026'
   ZzHAiHkAAAAJ:wGzT3bKASkAC:
     citations: 4
     title: "Algorithmes par d\xE9composition de domaine et acc\xE9l\xE9ration multigrille pour le calcul d'\xE9coulements compressibles"
@@ -626,11 +630,11 @@ papers:
     title: "Optimized Schwarz methods for heterogeneous Helmholtz and Maxwell\u2019s equations"
     year: '2017'
   ZzHAiHkAAAAJ:xyvS_IvSCKsC:
-    citations: 67
+    citations: 68
     title: High performance domain decomposition methods on massively parallel architectures with freefem++
     year: '2012'
   ZzHAiHkAAAAJ:yD5IFk8b50cC:
-    citations: 807
+    citations: 809
     title: 'An introduction to domain decomposition methods: algorithms, theory, and parallel implementation'
     year: '2015'
   ZzHAiHkAAAAJ:yIeBiWEAh44C:
