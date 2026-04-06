@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-03'
+  last_updated: '2026-04-06'
 papers:
   ZzHAiHkAAAAJ:-f6ydRqryjwC:
     citations: 7
@@ -122,7 +122,7 @@ papers:
     title: Natural domain decomposition algorithms for the solution of time-harmonic elastic waves
     year: '2020'
   ZzHAiHkAAAAJ:EUQCXRtRnyEC:
-    citations: 138
+    citations: 139
     title: 'Nonlinear preconditioning: How to use a nonlinear Schwarz method to precondition Newton''s method'
     year: '2016'
   ZzHAiHkAAAAJ:G36d5HCDkJYC:
@@ -206,7 +206,7 @@ papers:
     title: Local feature filtering for scalable and well-conditioned domain-decomposed random feature methods
     year: '2026'
   ZzHAiHkAAAAJ:NMxIlDl6LWMC:
-    citations: 298
+    citations: 299
     title: Abstract robust coarse spaces for systems of PDEs via generalized eigenproblems in the overlaps
     year: '2014'
   ZzHAiHkAAAAJ:NU-BerS4NX4C:
@@ -270,7 +270,7 @@ papers:
     title: New constructions of domain decomposition methods for systems of PDEs
     year: '2005'
   ZzHAiHkAAAAJ:U0iAMwwPxtsC:
-    citations: 73
+    citations: 74
     title: Domain decomposition preconditioning for the high-frequency time-harmonic Maxwell equations with absorption
     year: '2019'
   ZzHAiHkAAAAJ:ULOm3_A8WrAC:
@@ -490,7 +490,7 @@ papers:
     title: "An example of explicit implementation strategy and preconditioning for the high order edge finite elements applied to the time-harmonic Maxwell\u2019s equations"
     year: '2018'
   ZzHAiHkAAAAJ:lSLTfruPkqcC:
-    citations: 83
+    citations: 84
     title: "Effective transmission conditions for domain decomposition methods applied to the time-harmonic curl\u2013curl Maxwell's equations"
     year: '2015'
   ZzHAiHkAAAAJ:lbI08cpqPnQC:
@@ -634,7 +634,7 @@ papers:
     title: High performance domain decomposition methods on massively parallel architectures with freefem++
     year: '2012'
   ZzHAiHkAAAAJ:yD5IFk8b50cC:
-    citations: 812
+    citations: 816
     title: 'An introduction to domain decomposition methods: algorithms, theory, and parallel implementation'
     year: '2015'
   ZzHAiHkAAAAJ:yIeBiWEAh44C:
