@@ -1,9 +1,1306 @@
 ---
 ---
 
-@book{mybook1,
-  title={My Title},
-  author={Dolean, Victorita},
-  year={2026},
-  publisher={My Publisher},
+@article{Dolean:2026:CAN,
+title = {Can symmetric positive definite (SPD) coarse spaces perform well for indefinite Helmholtz problems?},
+journal = {Journal of Computational and Applied Mathematics},
+volume = {484},
+pages = {117403},
+year = {2026},
+issn = {0377-0427},
+doi = {https://doi.org/10.1016/j.cam.2026.117403},
+url = {https://www.sciencedirect.com/science/article/pii/S0377042726000683},
+author = {Victorita Dolean and Mark Fry and Matthias Langer},
+keywords = {Helmholtz equation, Domain decomposition method, Two-level method, Coarse space},
+abstract = {Wave propagation problems governed by the Helmholtz equation remain among the most challenging in scientific computing, due to their indefinite nature. Domain decomposition methods with spectral coarse spaces have emerged as some of the most effective preconditioners, yet their theoretical guarantees often lag behind practical performance. In this work, we introduce and analyse the Delta_k-GenEO coarse space within the two-level additive Schwarz preconditioners for heterogeneous Helmholtz problems. This is an adaptation of the Delta-GenEO coarse space. Our results sharpen the k-explicit conditions for GMRES convergence, reducing the restrictions on the subdomain size and eigenvalue threshold. This narrows the long-standing gap between pessimistic theory and empirical evidence, and reveals why GenEO spaces based on SPD (symmetric positive definite) eigenvalue problems remain surprisingly effective despite their apparent limitations. Numerical experiments confirm the theory, demonstrating scalability, robustness to heterogeneity for low to moderate frequencies (while experiencing limitations in the high frequency cases), and significantly milder coarse-space growth than conservative estimates predict.}
+}
+
+@article{vanBeek:2026:LOC,
+  abstract = {Random Feature Methods (RFMs) [1] and their variants such as extreme learning machine finite-basis physics-informed neural networks (ELM-FBPINNs) [2] offer a scalable approach for solving partial differential equations (PDEs) by using localized, overlapping and randomly initialized neural network basis functions to approximate the PDE solution and training them to minimize PDE residuals through solving structured least-squares problems. This combination leverages the approximation power of randomized neural networks, the parallelism of domain decomposition, and the accuracy and efficiency of least-squares solvers. However, the resulting structured least-squares systems are often severely ill-conditioned, due to local redundancy among random basis functions and correlation introduced by subdomain overlaps, which significantly affects the convergence of standard solvers. In this work, we introduce a block rank-revealing QR (RRQR) filtering and preconditioning strategy that operates directly on the structured least-squares problem. First, local RRQR factorizations identify and remove redundant basis functions while preserving numerically informative ones, reducing problem size, and improving conditioning. Second, we use these factorizations to construct a right preconditioner for the global problem which preserves block-sparsity and numerical stability. Third, we derive deterministic bounds of the condition number of the preconditioned system, with probabilistic refinements for small overlaps. We validate our approach on challenging, multi-scale PDE problems in 1D, 2D, and (2+1)D, demonstrating reductions in condition numbers by up to eleven orders of magnitude, LSQR convergence speedups by factors of 10–1000, and higher accuracy than both unpreconditioned and additive Schwarz-preconditioned baselines, all at significantly lower memory and computational cost. These results establish RRQR-based preconditioning as a scalable, accurate, and efficient enhancement for RFM-based PDE solvers.},
+  author      = {J. W. van Beek and Victorita Dolean and B. Moseley},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.cma.2025.118583},
+  journal     = {Computer Methods in Applied Mechanics and Engineering},
+  pages       = {118583},
+  title       = {Local feature filtering for scalable and well-conditioned domain-decomposed Random Feature Methods},
+  url         = {https://doi.org/10.1016/j.cma.2025.118583},
+  volume      = {449},
+  year        = {2026}
+}
+
+@article{Ludlam:2025:ULT,
+  abstract    = {Ultrasonic non-destructive evaluation (UNDE) is vital for assessing the structural integrity of safety-critical infrastructure. However, accurate defect detection and characterisation using UNDE is particularly challenging in complex materials like austenitic steel welds, as the heterogeneous and locally anisotropic grain structures distort wave paths, causing traditional imaging methods based on homogeneous and isotropic assumptions to fail. We present a probabilistic framework to reconstruct spatially varying elastic tensor information from ultrasonic travel-time data using stochastic Stein Variational Gradient Descent. Unlike prior approaches, our method relaxes assumptions of uniformity of material properties across the domain and considers uncertainty induced by limited prior knowledge. We show that travel-time data alone cannot fully constrain high-dimensional domains, and accurate imaging requires informed priors on a series of anisotropy parameters we use as a proxy for the stiffness tensor - scale, strength, and orientation.},
+  author      = {J. Ludlam and K. M. M. Tant and A. Curtis and Victorita Dolean},
+  bibtex_show = {true},
+  journal     = {IEEE International Ultrasonics Symposium},
+  title       = {Ultrasonic travel-time tomography for approximating the local elastic tensor in complex media},
+  url         = {https://ieeexplore.ieee.org/document/11201431},
+  year        = {2025}
+}
+
+@proceedings{Auroux:2025:CEM,
+  abstract    = {CEMRACS 2023 - Proceedings},
+  bibtex_show = {true},
+  editor      = {Didier Auroux and Manuel Campos Pinto and Bruno Despr{\'e}s and Victorita Dolean and St{\'e}phane Lanteri and Val{\'e}rie Michel-Dansac},
+  journal     = {ESAIM Proceedings and Surveys},
+  title       = {CEMRACS 2023 -- Scientific Machine Learning},
+  url         = {https://www.esaim-proc.org/articles/proc/abs/2025/04/contents/contents.html},
+  year        = {2025}
+}
+
+@article{Bootland:2025:ROB,
+  abstract    = {In this paper we design, analyse and test domain decomposition methods for linear systems of equations arising from conforming finite element discretisations of positive Maxwell-type equations, namely for  problems. It is well known that convergence of domain decomposition methods rely heavily on the efficiency of the coarse space used in the second level. We design adaptive coarse spaces that complement a near-kernel space made from the gradient of scalar functions. The new class of preconditioner is inspired by the idea of subspace decomposition, but based on spectral coarse spaces, and is specially designed for curl-conforming discretisations of Maxwell’s equations in heterogeneous media on general domains which may have holes. We also address the practical robustness of various solvers in the case of non-trivial topologies and/or high aspect ratio of the domain.},
+  author      = {N. Bootland and Victorita Dolean and F. Nataf and P.-H. Tournier},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1007/s10915-025-03061-2},
+  journal     = {Journal of Scientific Computing},
+  number      = {3},
+  pages       = {67},
+  title       = {A robust and adaptive GenEO-type domain decomposition preconditioner for H(curl) problems in three-dimensional general topologies},
+  url         = {https://doi.org/10.1007/s10915-025-03061-2},
+  volume      = {105},
+  year        = {2025}
+}
+
+@article{ChaumontFrelet:2024:EFF,
+  abstract    = {We introduce new finite-dimensional spaces specifically designed to approximate the solutions to high-frequency Helmholtz problems with smooth variable coefficients in dimension d. These discretization spaces are spanned by Gaussian coherent states, that have the key property to be localised in phase space. We carefully select the Gaussian coherent states spanning the approximation space by exploiting the (known) micro-localisation properties of the solution. For a large class of source terms (including plane-wave scattering problems), this choice leads to discrete spaces that provide a uniform approximation error for all wavenumber k with a number of degrees of freedom scaling as , which we rigorously establish. In comparison, for discretization spaces based on (piecewise) polynomials, the number of degrees of freedom has to scale at least as  to achieve the same property. These theoretical results are illustrated by one-dimensional numerical examples, where the proposed discretization spaces are coupled with a least-squares variational formulation.},
+  author      = {T. Chaumont-Frelet and Victorita Dolean and M. Ingremeau},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1007/s00211-024-01411-0},
+  journal     = {Numerische Mathematik},
+  number      = {4},
+  pages       = {1385--1426},
+  title       = {Efficient approximation of high-frequency Helmholtz solutions by Gaussian coherent states},
+  url         = {https://link.springer.com/article/10.1007/s00211-024-01411-0},
+  volume      = {156},
+  year        = {2024}
+}
+
+@article{Boutilier:2024:ROB,
+  abstract    = {For the Poisson equation posed in a domain containing a large number of polygonal perforations, we propose a low-dimensional coarse approximation space based on a coarse polygonal partitioning of the domain. Similarly to other multiscale numerical methods, this coarse space is spanned by locally discrete harmonic basis functions. Along the subdomain boundaries, the basis functions are piecewise polynomial. The main contribution of this article is an error estimate regarding the -projection over the coarse space; this error estimate depends only on the regularity of the solution over the edges of the coarse partitioning. For a specific edge refinement procedure, the error analysis establishes superconvergence of the method even if the true solution has a low general regularity. Additionally, this contribution numerically explores the combination of the coarse space with domain decomposition (DD) methods. This combination leads to an efficient two-level iterative linear solver which reaches the fine-scale finite element error in few iterations. It also bodes well as a preconditioner for Krylov methods and provides scalability with respect to the number of subdomains.},
+  author      = {M. Boutilier and K. Brenner and Victorita Dolean},
+  bibtex_show = {true},
+  journal     = {Applied Numerical Mathematics},
+  pages       = {561--578},
+  title       = {Robust methods for multiscale coarse approximations of diffusion models in perforated domains},
+  url         = {https://www.sciencedirect.com/science/article/abs/pii/S0168927424000916},
+  volume      = {201},
+  year        = {2024}
+}
+
+@article{Dolean:2024:MUL,
+  abstract    = {Physics-informed neural networks (PINNs) are a powerful approach for solving problems involving differential equations, yet they often struggle to solve problems with high frequency and/or multi-scale solutions. Finite basis physics-informed neural networks (FBPINNs) improve the performance of PINNs in this regime by combining them with an overlapping domain decomposition approach. In this work, FBPINNs are extended by adding multiple levels of domain decompositions to their solution ansatz, inspired by classical multilevel Schwarz domain decomposition methods (DDMs). Analogous to typical tests for classical DDMs, we assess how the accuracy of PINNs, FBPINNs and multilevel FBPINNs scale with respect to computational effort and solution complexity by carrying out strong and weak scaling tests. Our numerical results show that the proposed multilevel FBPINNs consistently and significantly outperform PINNs across a range of problems with high frequency and multi-scale solutions. Furthermore, as expected in classical DDMs, we show that multilevel FBPINNs improve the accuracy of FBPINNs when using large numbers of subdomains by aiding global communication between subdomains.},
+  author      = {Victorita Dolean and Alexander Heinlein and Siddhartha Mishra and B. Moseley},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.cma.2024.117116},
+  journal     = {Computer Methods in Applied Mechanics and Engineering},
+  pages       = {117116},
+  title       = {Multilevel domain decomposition-based architectures for physics-informed neural networks},
+  url         = {https://doi.org/10.1016/j.cma.2024.117116},
+  volume      = {429},
+  year        = {2024}
+}
+
+@article{Borzooei:2024:MIC,
+  abstract    = {One of the most common shoulder injuries is the rotator cuff tear (RCT). The risk of RCTs increases with age, with a prevalence of 9.7% in those under 20 years old and up to 62% in individuals aged 80 years and older. In this article, we present first a microwave digital twin prototype (MDTP) for RCT detection, based on machine learning (ML) and advanced numerical modeling of the system. We generate a generalizable dataset of scattering parameters through flexible numerical modeling in order to bypass real-world data collection challenges. This involves solving the linear system as a result of finite element discretization of the forward problem with use of the domain decomposition method to accelerate the computations. We use a support vector machine (SVM) to differentiate between injured and healthy shoulder models. This approach is more efficient in terms of required memory resources and computing time compared with traditional imaging methods.},
+  author      = {S. Borzooei and P.-H. Tournier and Victorita Dolean and C. Migliaccio},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.3390/s24206663},
+  journal     = {Sensors},
+  number      = {20},
+  pages       = {6663},
+  title       = {Microwave digital twin prototype for shoulder injury detection},
+  url         = {https://doi.org/10.3390/s24206663},
+  volume      = {24},
+  year        = {2024}
+}
+
+@inproceedings{Borzooei:2024:SVM,
+  abstract    = {In this paper, a solution for the fast detection of shoulder's tendon injury based on numerical modeling and machine learning (ML) algorithm is proposed. The synthetic data for the ML algorithm are the set of scattering parameters which are produced by solving Maxwell's equations for each transmitting antenna of the microwave imaging (MWI) system. The corresponding data of various healthy and injured models are categorized into two classes. Using support vector machine (SVM) for classification, an accuracy of 100% is achieved.},
+  author      = {S. Borzooei and P.-H. Tournier and Victorita Dolean and C. Migliaccio},
+  bibtex_show = {true},
+  booktitle   = {IEEE International Symposium on Antennas and Propagation and INC/USNC-URSI Radio Science Meeting},
+  pages       = {1511--1512},
+  title       = {A SVM-Based Approach for Detecting Tendon Injury},
+  url         = {https://ieeexplore.ieee.org/abstract/document/10685863},
+  volume      = {8},
+  year        = {2024}
+}
+
+@article{Borzooei:2024:NUM,
+  abstract    = {Rotator cuff tear (RCT) is one of the most common shoulder injuries, which can be irreparable if it develops to a severe condition. A portable imaging system for the on-site detection of RCT is necessary to identify its extent for early diagnosis. We introduce a microwave tomography system, using state-of-the-art numerical modeling and parallel computing for detection of RCT. The results show that the proposed method is capable of accurately detecting and localizing this injury in different size. In the next step, an efficient design in terms of computing time and complexity is proposed to detect the variations in the injured model with respect to the healthy model. The method is based on finite element discretization and uses parallel preconditioners from the domain decomposition method to accelerate computations. It is implemented using the open source FreeFEM software.},
+  author      = {S. Borzooei and P.-H. Tournier and Victorita Dolean and C. Pichot and N. Joachimowicz and H. Roussel and C. Migliaccio},
+  bibtex_show = {true},
+  journal     = {IEEE Journal of Electromagnetics, RF and Microwaves in Medicine and Biology},
+  number      = {3},
+  pages       = {282--289},
+  title       = {Numerical Modeling for Shoulder Injury Detection Using Microwave Imaging},
+  url         = {https://ieeexplore.ieee.org/abstract/document/10564578},
+  volume      = {8},
+  year        = {2024}
+}
+
+@incollection{Boutilier:2023:TRE,
+  abstract    = {},
+  author      = {M. Boutilier and K. Brenner and Victorita Dolean},
+  bibtex_show = {true},
+  booktitle   = {Finite Volumes for Complex Applications X---Volume 1, Elliptic and Parabolic Problems: FVCA10, Strasbourg, France, Invited Contributions},
+  doi         = {https://doi.org/10.1007/978-3-031-40864-9_14},
+  publisher   = {Springer Nature},
+  title       = {Trefftz Approximation Space for Poisson Equation in Perforated Domains},
+  url         = {https://link.springer.com/chapter/10.1007/978-3-031-40864-9_14},
+  year        = {2023}
+}
+
+@incollection{Dolean:2023:OPT,
+  abstract    = {},
+  author      = {Victorita Dolean and Martin J. Gander and A. Kyriakis},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XXVI},
+  doi         = {https://doi.org/10.1007/978-3-030-95025-5_22},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Optimizing transmission conditions for multiple subdomains in the magnetotelluric approximation of Maxwell's equations},
+  url         = {https://doi.org/10.1007/978-3-030-95025-5_22},
+  volume      = {145},
+  year        = {2023}
+}
+
+@incollection{Bootland:2023:INE,
+  abstract    = {},
+  author      = {N. Bootland and Victorita Dolean and V. Dwarka and P. Jolivet and C. Vuik},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XXVI},
+  doi         = {https://doi.org/10.1007/978-3-030-95025-5_11},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Inexact subdomain solves using deflated GMRES for Helmholtz problems},
+  url         = {https://doi.org/10.1007/978-3-030-95025-5_11},
+  volume      = {145},
+  year        = {2023}
+}
+
+@incollection{Bootland:2023:GEN,
+  abstract    = {},
+  author      = {N. Bootland and Victorita Dolean and I. Graham and C. Ma and R. Scheichl},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XXVI},
+  doi         = {https://doi.org/10.1007/978-3-030-95025-5_102023},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Geneo coarse spaces for heterogeneous indefinite elliptic problems},
+  url         = {https://doi.org/10.1007/978-3-030-95025-5_102023},
+  volume      = {145},
+  year        = {2023}
+}
+
+@incollection{Bootland:2023:SEV,
+  abstract    = {},
+  author      = {N. Bootland and Victorita Dolean and P. Jolivet and F. Nataf and S. Operto and P.-H. Tournier},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XXVI},
+  doi         = {https://doi.org/10.1007/978-3-030-95025-5_2},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Several ways to achieve robustness when solving wave propagation problems},
+  url         = {https://doi.org/10.1007/978-3-030-95025-5_2},
+  volume      = {145},
+  year        = {2023}
+}
+
+@article{Dolean:2023:CLO,
+  abstract    = {},
+  author      = {Victorita Dolean and Martin J. Gander and Alexandros Kyriakis},
+  bibtex_show = {true},
+  journal     = {SIAM Journal on Scientific Computing},
+  title       = {Closed form optimized transmission conditions for complex diffusion with many subdomains},
+  year        = {2023}
+}
+
+@article{Ludlam:2023:TRA,
+  abstract    = {},
+  author      = {J. Ludlam and K. M. M. Tant and Victorita Dolean and A. Curtis},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.jcp.2023.112500},
+  journal     = {Journal of Computational Physics},
+  pages       = {112500},
+  title       = {Travel times and ray paths for acoustic and elastic waves in generally anisotropic media},
+  url         = {https://doi.org/10.1016/j.jcp.2023.112500},
+  volume      = {494},
+  year        = {2023}
+}
+
+@article{Operto:2023:IS3,
+  abstract    = {},
+  author      = {S. Operto and P. Amestoy and H. S. Aghamiry and S. Beller and A. Buttari and L. Combe and Victorita Dolean and M. Gerest and G. Guo and P. Jolivet and J. Y. L'Excellent and F. Mamfoumbi and T. Mary and C. Puglisi and A. Ribodetti and P.-H. Tournier},
+  bibtex_show = {true},
+  journal     = {The Leading Edge},
+  title       = {Is 3D frequency-domain FWI of full-azimuth/long-offset OBN data feasible? The Gorgon-data FWI case study},
+  url         = {https://arxiv.org/abs/2210.16767},
+  year        = {2023}
+}
+
+@article{Sudhi:2023:SCA,
+  abstract    = {},
+  author      = {Sudhi P. V. and Victorita Dolean and Pierre Jolivet and Brandon Robinson and Jodi D. Edwards and Tetyana Kendzerska and Abhijit Sarkar},
+  bibtex_show = {true},
+  journal     = {Mathematical Biosciences and Engineering},
+  number      = {8},
+  pages       = {14634--14674},
+  title       = {Scalable computational algorithms for geo-spatial Covid-19 spread in high performance computing},
+  url         = {https://arxiv.org/abs/2208.01839},
+  volume      = {20},
+  year        = {2023}
+}
+
+@inproceedings{Borzooei:2023:HIG,
+  abstract    = {},
+  author      = {S. Borzooei and C. Migliaccio and Victorita Dolean and P.-H. Tournier and Christian Pichot},
+  bibtex_show = {true},
+  booktitle   = {IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting},
+  pages       = {1879--1880},
+  title       = {High-Performance Numerical Modeling for Detection of Rotator Cuff Tear},
+  url         = {https://ieeexplore.ieee.org/abstract/document/10238302},
+  year        = {2023}
+}
+
+@article{Bootland:2022:CAN,
+  abstract    = {},
+  author      = {N. Bootland and Victorita Dolean},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.3390/mca27030035},
+  journal     = {Mathematical and Computational Applications},
+  number      = {3},
+  title       = {Can DtN and GenEO coarse spaces be sufficiently robust for heterogeneous Helmholtz problems?},
+  url         = {https://doi.org/10.3390/mca27030035},
+  volume      = {27},
+  year        = {2022}
+}
+
+@article{Bootland:2022:OVE,
+  abstract    = {},
+  author      = {N. Bootland and Victorita Dolean and I. G. Graham and C. Ma and R. Scheichl},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1093/imanum/drac036},
+  journal     = {IMA Journal of Numerical Analysis},
+  title       = {Overlapping Schwarz methods with GenEO coarse spaces for indefinite and nonself-adjoint problems},
+  url         = {https://doi.org/10.1093/imanum/drac036},
+  year        = {2022}
+}
+
+@article{Bootland:2022:ANA,
+  abstract    = {},
+  author      = {N. Bootland and Victorita Dolean and A. Kyriakis and J. Pestana},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1553/etna_vol55s112},
+  journal     = {Electronic Transactions on Numerical Analysis},
+  pages       = {112--141},
+  title       = {Analysis of parallel Schwarz algorithms for time-harmonic problems using block Toeplitz matrices},
+  url         = {https://doi.org/10.1553/etna_vol55s112},
+  volume      = {55},
+  year        = {2022}
+}
+
+@article{Tournier:2022:THR,
+  abstract    = {},
+  author      = {P.-H. Tournier and P. Jolivet and Victorita Dolean and H. S. Aghamiry and S. Operto and S. Riffo},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1190/geo2021-0702.1},
+  journal     = {Geophysics},
+  pages       = {1--84},
+  title       = {Three-dimensional finite-difference finite-element frequency-domain wave simulation with multi-level optimized additive Schwarz domain-decomposition preconditioner: A tool for FWI of sparse node datasets},
+  url         = {https://doi.org/10.1190/geo2021-0702.1},
+  volume      = {0},
+  year        = {2022}
+}
+
+@article{Robinson:2022:COM,
+  abstract    = {},
+  author      = {B. Robinson and J. D. Edwards and T. Kendzerska and C. L. Pettit and D. Poirel and J. M. Daly and M. Ammi and M. Khalil and P. J. Taillon and R. Sandhu and S. Mills and S. Mulpuru and T. Walker and V. Percival and Victorita Dolean and A. Sarkar},
+  bibtex_show = {true},
+  journal     = {BMJ Open},
+  number      = {3},
+  title       = {Comprehensive compartmental model and calibration algorithm for the study of clinical implications of the population-level spread of COVID-19: a study protocol},
+  url         = {https://bmjopen.bmj.com/content/12/3/e052681},
+  volume      = {12},
+  year        = {2022}
+}
+
+@article{Bootland:2021:COM,
+  abstract    = {},
+  author      = {N. Bootland and Victorita Dolean and P. Jolivet and P.-H. Tournier},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.camwa.2021.07.011},
+  journal     = {Computers and Mathematics with Applications},
+  pages       = {239--253},
+  title       = {A comparison of coarse spaces for Helmholtz problems in the high frequency regime},
+  url         = {https://doi.org/10.1016/j.camwa.2021.07.011},
+  volume      = {98},
+  year        = {2021}
+}
+
+@incollection{Bootland:2021:ONT,
+  abstract    = {},
+  author      = {N. Bootland and Victorita Dolean},
+  bibtex_show = {true},
+  booktitle   = {Numerical mathematics and advanced applications --- ENUMATH 2019},
+  pages       = {175--184},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {On the Dirichlet-to-Neumann coarse space for solving the Helmholtz problem using domain decomposition},
+  volume      = {139},
+  year        = {2021}
+}
+
+@article{Brunet:2020:NAT,
+  abstract    = {},
+  author      = {R. Brunet and Victorita Dolean and Martin J. Gander},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1137/19M125858X},
+  journal     = {SIAM Journal on Scientific Computing},
+  number      = {5},
+  pages       = {A3313--A3339},
+  title       = {Natural domain decomposition algorithms for the solution of time-harmonic elastic waves},
+  url         = {https://epubs.siam.org/doi/abs/10.1137/19M125858X},
+  volume      = {42},
+  year        = {2020}
+}
+
+@inproceedings{Dolean:2020:LAR,
+  abstract    = {},
+  author      = {Victorita Dolean and P.-H. Tournier and P. Jolivet and S. Operto},
+  bibtex_show = {true},
+  pages       = {2683--2688},
+  title       = {Large-scale frequency-domain seismic wave modeling on h-adaptive tetrahedral meshes with iterative solver and multi-level domain-decomposition preconditioners},
+  year        = {2020}
+}
+
+@article{Dolean:2020:ITE,
+  abstract    = {},
+  author      = {Victorita Dolean and P. Jolivet and P. Tournier and S. Operto},
+  bibtex_show = {true},
+  journal     = {2020(1)},
+  pages       = {1--5},
+  title       = {Iterative frequency-domain seismic wave solvers based on multi-level domain-decomposition preconditioners},
+  year        = {2020}
+}
+
+@incollection{Brunet:2020:CAN,
+  abstract    = {},
+  author      = {R. Brunet and Victorita Dolean and Martin J. Gander},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XXV},
+  pages       = {425--432},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Can classical Schwarz methods for time-harmonic elastic waves converge?},
+  volume      = {138},
+  year        = {2020}
+}
+
+@incollection{Barrenechea:2020:STA,
+  abstract    = {},
+  author      = {G. Barrenechea and M. Bosy and Victorita Dolean},
+  bibtex_show = {true},
+  booktitle   = {Spectral and high order methods for partial differential equations --- ICOSAHOM 2018},
+  pages       = {179--189},
+  publisher   = {Springer},
+  series      = {Lecture Notes in Computational Science and Engineering},
+  title       = {Stabilised hybrid discontinuous Galerkin methods for the Stokes problem with non-standard boundary conditions},
+  volume      = {134},
+  year        = {2020}
+}
+
+@article{Tournier:2019:MIC,
+  abstract    = {},
+  author      = {P.-H. Tournier and I. Aliferis and M. Bonazzoli and M. de Buhan and M. Darbas and Victorita Dolean and F. Hecht and P. Jolivet and I. El Kanfoud and C. Migliaccio and F. Nataf and Ch. Pichot and S. Semenov},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.parco.2019.02.004},
+  journal     = {Parallel Computing},
+  pages       = {88--97},
+  title       = {Microwave tomographic imaging of cerebrovascular accidents by using high-performance computing},
+  url         = {https://doi.org/10.1016/j.parco.2019.02.004},
+  volume      = {85},
+  year        = {2019}
+}
+
+@article{Barrenechea:2019:HYB,
+  abstract    = {},
+  author      = {G. Barrenechea and M. Bosy and Victorita Dolean and F. Nataf and Pierre-Henri Tournier},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1515/cmam-2018-0005},
+  journal     = {Computational Methods in Applied Mathematics},
+  number      = {4},
+  pages       = {703--722},
+  title       = {Hybrid discontinuous Galerkin discretisation and domain decomposition preconditioners for the Stokes problem},
+  url         = {https://doi.org/10.1515/cmam-2018-0005},
+  volume      = {19},
+  year        = {2019}
+}
+
+@article{Bonazzoli:2019:DOM,
+  abstract    = {},
+  author      = {M. Bonazzoli and Victorita Dolean and I. G. Graham and E. A. Spence and P.-H. Tournier},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1090/mcom/3447},
+  journal     = {Mathematics of Computation},
+  number      = {320},
+  pages       = {2559--2604},
+  title       = {Domain decomposition preconditioning for the high-frequency time-harmonic Maxwell equations with absorption},
+  url         = {https://doi.org/10.1090/mcom/3447},
+  volume      = {88},
+  year        = {2019}
+}
+
+@article{Claeys:2019:INT,
+  abstract    = {},
+  author      = {X. Claeys and Victorita Dolean and Martin J. Gander},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.apnum.2018.07.006},
+  journal     = {Applied Numerical Mathematics},
+  pages       = {69--86},
+  title       = {An introduction to multi-trace formulations and associated domain decomposition solvers},
+  url         = {https://doi.org/10.1016/j.apnum.2018.07.006},
+  volume      = {135},
+  year        = {2019}
+}
+
+@article{Coli:2019:DET,
+  abstract    = {},
+  author      = {V. L. Coli and P.-H. Tournier and Victorita Dolean and I. El Kanfoud and C. Pichot and C. Migliaccio and L. Blanc-F{\'e}raud},
+  bibtex_show = {true},
+  journal     = {IEEE Journal of Electromagnetics, RF and Microwaves in Medicine and Biology},
+  number      = {4},
+  pages       = {254--260},
+  title       = {Detection of simulated brain strokes using microwave tomography},
+  url         = {https://ieeexplore.ieee.org/document/8731640},
+  volume      = {3},
+  year        = {2019}
+}
+
+@article{Dolean:2018:ASY,
+  abstract    = {},
+  author      = {Victorita Dolean and Martin J. Gander and Erwin Veneros},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1051/m2an/2018041},
+  journal     = {ESAIM: Mathematical Modelling and Numerical Analysis},
+  number      = {6},
+  pages       = {2457--2477},
+  title       = {Asymptotic analysis of optimized Schwarz methods for Maxwell's equations with discontinuous coefficients},
+  url         = {https://doi.org/10.1051/m2an/2018041},
+  volume      = {52},
+  year        = {2018}
+}
+
+@article{Barrenechea:2018:NUM,
+  abstract    = {},
+  author      = {G. Barrenechea and M. Bosy and Victorita Dolean},
+  bibtex_show = {true},
+  journal     = {Electronic Transactions on Numerical Analysis},
+  pages       = {41--63},
+  title       = {Numerical assessment of two-level domain decomposition preconditioners for incompressible Stokes and elasticity equations},
+  url         = {https://epub.oeaw.ac.at/?arp=0x003892f2},
+  volume      = {49},
+  year        = {2018}
+}
+
+@article{Bonazzoli:2018:EXA,
+  abstract    = {},
+  author      = {M. Bonazzoli and Victorita Dolean and F. Hecht and F. Rapetti},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.camwa.2017.11.013},
+  journal     = {Computers and Mathematics with Applications},
+  number      = {5},
+  pages       = {1498--1514},
+  title       = {An example of explicit implementation strategy and preconditioning for the high order edge finite elements applied to the time-harmonic Maxwell's equations},
+  url         = {https://doi.org/10.1016/j.camwa.2017.11.013},
+  volume      = {75},
+  year        = {2018}
+}
+
+@article{Bonazzoli:2018:PAR,
+  abstract    = {},
+  author      = {M. Bonazzoli and Victorita Dolean and F. Rapetti and P.-H. Tournier},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1002/jnm.2229},
+  journal     = {International Journal of Numerical Modelling: Electronic Networks, Devices and Fields},
+  number      = {2},
+  pages       = {e2229},
+  title       = {Parallel preconditioners for high-order discretizations arising from full system modeling for brain microwave imaging},
+  url         = {https://doi.org/10.1002/jnm.2229},
+  volume      = {31},
+  year        = {2018}
+}
+
+@incollection{Bonazzoli:2018:TWO,
+  abstract    = {},
+  author      = {M. Bonazzoli and Victorita Dolean and I. G. Graham and E. A. Spence and P.-H. Tournier},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XXIV},
+  pages       = {149--157},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {A two-level domain-decomposition preconditioner for the time-harmonic Maxwell's equations},
+  volume      = {125},
+  year        = {2018}
+}
+
+@incollection{Bonazzoli:2018:HEL,
+  abstract    = {},
+  author      = {M. Bonazzoli and Victorita Dolean and I. G. Graham and E. A. Spence and P.-H. Tournier},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XXIV},
+  pages       = {139--147},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Two-level preconditioners for the Helmholtz equation},
+  volume      = {125},
+  year        = {2018}
+}
+
+@article{Tournier:2017:NUM,
+  abstract    = {},
+  author      = {P.-H. Tournier and M. Bonazzoli and Victorita Dolean and F. Rapetti and F. Hecht and F. Nataf and I. Aliferis and I. El Kanfoud and C. Migliaccio and M. de Buhan and M. Darbas and S. Semenov and C. Pichot},
+  bibtex_show = {true},
+  journal     = {IEEE Antennas and Propagation Magazine},
+  number      = {5},
+  pages       = {98--110},
+  title       = {Numerical modeling and high-speed parallel computing: New perspectives on tomographic microwave imaging for brain stroke detection and monitoring},
+  url         = {https://ieeexplore.ieee.org/document/8014422},
+  volume      = {59},
+  year        = {2017}
+}
+
+@incollection{Dolean:2017:OPT,
+  abstract    = {},
+  author      = {Victorita Dolean and Martin J. Gander and E. Veneros and H. Zhang},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XXIII},
+  pages       = {145--152},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Optimized Schwarz methods for heterogeneous Helmholtz and Maxwell's equations},
+  volume      = {116},
+  year        = {2017}
+}
+
+@incollection{Bonazzoli:2017:SCH,
+  abstract    = {},
+  author      = {M. Bonazzoli and Victorita Dolean and R. Pasquetti and F. Rapetti},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XXIII},
+  pages       = {117--124},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Schwarz preconditioning for high order edge element discretizations of the time-harmonic Maxwell's equations},
+  volume      = {116},
+  year        = {2017}
+}
+
+@incollection{Ayala:2017:CLO,
+  abstract    = {},
+  author      = {A. Ayala and X. Claeys and Victorita Dolean and Martin J. Gander},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XXIII},
+  pages       = {107--115},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Closed form inverse of local multi-trace operators},
+  volume      = {116},
+  year        = {2017}
+}
+
+@article{Dolean:2016:NON,
+  abstract    = {},
+  author      = {Victorita Dolean and Martin J. Gander and W. Kheriji and F. Kwok and R. Masson},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1137/15M102887X},
+  journal     = {SIAM Journal on Scientific Computing},
+  number      = {6},
+  pages       = {A3357--A3380},
+  title       = {Nonlinear preconditioning: how to use a nonlinear Schwarz method to precondition Newton's method},
+  url         = {https://doi.org/10.1137/15M102887X},
+  volume      = {38},
+  year        = {2016}
+}
+
+@incollection{Dolean:2016:SCH,
+  abstract    = {},
+  author      = {Victorita Dolean and Martin J. Gander and E. Veneros},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XXII},
+  pages       = {471--479},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Schwarz methods for second order Maxwell equations in 3D with coefficient jumps},
+  volume      = {104},
+  year        = {2016}
+}
+
+@incollection{Dolean:2016:MUL,
+  abstract    = {},
+  author      = {Victorita Dolean and Martin J. Gander},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XXII},
+  pages       = {147--155},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Multitrace formulations and Dirichlet-Neumann algorithms},
+  volume      = {104},
+  year        = {2016}
+}
+
+@book{Dolean:2015:INT,
+  abstract    = {},
+  author      = {Victorita Dolean and Pierre Jolivet and Fr{\'e}d{\'e}ric Nataf},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1137/1.9781611974065},
+  publisher   = {Society for Industrial and Applied Mathematics},
+  address      = {Philadelphia, PA},
+  title       = {An introduction to domain decomposition methods: Algorithms, theory, and parallel implementation},
+  url         = {https://epubs.siam.org/doi/book/10.1137/1.9781611974065},
+  year        = {2015}
+}
+
+@article{Conen:2015:ADD,
+  abstract    = {},
+  author      = {L. Conen and Victorita Dolean and R. Krause and F. Nataf},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.cam.2015.04.031},
+  journal     = {Journal of Computational and Applied Mathematics},
+  pages       = {670--674},
+  title       = {Addendum to ``A coarse space for heterogeneous Helmholtz problems based on the Dirichlet-to-Neumann operator''},
+  url         = {https://doi.org/10.1016/j.cam.2015.04.031},
+  volume      = {290},
+  year        = {2015}
+}
+
+@article{Dolean:2015:EFF,
+  abstract    = {},
+  author      = {Victorita Dolean and Martin J. Gander and St{\'e}phane Lanteri and Jin-Fa Lee and Zhen Peng},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.jcp.2014.09.024},
+  journal     = {Journal of Computational Physics},
+  pages       = {232--247},
+  title       = {Effective transmission conditions for domain decomposition methods applied to the time-harmonic curl-curl Maxwell's equations},
+  url         = {https://doi.org/10.1016/j.jcp.2014.09.024},
+  volume      = {280},
+  year        = {2015}
+}
+
+@article{ElBouajaji:2015:DIS,
+  abstract    = {},
+  author      = {M. El Bouajaji and Victorita Dolean and Martin J. Gander and St{\'e}phane Lanteri and R. Perrussel},
+  bibtex_show = {true},
+  journal     = {Electronic Transactions on Numerical Analysis},
+  pages       = {572--592},
+  title       = {Discontinuous Galerkin discretizations of optimized Schwarz methods for solving the time-harmonic Maxwell's equations},
+  url         = {https://etna.math.kent.edu/volumes/2011-2020/vol44/abstract.php?vol=44&pages=572-592},
+  volume      = {44},
+  year        = {2015}
+}
+
+@article{Spillane:2014:ABS,
+  abstract    = {},
+  author      = {N. Spillane and Victorita Dolean and P. Hauret and F. Nataf and C. Pechstein and R. Scheichl},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1007/s00211-013-0576-y},
+  journal     = {Numerische Mathematik},
+  number      = {4},
+  pages       = {741--770},
+  title       = {Abstract robust coarse spaces for systems of PDEs via generalized eigenproblems in the overlaps},
+  url         = {https://link.springer.com/article/10.1007/s00211-013-0576-y},
+  volume      = {126},
+  year        = {2014}
+}
+
+@article{Conen:2014:COA,
+  abstract    = {},
+  author      = {L. Conen and Victorita Dolean and R. Krause and F. Nataf},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.cam.2014.03.031},
+  journal     = {Journal of Computational and Applied Mathematics},
+  pages       = {83--99},
+  title       = {A coarse space for heterogeneous Helmholtz problems based on the Dirichlet-to-Neumann operator},
+  url         = {https://doi.org/10.1016/j.cam.2014.03.031},
+  volume      = {271},
+  year        = {2014}
+}
+
+@article{Dolean:2014:TWO,
+  abstract    = {},
+  author      = {Victorita Dolean and Fr{\'e}d{\'e}ric Nataf and N. Spillane and H. Xiang},
+  bibtex_show = {true},
+  journal     = {Oil \& Gas Science and Technology -- Revue d'IFP Energies nouvelles},
+  number      = {4},
+  pages       = {731--752},
+  title       = {Two-level domain decomposition methods for highly heterogeneous Darcy equations. Connections with multiscale methods},
+  url         = {https://ogst.ifpenergiesnouvelles.fr/articles/ogst/abs/2014/04/ogst130025/ogst130025.html},
+  volume      = {69},
+  year        = {2014}
+}
+
+@incollection{Dolean:2014:OPT,
+  abstract    = {},
+  author      = {Victorita Dolean and Martin J. Gander and St{\'e}phane Lanteri and Jin-Fa Lee and Zhen Peng},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XXI},
+  pages       = {587--595},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Optimized Schwarz methods for curl-curl time-harmonic Maxwell's equations},
+  volume      = {98},
+  year        = {2014}
+}
+
+@incollection{Dolean:2014:OPTM,
+  abstract    = {},
+  author      = {Victorita Dolean and Martin J. Gander and E. Veneros},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XXI},
+  pages       = {517--525},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Optimized Schwarz methods for Maxwell equations with discontinuous coefficients},
+  volume      = {98},
+  year        = {2014}
+}
+
+@incollection{Spillane:2014:ACH,
+  abstract    = {},
+  author      = {N. Spillane and Victorita Dolean and P. Hauret and F. Nataf and C. Pechstein and R. Scheichl},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XXI},
+  pages       = {447--455},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Achieving robustness through coarse space enrichment in the two level Schwarz framework},
+  volume      = {98},
+  year        = {2014}
+}
+
+@incollection{ElBouajaji:2014:DGD,
+  abstract    = {},
+  author      = {M. El Bouajaji and Victorita Dolean and Martin J. Gander and St{\'e}phane Lanteri and R. Perrussel},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XXI},
+  pages       = {217--225},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {DG discretization of optimized Schwarz methods for Maxwell's equations},
+  volume      = {98},
+  year        = {2014}
+}
+
+@article{Spillane:2013:SOL,
+  abstract    = {},
+  author      = {N. Spillane and Victorita Dolean and P. Hauret and F. Nataf and D. Rixen},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.crma.2013.03.010},
+  journal     = {Comptes Rendus Math{\'e}matique},
+  number      = {5-6},
+  pages       = {197--201},
+  title       = {Solving generalized eigenvalue problems on the interfaces to build a robust two-level FETI method},
+  url         = {https://doi.org/10.1016/j.crma.2013.03.010},
+  volume      = {351},
+  year        = {2013}
+}
+
+@incollection{ElBouajaji:2013:COM,
+  abstract    = {},
+  author      = {M. El Bouajaji and Victorita Dolean and Martin J. Gander and St{\'e}phane Lanteri},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XX},
+  pages       = {271--278},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Comparison of a one and two parameter family of transmission conditions for Maxwell's equations with damping},
+  volume      = {91},
+  year        = {2013}
+}
+
+@incollection{Dolean:2013:TWO,
+  abstract    = {},
+  author      = {Victorita Dolean and Fr{\'e}d{\'e}ric Nataf and R. Scheichl and N. Spillane},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XX},
+  pages       = {87--94},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {A two-level Schwarz preconditioner for heterogeneous problems},
+  volume      = {91},
+  year        = {2013}
+}
+
+@incollection{Cluzeau:2013:SYM,
+  abstract    = {},
+  author      = {T. Cluzeau and Victorita Dolean and Fr{\'e}d{\'e}ric Nataf and A. Quadrat},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XX},
+  pages       = {27--38},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Symbolic techniques for domain decomposition methods},
+  volume      = {91},
+  year        = {2013}
+}
+
+@article{Dolean:2012:ANA,
+  abstract    = {},
+  author      = {Victorita Dolean and Fr{\'e}d{\'e}ric Nataf and R. Scheichl and N. Spillane},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.2478/cmam-2012-0027},
+  journal     = {Computational Methods in Applied Mathematics},
+  number      = {4},
+  pages       = {391--414},
+  title       = {Analysis of a two-level Schwarz method with coarse spaces based on local Dirichlet-to-Neumann maps},
+  url         = {https://doi.org/10.2478/cmam-2012-0027},
+  volume      = {12},
+  year        = {2012}
+}
+
+@article{Jolivet:2012:HIG,
+  abstract    = {},
+  author      = {P. Jolivet and V. Dolean and F. Hecht and F. Nataf and C. Prud'Homme and N. Spillane},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1515/jnum-2012-0015},
+  journal     = {Journal of Numerical Mathematics},
+  number      = {3-4},
+  pages       = {287--302},
+  title       = {High performance domain decomposition methods on massively parallel architectures with FreeFem++},
+  url         = {https://doi.org/10.1515/jnum-2012-0015},
+  volume      = {20},
+  year        = {2012}
+}
+
+@article{ElBouajaji:2012:OPT,
+  abstract    = {},
+  author      = {M. El Bouajaji and V. Dolean and M. J. Gander and S. Lanteri},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1137/110842995},
+  journal     = {SIAM Journal on Scientific Computing},
+  number      = {4},
+  pages       = {A2048--A2071},
+  title       = {Optimized Schwarz methods for the time-harmonic Maxwell equations with damping},
+  url         = {https://doi.org/10.1137/110842995},
+  volume      = {34},
+  year        = {2012}
+}
+
+@article{Nataf:2011:ACO,
+  abstract    = {},
+  author      = {Fr{\'e}d{\'e}ric Nataf and H. Xiang and Victorita Dolean and N. Spillane},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1137/100796376},
+  journal     = {SIAM Journal on Scientific Computing},
+  number      = {4},
+  pages       = {1623--1642},
+  title       = {A coarse space construction based on local Dirichlet-to-Neumann maps},
+  url         = {https://doi.org/10.1137/100796376},
+  volume      = {33},
+  year        = {2011}
+}
+
+@article{Spillane:2011:ROB,
+  abstract    = {},
+  author      = {N. Spillane and Victorita Dolean and P. Hauret and F. Nataf and C. Pechstein and R. Scheichl},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.crma.2011.10.021},
+  journal     = {Comptes Rendus Math{\'e}matique},
+  number      = {23-24},
+  pages       = {1255--1259},
+  title       = {A robust two-level domain decomposition preconditioner for systems of PDEs},
+  url         = {https://doi.org/10.1016/j.crma.2011.10.021},
+  volume      = {349},
+  year        = {2011}
+}
+
+@incollection{Dolean:2011:HYB,
+  abstract    = {},
+  author      = {Victorita Dolean and H. Fahs and L. Fezoui and S. Lanteri},
+  bibtex_show = {true},
+  booktitle   = {Spectral and high order methods for partial differential equations},
+  pages       = {163--170},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Hybrid explicit-implicit time integration for grid-induced stiffness in a DGTD method for time domain electromagnetics},
+  volume      = {76},
+  year        = {2011}
+}
+
+@incollection{Descombes:2011:SCH,
+  abstract    = {},
+  author      = {S. Descombes and Victorita Dolean and Martin J. Gander},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XIX},
+  pages       = {423--430},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Schwarz waveform relaxation methods for systems of semi-linear reaction-diffusion equations},
+  volume      = {78},
+  year        = {2011}
+}
+
+@incollection{Dolean:2011:OPT,
+  abstract    = {},
+  author      = {Victorita Dolean and M. El Bouajaji and M. J. Gander and S. Lanteri},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XIX},
+  pages       = {269--276},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Optimized Schwarz methods for Maxwell's equations with non-zero electric conductivity},
+  volume      = {78},
+  year        = {2011}
+}
+
+@incollection{Dolean:2011:CAN,
+  abstract    = {},
+  author      = {Victorita Dolean and M. J. Gander},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XIX},
+  pages       = {117--124},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Can the discretization modify the performance of Schwarz methods?},
+  volume      = {78},
+  year        = {2011}
+}
+
+@incollection{Dolean:2011:DOM,
+  abstract    = {},
+  author      = {Victorita Dolean and M. El Bouajaji and M. J. Gander and S. Lanteri and R. Perrussel},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XIX},
+  pages       = {15--26},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Domain decomposition methods for electromagnetic wave propagation problems in heterogeneous media and complex domains},
+  volume      = {78},
+  year        = {2011}
+}
+
+@article{Nataf:2010:TWO,
+  abstract    = {},
+  author      = {Fr{\'e}d{\'e}ric Nataf and H. Xiang and Victorita Dolean},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.crma.2011.10.021},
+  journal     = {Comptes Rendus Math{\'e}matique},
+  number      = {21-22},
+  pages       = {1163--1167},
+  title       = {A two level domain decomposition preconditioner based on local Dirichlet-to-Neumann maps},
+  url         = {https://doi.org/10.1016/j.crma.2011.10.021},
+  volume      = {348},
+  year        = {2010}
+}
+
+@article{Dolean:2010:LOC,
+  abstract    = {},
+  author      = {Victorita Dolean and H. Fahs and L. Fezoui and S. Lanteri},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.jcp.2009.09.038},
+  journal     = {Journal of Computational Physics},
+  number      = {2},
+  pages       = {512--526},
+  title       = {Locally implicit discontinuous Galerkin method for time domain electromagnetics},
+  url         = {https://doi.org/10.1016/j.jcp.2009.09.038},
+  volume      = {229},
+  year        = {2010}
+}
+
+@article{Catella:2010:IMP,
+  abstract    = {},
+  author      = {A. Catella and Victorita Dolean and S. Lanteri},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1108/03321641011028215},
+  journal     = {COMPEL},
+  number      = {3},
+  pages       = {602--625},
+  title       = {An implicit discontinuous Galerkin time-domain method for two-dimensional electromagnetic wave propagation},
+  url         = {https://doi.org/10.1108/03321641011028215},
+  volume      = {29},
+  year        = {2010}
+}
+
+@article{Fahs:2010:REC,
+  abstract    = {},
+  author      = {H. Fahs and L. Fezoui and S. Lanteri and Victorita Dolean and F. Rapetti},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1109/TMAG.2010.2043342},
+  journal     = {IEEE Transactions on Magnetics},
+  number      = {8},
+  pages       = {3061--3064},
+  title       = {Recent achievements on a DGTD method for time-domain electromagnetics},
+  url         = {https://doi.org/10.1109/TMAG.2010.2043342},
+  volume      = {46},
+  year        = {2010}
+}
+
+@article{Dolean:2009:OPT,
+  abstract    = {},
+  author      = {Victorita Dolean and Martin J. Gander and L. Gerardo-Giorda},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1137/080728536},
+  journal     = {SIAM Journal on Scientific Computing},
+  number      = {3},
+  pages       = {2193--2213},
+  title       = {Optimized Schwarz methods for Maxwell's equations},
+  url         = {https://doi.org/10.1137/080728536},
+  volume      = {31},
+  year        = {2009}
+}
+
+@article{Dolean:2009:DER,
+  abstract    = {},
+  author      = {Victorita Dolean and Fr{\'e}d{\'e}ric Nataf and G. Rapin},
+  bibtex_show = {true},
+  journal     = {Mathematics of Computation},
+  number      = {266},
+  pages       = {789--814},
+  title       = {Deriving a new domain decomposition method for the Stokes equations using the Smith factorization},
+  url         = {https://www.ams.org/journals/mcom/2009-78-266/S0025-5718-08-02172-8/},
+  volume      = {78},
+  year        = {2009}
+}
+
+@incollection{Dolean:2009:NEU,
+  abstract    = {},
+  author      = {Victorita Dolean and Fr{\'e}d{\'e}ric Nataf and G. Rapin},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XVIII},
+  pages       = {161--168},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {A domain decomposition preconditioner of Neumann-Neumann type for the Stokes equations},
+  volume      = {70},
+  year        = {2009}
+}
+
+@article{Dolean:2008:DOM,
+  abstract    = {},
+  author      = {Victorita Dolean and S. Lanteri and R. Perrussel},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.jcp.2007.10.004},
+  journal     = {Journal of Computational Physics},
+  number      = {3},
+  pages       = {2044--2072},
+  title       = {A domain decomposition method for solving the three-dimensional time-harmonic Maxwell equations discretized by discontinuous Galerkin methods},
+  url         = {https://doi.org/10.1016/j.jcp.2007.10.004},
+  volume      = {227},
+  year        = {2008}
+}
+
+@article{Dolean:2008:SOL,
+  abstract    = {},
+  author      = {Victorita Dolean and H. Fol and S. Lanteri and R. Perrussel},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.cam.2007.05.026},
+  journal     = {Journal of Computational and Applied Mathematics},
+  number      = {2},
+  pages       = {435--445},
+  title       = {Solution of the time-harmonic Maxwell equations using discontinuous Galerkin methods},
+  url         = {https://doi.org/10.1016/j.cam.2007.05.026},
+  volume      = {218},
+  year        = {2008}
+}
+
+@article{Catella:2008:UNC,
+  abstract    = {},
+  author      = {A. Catella and Victorita Dolean and S. Lanteri},
+  bibtex_show = {true},
+  journal     = {IEEE Transactions on Magnetics},
+  number      = {6},
+  pages       = {1250--1253},
+  title       = {An unconditionally stable discontinuous Galerkin method for solving the 2D time-domain Maxwell equations on unstructured triangular meshes},
+  url         = {https://ieeexplore.ieee.org/document/4526821},
+  volume      = {44},
+  year        = {2008}
+}
+
+@article{Dolean:2008:OPTM2,
+  abstract    = {},
+  author      = {Victorita Dolean and S. Lanteri and R. Perrussel},
+  bibtex_show = {true},
+  journal     = {IEEE Transactions on Magnetics},
+  number      = {6},
+  pages       = {954--957},
+  title       = {Optimized Schwarz algorithms for solving time-harmonic Maxwell's equations discretized by a discontinuous Galerkin method},
+  url         = {https://ieeexplore.ieee.org/abstract/document/4526850},
+  volume      = {44},
+  year        = {2008}
+}
+
+@incollection{Dolean:2008:PMU,
+  abstract    = {},
+  author      = {Victorita Dolean and R. Pasquetti and F. Rapetti},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XVII},
+  pages       = {485--492},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {p-multigrid for Fekete spectral element method},
+  volume      = {60},
+  year        = {2008}
+}
+
+@incollection{Dolean:2008:HOW,
+  abstract    = {},
+  author      = {Victorita Dolean and Fr{\'e}d{\'e}ric Nataf and G. Rapin},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XVII},
+  pages       = {477--484},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {How to use the Smith factorization for domain decomposition methods applied to the Stokes equations},
+  volume      = {60},
+  year        = {2008}
+}
+
+@incollection{Dolean:2008:WHY,
+  abstract    = {},
+  author      = {Victorita Dolean and Martin J. Gander},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XVII},
+  pages       = {467--475},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Why classical Schwarz methods applied to certain hyperbolic systems converge even without overlap},
+  volume      = {60},
+  year        = {2008}
+}
+
+@incollection{Dolean:2008:NEW,
+  abstract    = {},
+  author      = {Victorita Dolean and Fr{\'e}d{\'e}ric Nataf},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XVII},
+  pages       = {331--338},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {A new domain decomposition method for the compressible Euler equations using Smith factorization},
+  volume      = {60},
+  year        = {2008}
+}
+
+@article{Dolean:2006:NEW,
+  abstract    = {},
+  author      = {Victorita Dolean and Fr{\'e}d{\'e}ric Nataf},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1051/m2an:2006026},
+  journal     = {M2AN: Mathematical Modelling and Numerical Analysis},
+  number      = {4},
+  pages       = {689--703},
+  title       = {A new domain decomposition method for the compressible Euler equations},
+  url         = {https://doi.org/10.1051/m2an:2006026},
+  volume      = {40},
+  year        = {2006}
+}
+
+@article{Dolean:2005:NEW,
+  abstract    = {},
+  author      = {Victorita Dolean and Fr{\'e}d{\'e}ric Nataf and G. Rapin},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.crma.2005.03.026},
+  journal     = {Comptes Rendus Math{\'e}matique},
+  number      = {9},
+  pages       = {693--696},
+  title       = {New constructions of domain decomposition methods for systems of PDEs},
+  url         = {https://doi.org/10.1016/j.crma.2005.03.026},
+  volume      = {340},
+  year        = {2005}
+}
+
+@article{Dolean:2004:PAR,
+  abstract    = {},
+  author      = {Victorita Dolean and S. Lanteri},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.parco.2004.03.002},
+  journal     = {Parallel Computing},
+  number      = {4},
+  pages       = {503--525},
+  title       = {Parallel multigrid methods for the calculation of unsteady flows on unstructured grids: algorithmic aspects and parallel performances on clusters of PCs},
+  url         = {https://doi.org/10.1016/j.parco.2004.03.002},
+  volume      = {30},
+  year        = {2004}
+}
+
+@article{Dolean:2004:CON,
+  abstract    = {},
+  author      = {Victorita Dolean and St{\'e}phane Lanteri and Fr{\'e}d{\'e}ric Nataf},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1016/j.apnum.2003.09.006},
+  journal     = {Applied Numerical Mathematics},
+  number      = {2},
+  pages       = {153--186},
+  title       = {Convergence analysis of additive Schwarz for the Euler equations},
+  url         = {https://doi.org/10.1016/j.apnum.2003.09.006},
+  volume      = {49},
+  year        = {2004}
+}
+
+@article{Dolean:2002:OPT,
+  abstract    = {},
+  author      = {Victorita Dolean and St{\'e}phane Lanteri and Fr{\'e}d{\'e}ric Nataf},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1002/fld.410},
+  journal     = {International Journal for Numerical Methods in Fluids},
+  number      = {12},
+  pages       = {1539--1550},
+  title       = {Optimized interface conditions for domain decomposition methods in fluid dynamics},
+  url         = {https://doi.org/10.1002/fld.410},
+  volume      = {40},
+  year        = {2002}
+}
+
+@article{Dolean:2002:CONS,
+  abstract    = {},
+  author      = {Victorita Dolean and Fr{\'e}d{\'e}ric Nataf and St{\'e}phane Lanteri},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1002/fld.406},
+  journal     = {International Journal for Numerical Methods in Fluids},
+  number      = {12},
+  pages       = {1485--1492},
+  title       = {Construction of interface conditions for solving the compressible Euler equations by non-overlapping domain decomposition methods},
+  url         = {https://doi.org/10.1002/fld.406},
+  volume      = {40},
+  year        = {2002}
+}
+
+@incollection{Dolean:2002:NON,
+  abstract    = {},
+  author      = {Victorita Dolean and S. Lanteri and Fr{\'e}d{\'e}ric Nataf},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering (Lyon, 2000)},
+  pages       = {455--462},
+  publisher   = {Internat. Center Numer. Methods Eng. (CIMNE)},
+  title       = {Nonoverlapping domain decomposition algorithms for the system of Euler equations},
+  year        = {2002}
+}
+
+@article{Dolean:2001:DOM,
+  abstract    = {},
+  author      = {Victorita Dolean and S. Lanteri},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1002/fld.184},
+  journal     = {International Journal for Numerical Methods in Fluids},
+  number      = {6},
+  pages       = {625--656},
+  title       = {A domain decomposition approach to finite volume solutions of the Euler equations on unstructured triangular meshes},
+  url         = {https://doi.org/10.1002/fld.184},
+  volume      = {37},
+  year        = {2001}
+}
+
+@article{Dolean:2001:HYB,
+  abstract    = {},
+  author      = {Victorita Dolean and S. Lanteri},
+  bibtex_show = {true},
+  doi         = {https://doi.org/10.1080/10618560108940730},
+  journal     = {International Journal of Computational Fluid Dynamics},
+  number      = {4},
+  pages       = {287--304},
+  title       = {A hybrid domain decomposition and multigrid method for the acceleration of compressible viscous flow calculations on unstructured triangular meshes},
+  url         = {https://doi.org/10.1080/10618560108940730},
+  volume      = {14},
+  year        = {2001}
 }
