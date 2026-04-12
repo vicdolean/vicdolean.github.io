@@ -2,20 +2,22 @@
 ---
 
 @article{Dolean:2026:CAN,
-title = {Can symmetric positive definite (SPD) coarse spaces perform well for indefinite Helmholtz problems?},
-journal = {Journal of Computational and Applied Mathematics},
-volume = {484},
-pages = {117403},
-year = {2026},
-issn = {0377-0427},
-doi = {https://doi.org/10.1016/j.cam.2026.117403},
-url = {https://www.sciencedirect.com/science/article/pii/S0377042726000683},
-author = {Victorita Dolean and Mark Fry and Matthias Langer},
-keywords = {Helmholtz equation, Domain decomposition method, Two-level method, Coarse space},
-abstract = {Wave propagation problems governed by the Helmholtz equation remain among the most challenging in scientific computing, due to their indefinite nature. Domain decomposition methods with spectral coarse spaces have emerged as some of the most effective preconditioners, yet their theoretical guarantees often lag behind practical performance. In this work, we introduce and analyse the Delta_k-GenEO coarse space within the two-level additive Schwarz preconditioners for heterogeneous Helmholtz problems. This is an adaptation of the Delta-GenEO coarse space. Our results sharpen the k-explicit conditions for GMRES convergence, reducing the restrictions on the subdomain size and eigenvalue threshold. This narrows the long-standing gap between pessimistic theory and empirical evidence, and reveals why GenEO spaces based on SPD (symmetric positive definite) eigenvalue problems remain surprisingly effective despite their apparent limitations. Numerical experiments confirm the theory, demonstrating scalability, robustness to heterogeneity for low to moderate frequencies (while experiencing limitations in the high frequency cases), and significantly milder coarse-space growth than conservative estimates predict.}
+  abbr  = {CAMWA},
+  title = {Can symmetric positive definite (SPD) coarse spaces perform well for indefinite Helmholtz problems?},
+  journal = {Journal of Computational and Applied Mathematics},
+  volume = {484},
+  pages = {117403},
+  year = {2026},
+  issn = {0377-0427},
+  doi = {https://doi.org/10.1016/j.cam.2026.117403},
+  url = {https://www.sciencedirect.com/science/article/pii/S0377042726000683},
+  author = {Victorita Dolean and Mark Fry and Matthias Langer},
+  keywords = {Helmholtz equation, Domain decomposition method, Two-level method, Coarse space},
+  abstract = {Wave propagation problems governed by the Helmholtz equation remain among the most challenging in scientific computing, due to their indefinite nature. Domain decomposition methods with spectral coarse spaces have emerged as some of the most effective preconditioners, yet their theoretical guarantees often lag behind practical performance. In this work, we introduce and analyse the Delta_k-GenEO coarse space within the two-level additive Schwarz preconditioners for heterogeneous Helmholtz problems. This is an adaptation of the Delta-GenEO coarse space. Our results sharpen the k-explicit conditions for GMRES convergence, reducing the restrictions on the subdomain size and eigenvalue threshold. This narrows the long-standing gap between pessimistic theory and empirical evidence, and reveals why GenEO spaces based on SPD (symmetric positive definite) eigenvalue problems remain surprisingly effective despite their apparent limitations. Numerical experiments confirm the theory, demonstrating scalability, robustness to heterogeneity for low to moderate frequencies (while experiencing limitations in the high frequency cases), and significantly milder coarse-space growth than conservative estimates predict.}
 }
 
 @article{vanBeek:2026:LOC,
+  abbr  = {CMAME},
   abstract = {Random Feature Methods (RFMs) [1] and their variants such as extreme learning machine finite-basis physics-informed neural networks (ELM-FBPINNs) [2] offer a scalable approach for solving partial differential equations (PDEs) by using localized, overlapping and randomly initialized neural network basis functions to approximate the PDE solution and training them to minimize PDE residuals through solving structured least-squares problems. This combination leverages the approximation power of randomized neural networks, the parallelism of domain decomposition, and the accuracy and efficiency of least-squares solvers. However, the resulting structured least-squares systems are often severely ill-conditioned, due to local redundancy among random basis functions and correlation introduced by subdomain overlaps, which significantly affects the convergence of standard solvers. In this work, we introduce a block rank-revealing QR (RRQR) filtering and preconditioning strategy that operates directly on the structured least-squares problem. First, local RRQR factorizations identify and remove redundant basis functions while preserving numerically informative ones, reducing problem size, and improving conditioning. Second, we use these factorizations to construct a right preconditioner for the global problem which preserves block-sparsity and numerical stability. Third, we derive deterministic bounds of the condition number of the preconditioned system, with probabilistic refinements for small overlaps. We validate our approach on challenging, multi-scale PDE problems in 1D, 2D, and (2+1)D, demonstrating reductions in condition numbers by up to eleven orders of magnitude, LSQR convergence speedups by factors of 10–1000, and higher accuracy than both unpreconditioned and additive Schwarz-preconditioned baselines, all at significantly lower memory and computational cost. These results establish RRQR-based preconditioning as a scalable, accurate, and efficient enhancement for RFM-based PDE solvers.},
   author      = {J. W. van Beek and Victorita Dolean and B. Moseley},
   bibtex_show = {true},
