@@ -12,6 +12,7 @@
   doi = {https://doi.org/10.1016/j.cam.2026.117403},
   url = {https://www.sciencedirect.com/science/article/pii/S0377042726000683},
   author = {Victorita Dolean and Mark Fry and Matthias Langer},
+  bibtex_show = {true},
   keywords = {Helmholtz equation, Domain decomposition method, Two-level method, Coarse space},
   abstract = {Wave propagation problems governed by the Helmholtz equation remain among the most challenging in scientific computing, due to their indefinite nature. Domain decomposition methods with spectral coarse spaces have emerged as some of the most effective preconditioners, yet their theoretical guarantees often lag behind practical performance. In this work, we introduce and analyse the Delta_k-GenEO coarse space within the two-level additive Schwarz preconditioners for heterogeneous Helmholtz problems. This is an adaptation of the Delta-GenEO coarse space. Our results sharpen the k-explicit conditions for GMRES convergence, reducing the restrictions on the subdomain size and eigenvalue threshold. This narrows the long-standing gap between pessimistic theory and empirical evidence, and reveals why GenEO spaces based on SPD (symmetric positive definite) eigenvalue problems remain surprisingly effective despite their apparent limitations. Numerical experiments confirm the theory, demonstrating scalability, robustness to heterogeneity for low to moderate frequencies (while experiencing limitations in the high frequency cases), and significantly milder coarse-space growth than conservative estimates predict.}
 }
@@ -31,9 +32,11 @@
 }
 
 @article{Ludlam:2025:ULT,
+  abbr  = {IEEE-IUS},
   abstract    = {Ultrasonic non-destructive evaluation (UNDE) is vital for assessing the structural integrity of safety-critical infrastructure. However, accurate defect detection and characterisation using UNDE is particularly challenging in complex materials like austenitic steel welds, as the heterogeneous and locally anisotropic grain structures distort wave paths, causing traditional imaging methods based on homogeneous and isotropic assumptions to fail. We present a probabilistic framework to reconstruct spatially varying elastic tensor information from ultrasonic travel-time data using stochastic Stein Variational Gradient Descent. Unlike prior approaches, our method relaxes assumptions of uniformity of material properties across the domain and considers uncertainty induced by limited prior knowledge. We show that travel-time data alone cannot fully constrain high-dimensional domains, and accurate imaging requires informed priors on a series of anisotropy parameters we use as a proxy for the stiffness tensor - scale, strength, and orientation.},
   author      = {J. Ludlam and K. M. M. Tant and A. Curtis and Victorita Dolean},
   bibtex_show = {true},
+  doi         = {https://doi.org/10.1109/IUS62464.2025.11201431},
   journal     = {IEEE International Ultrasonics Symposium},
   title       = {Ultrasonic travel-time tomography for approximating the local elastic tensor in complex media},
   url         = {https://ieeexplore.ieee.org/document/11201431},
@@ -41,6 +44,7 @@
 }
 
 @proceedings{Auroux:2025:CEM,
+  abbr  = {ESAIM-Proc},
   abstract    = {CEMRACS 2023 - Proceedings},
   bibtex_show = {true},
   editor      = {Didier Auroux and Manuel Campos Pinto and Bruno Despr{\'e}s and Victorita Dolean and St{\'e}phane Lanteri and Val{\'e}rie Michel-Dansac},
@@ -51,6 +55,7 @@
 }
 
 @article{Bootland:2025:ROB,
+  abbr = {JSC},
   abstract    = {In this paper we design, analyse and test domain decomposition methods for linear systems of equations arising from conforming finite element discretisations of positive Maxwell-type equations, namely for  problems. It is well known that convergence of domain decomposition methods rely heavily on the efficiency of the coarse space used in the second level. We design adaptive coarse spaces that complement a near-kernel space made from the gradient of scalar functions. The new class of preconditioner is inspired by the idea of subspace decomposition, but based on spectral coarse spaces, and is specially designed for curl-conforming discretisations of Maxwell’s equations in heterogeneous media on general domains which may have holes. We also address the practical robustness of various solvers in the case of non-trivial topologies and/or high aspect ratio of the domain.},
   author      = {N. Bootland and Victorita Dolean and F. Nataf and P.-H. Tournier},
   bibtex_show = {true},
@@ -65,6 +70,7 @@
 }
 
 @article{ChaumontFrelet:2024:EFF,
+  abbr = {Numer. Math.},
   abstract    = {We introduce new finite-dimensional spaces specifically designed to approximate the solutions to high-frequency Helmholtz problems with smooth variable coefficients in dimension d. These discretization spaces are spanned by Gaussian coherent states, that have the key property to be localised in phase space. We carefully select the Gaussian coherent states spanning the approximation space by exploiting the (known) micro-localisation properties of the solution. For a large class of source terms (including plane-wave scattering problems), this choice leads to discrete spaces that provide a uniform approximation error for all wavenumber k with a number of degrees of freedom scaling as , which we rigorously establish. In comparison, for discretization spaces based on (piecewise) polynomials, the number of degrees of freedom has to scale at least as  to achieve the same property. These theoretical results are illustrated by one-dimensional numerical examples, where the proposed discretization spaces are coupled with a least-squares variational formulation.},
   author      = {T. Chaumont-Frelet and Victorita Dolean and M. Ingremeau},
   bibtex_show = {true},
@@ -79,6 +85,7 @@
 }
 
 @article{Boutilier:2024:ROB,
+  abbr = {ANM},
   abstract    = {For the Poisson equation posed in a domain containing a large number of polygonal perforations, we propose a low-dimensional coarse approximation space based on a coarse polygonal partitioning of the domain. Similarly to other multiscale numerical methods, this coarse space is spanned by locally discrete harmonic basis functions. Along the subdomain boundaries, the basis functions are piecewise polynomial. The main contribution of this article is an error estimate regarding the -projection over the coarse space; this error estimate depends only on the regularity of the solution over the edges of the coarse partitioning. For a specific edge refinement procedure, the error analysis establishes superconvergence of the method even if the true solution has a low general regularity. Additionally, this contribution numerically explores the combination of the coarse space with domain decomposition (DD) methods. This combination leads to an efficient two-level iterative linear solver which reaches the fine-scale finite element error in few iterations. It also bodes well as a preconditioner for Krylov methods and provides scalability with respect to the number of subdomains.},
   author      = {M. Boutilier and K. Brenner and Victorita Dolean},
   bibtex_show = {true},
@@ -91,6 +98,7 @@
 }
 
 @article{Dolean:2024:MUL,
+  abbr = {CMAME},
   abstract    = {Physics-informed neural networks (PINNs) are a powerful approach for solving problems involving differential equations, yet they often struggle to solve problems with high frequency and/or multi-scale solutions. Finite basis physics-informed neural networks (FBPINNs) improve the performance of PINNs in this regime by combining them with an overlapping domain decomposition approach. In this work, FBPINNs are extended by adding multiple levels of domain decompositions to their solution ansatz, inspired by classical multilevel Schwarz domain decomposition methods (DDMs). Analogous to typical tests for classical DDMs, we assess how the accuracy of PINNs, FBPINNs and multilevel FBPINNs scale with respect to computational effort and solution complexity by carrying out strong and weak scaling tests. Our numerical results show that the proposed multilevel FBPINNs consistently and significantly outperform PINNs across a range of problems with high frequency and multi-scale solutions. Furthermore, as expected in classical DDMs, we show that multilevel FBPINNs improve the accuracy of FBPINNs when using large numbers of subdomains by aiding global communication between subdomains.},
   author      = {Victorita Dolean and Alexander Heinlein and Siddhartha Mishra and B. Moseley},
   bibtex_show = {true},
@@ -103,7 +111,8 @@
   year        = {2024}
 }
 
-@article{Borzooei:2024:MIC,
+@article{Borzooei:2024:MIC,  
+  abbr = {Sensors},
   abstract    = {One of the most common shoulder injuries is the rotator cuff tear (RCT). The risk of RCTs increases with age, with a prevalence of 9.7% in those under 20 years old and up to 62% in individuals aged 80 years and older. In this article, we present first a microwave digital twin prototype (MDTP) for RCT detection, based on machine learning (ML) and advanced numerical modeling of the system. We generate a generalizable dataset of scattering parameters through flexible numerical modeling in order to bypass real-world data collection challenges. This involves solving the linear system as a result of finite element discretization of the forward problem with use of the domain decomposition method to accelerate the computations. We use a support vector machine (SVM) to differentiate between injured and healthy shoulder models. This approach is more efficient in terms of required memory resources and computing time compared with traditional imaging methods.},
   author      = {S. Borzooei and P.-H. Tournier and Victorita Dolean and C. Migliaccio},
   bibtex_show = {true},
@@ -118,6 +127,7 @@
 }
 
 @inproceedings{Borzooei:2024:SVM,
+  abbr = {IEEE-APP},
   abstract    = {In this paper, a solution for the fast detection of shoulder's tendon injury based on numerical modeling and machine learning (ML) algorithm is proposed. The synthetic data for the ML algorithm are the set of scattering parameters which are produced by solving Maxwell's equations for each transmitting antenna of the microwave imaging (MWI) system. The corresponding data of various healthy and injured models are categorized into two classes. Using support vector machine (SVM) for classification, an accuracy of 100% is achieved.},
   author      = {S. Borzooei and P.-H. Tournier and Victorita Dolean and C. Migliaccio},
   bibtex_show = {true},
@@ -130,6 +140,7 @@
 }
 
 @article{Borzooei:2024:NUM,
+  abbr = {IEEE-JERM},
   abstract    = {Rotator cuff tear (RCT) is one of the most common shoulder injuries, which can be irreparable if it develops to a severe condition. A portable imaging system for the on-site detection of RCT is necessary to identify its extent for early diagnosis. We introduce a microwave tomography system, using state-of-the-art numerical modeling and parallel computing for detection of RCT. The results show that the proposed method is capable of accurately detecting and localizing this injury in different size. In the next step, an efficient design in terms of computing time and complexity is proposed to detect the variations in the injured model with respect to the healthy model. The method is based on finite element discretization and uses parallel preconditioners from the domain decomposition method to accelerate computations. It is implemented using the open source FreeFEM software.},
   author      = {S. Borzooei and P.-H. Tournier and Victorita Dolean and C. Pichot and N. Joachimowicz and H. Roussel and C. Migliaccio},
   bibtex_show = {true},
