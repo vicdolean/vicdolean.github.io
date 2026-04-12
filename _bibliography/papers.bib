@@ -89,6 +89,7 @@
   abstract    = {For the Poisson equation posed in a domain containing a large number of polygonal perforations, we propose a low-dimensional coarse approximation space based on a coarse polygonal partitioning of the domain. Similarly to other multiscale numerical methods, this coarse space is spanned by locally discrete harmonic basis functions. Along the subdomain boundaries, the basis functions are piecewise polynomial. The main contribution of this article is an error estimate regarding the -projection over the coarse space; this error estimate depends only on the regularity of the solution over the edges of the coarse partitioning. For a specific edge refinement procedure, the error analysis establishes superconvergence of the method even if the true solution has a low general regularity. Additionally, this contribution numerically explores the combination of the coarse space with domain decomposition (DD) methods. This combination leads to an efficient two-level iterative linear solver which reaches the fine-scale finite element error in few iterations. It also bodes well as a preconditioner for Krylov methods and provides scalability with respect to the number of subdomains.},
   author      = {M. Boutilier and K. Brenner and Victorita Dolean},
   bibtex_show = {true},
+  doi = {https://doi.org/10.1016/j.apnum.2024.04.007},
   journal     = {Applied Numerical Mathematics},
   pages       = {561--578},
   title       = {Robust methods for multiscale coarse approximations of diffusion models in perforated domains},
@@ -131,6 +132,7 @@
   abstract    = {In this paper, a solution for the fast detection of shoulder's tendon injury based on numerical modeling and machine learning (ML) algorithm is proposed. The synthetic data for the ML algorithm are the set of scattering parameters which are produced by solving Maxwell's equations for each transmitting antenna of the microwave imaging (MWI) system. The corresponding data of various healthy and injured models are categorized into two classes. Using support vector machine (SVM) for classification, an accuracy of 100% is achieved.},
   author      = {S. Borzooei and P.-H. Tournier and Victorita Dolean and C. Migliaccio},
   bibtex_show = {true},
+  doi   = {https://doi.org/10.1109/AP-S/INC-USNC-URSI52054.2024.10685863},
   booktitle   = {IEEE International Symposium on Antennas and Propagation and INC/USNC-URSI Radio Science Meeting},
   pages       = {1511--1512},
   title       = {A SVM-Based Approach for Detecting Tendon Injury},
@@ -144,6 +146,7 @@
   abstract    = {Rotator cuff tear (RCT) is one of the most common shoulder injuries, which can be irreparable if it develops to a severe condition. A portable imaging system for the on-site detection of RCT is necessary to identify its extent for early diagnosis. We introduce a microwave tomography system, using state-of-the-art numerical modeling and parallel computing for detection of RCT. The results show that the proposed method is capable of accurately detecting and localizing this injury in different size. In the next step, an efficient design in terms of computing time and complexity is proposed to detect the variations in the injured model with respect to the healthy model. The method is based on finite element discretization and uses parallel preconditioners from the domain decomposition method to accelerate computations. It is implemented using the open source FreeFEM software.},
   author      = {S. Borzooei and P.-H. Tournier and Victorita Dolean and C. Pichot and N. Joachimowicz and H. Roussel and C. Migliaccio},
   bibtex_show = {true},
+  doi = {https://doi.org/10.1109/JERM.2024.3411799},
   journal     = {IEEE Journal of Electromagnetics, RF and Microwaves in Medicine and Biology},
   number      = {3},
   pages       = {282--289},
@@ -154,7 +157,8 @@
 }
 
 @incollection{Boutilier:2023:TRE,
-  abstract    = {},
+  abbr = {FVCA10},
+  abstract    = {For the Poisson equation posed in a planar domain containing a large number of polygonal perforations, we propose a low-dimensional approximation space based on a coarse polygonal partitioning of the domain. Similar to other multi-scale numerical methods, this coarse space is spanned by basis functions that are locally discrete harmonic. We provide an error estimate in the energy norm that only depends on the regularity of the solution over the edges of the coarse skeleton. For a specific edge refinement procedure, this estimate allows us to establish superconvergence of the method, even if the true solution has low general regularity. Combined with the Restricted Additive Schwarz method, the proposed coarse space leads to an efficient two-level iterative linear solver which achieves the fine-scale finite element error in few iterations. The numerical experiment showcases the use of this coarse space over test cases involving singular solutions and realistic urban geometries.},
   author      = {M. Boutilier and K. Brenner and Victorita Dolean},
   bibtex_show = {true},
   booktitle   = {Finite Volumes for Complex Applications X---Volume 1, Elliptic and Parabolic Problems: FVCA10, Strasbourg, France, Invited Contributions},
@@ -166,7 +170,8 @@
 }
 
 @incollection{Dolean:2023:OPT,
-  abstract    = {},
+  abbr = {DDMSE26},
+  abstract    = {Wave propagation phenomena are ubiquitous in science and engineering. In Geophysics, the magnetotelluric approximation of Maxwell’s equations is an important tool to extract information about the spatial variation of electrical conductivity in the Earth’s subsurface.},
   author      = {Victorita Dolean and Martin J. Gander and A. Kyriakis},
   bibtex_show = {true},
   booktitle   = {Domain decomposition methods in science and engineering XXVI},
@@ -180,7 +185,8 @@
 }
 
 @incollection{Bootland:2023:INE,
-  abstract    = {},
+  abbr = {DDMSE26},
+  abstract    = {In recent years, domain decomposition based preconditioners have become popular tools to solve the Helmholtz equation. Notorious for causing a variety of convergence issues, the Helmholtz equation remains a challenging PDE to solve numerically. Even for simple model problems, the resulting linear system after discretisation becomes indefinite and tailored iterative solvers are required to obtain the numerical solution efficiently. At the same time, the mesh must be kept fine enough in order to prevent numerical dispersion ‘polluting’ the solution [4]. This leads to very large linear systems, further amplifying the need to develop economical solver methodologies.},
   author      = {N. Bootland and Victorita Dolean and V. Dwarka and P. Jolivet and C. Vuik},
   bibtex_show = {true},
   booktitle   = {Domain decomposition methods in science and engineering XXVI},
@@ -194,21 +200,22 @@
 }
 
 @incollection{Bootland:2023:GEN,
-  abstract    = {},
+  abbr = {DDMSE26},
+  abstract    = {For domain decomposition preconditioners, the use of a coarse correction as a second level is usually required to provide scalability (in the weak sense), such that the iteration count is independent of the number of subdomains, for subdomains of fixed dimension. In addition, it is desirable to guarantee robustness with respect to strong variations in the physical parameters. Achieving scalability and robustness usually relies on sophisticated tools such as spectral coarse spaces [4, 5]. In particular, we can highlight the GenEO coarse space [9], which has been successfully analysed and applied to highly heterogeneous positive definite elliptic problems. This coarse space relies on the solution of local eigenvalue problems on subdomains and the theory in the SPD case is based on the fact that local eigenfunctions form an orthonormal basis with respect to the energy scalar product induced by the bilinear form},
   author      = {N. Bootland and Victorita Dolean and I. Graham and C. Ma and R. Scheichl},
   bibtex_show = {true},
   booktitle   = {Domain decomposition methods in science and engineering XXVI},
-  doi         = {https://doi.org/10.1007/978-3-030-95025-5_102023},
+  doi         = {https://doi.org/10.1007/978-3-030-95025-5_10},
   publisher   = {Springer},
   series      = {LNCSE},
   title       = {Geneo coarse spaces for heterogeneous indefinite elliptic problems},
-  url         = {https://doi.org/10.1007/978-3-030-95025-5_102023},
   volume      = {145},
   year        = {2023}
 }
 
 @incollection{Bootland:2023:SEV,
-  abstract    = {},
+  abbr = {DDMSE26},
+  abstract    = {Why do we need robust solution methods for wave propagation problems? Very often in applications, as for example in seismic inversion, we need to reconstruct the a priori unknown physical properties of an environment from given measurements.},
   author      = {N. Bootland and Victorita Dolean and P. Jolivet and F. Nataf and S. Operto and P.-H. Tournier},
   bibtex_show = {true},
   booktitle   = {Domain decomposition methods in science and engineering XXVI},
@@ -222,8 +229,10 @@
 }
 
 @article{Dolean:2023:CLO,
-  abstract    = {},
+  abbr = {SISC},
+  abstract    = {Optimized transmission conditions in domain decomposition methods have been the focus of intensive research efforts over the past decade. Traditionally, transmission conditions are optimized for two subdomains model configurations, and then used in practice for many subdomains. We optimizetransmission conditions here for the first time directly for many subdomains for a class of complex diffusion problems. Our asymptotic analysis leads to closed form optimized transmission conditions for many subdomains, and shows that the asymptotic best choice in the mesh size only differs from the two subdomain best choice in the constants, for which we derive the dependence on the number of subdomains explicitly, including the limiting case of an infinite number of subdomains, leading to new insight into scalability. Our results include both Robin and Ventcell transmission conditions, and we also optimize for the first time a two-sided Ventcell condition. We illustrate our results with numerical experiments, both for situations covered by our analysis and situations that go beyond.},
   author      = {Victorita Dolean and Martin J. Gander and Alexandros Kyriakis},
+  doi = {https://doi.org/10.1137/22M1492386},
   bibtex_show = {true},
   journal     = {SIAM Journal on Scientific Computing},
   title       = {Closed form optimized transmission conditions for complex diffusion with many subdomains},
@@ -231,7 +240,8 @@
 }
 
 @article{Ludlam:2023:TRA,
-  abstract    = {},
+  abbr = {JCP},
+  abstract    = {Wavefield travel time tomography is used for a variety of purposes in acoustics, geophysics and non-destructive testing. Since the problem is non-linear, assessing uncertainty in the results requires many forward evaluations. It is therefore important that the forward evaluation of travel times and ray paths is efficient, which is challenging in generally anisotropic media. Given a computed travel time field, ray tracing can be performed to obtain the fastest ray path from any point in the medium to the source of the travel time field. These rays can then be used to speed up gradient based inversion methods. We present a forward modeller for calculating travel time fields by localised estimation of wavefronts, and a novel approach to ray tracing through those travel time fields. These methods have been tested in a complex anisotropic weld and give travel times comparable to those obtained using finite element modelling while being computationally cheaper.},
   author      = {J. Ludlam and K. M. M. Tant and Victorita Dolean and A. Curtis},
   bibtex_show = {true},
   doi         = {https://doi.org/10.1016/j.jcp.2023.112500},
@@ -244,18 +254,22 @@
 }
 
 @article{Operto:2023:IS3,
-  abstract    = {},
+  abbr = {TLE},
+  abstract    = {Frequency-domain full-waveform inversion (FWI) is potentially amenable to efficient processing of full-azimuth long-offset stationary-recording seabed acquisition carried out with a sparse layout of ocean-bottom nodes (OBNs) and broadband sources because the inversion can be performed with a few discrete frequencies. However, computing the solution of the forward (boundary-value) problem efficiently in the frequency domain with linear algebra solvers remains a challenge for large computational domains involving tens to hundreds of millions of parameters. We illustrate the feasibility of 3D frequency-domain FWI with a subset of the 2015/2016 Gorgon OBN data set in the North West Shelf, Australia. We solve the forward problem with the massively parallel multifrontal direct solver MUMPS, which includes four key features to reach high computational efficiency: an efficient parallelism combining message-passing interface and multithreading, block low-rank compression, mixed-precision arithmetic, and efficient processing of sparse sources. The Gorgon subdata set involves 650 OBNs that are processed as reciprocal sources and 400,000 sources. Monoparameter FWI for vertical wavespeed is performed in the viscoacoustic vertically transverse isotropic approximation with a classical frequency continuation approach proceeding from a starting frequency of 1.7 Hz to a final frequency of 13 Hz. The target covers an area ranging from 260 km2 (frequency ≥ 8.5 Hz) to 705 km2 (frequency ≤ 8.5 Hz) for a maximum depth of 8 km. Compared to the starting model, FWI dramatically improves the reconstruction of the bounding faults of the Gorgon horst at reservoir depths as well as several intrahorst faults and several horizons of the Mungaroo Formation down to a depth of 7 km. Seismic modeling reveals a good kinematic agreement between recorded and simulated data, but amplitude mismatches between the recorded and simulated reflection from the reservoir suggest elastic effects. Therefore, future works involve multiparameter reconstruction for density and attenuation before considering elastic FWI from hydrophone and geophone data.},
   author      = {S. Operto and P. Amestoy and H. S. Aghamiry and S. Beller and A. Buttari and L. Combe and Victorita Dolean and M. Gerest and G. Guo and P. Jolivet and J. Y. L'Excellent and F. Mamfoumbi and T. Mary and C. Puglisi and A. Ribodetti and P.-H. Tournier},
   bibtex_show = {true},
   journal     = {The Leading Edge},
+  doi = {https://doi.org/10.1190/tle42030173.1},
   title       = {Is 3D frequency-domain FWI of full-azimuth/long-offset OBN data feasible? The Gorgon-data FWI case study},
   url         = {https://arxiv.org/abs/2210.16767},
   year        = {2023}
 }
 
 @article{Sudhi:2023:SCA,
-  abstract    = {},
+  abbr = {MBE},
+  abstract    = {A nonlinear partial differential equation (PDE) based compartmental model of COVID-19 provides a continuous trace of infection over space and time. Finer resolutions in the spatial discretization, the inclusion of additional model compartments and model stratifications based on clinically relevant categories contribute to an increase in the number of unknowns to the order of millions. We adopt a parallel scalable solver that permits faster solutions for these high fidelity models. The solver combines domain decomposition and algebraic multigrid preconditioners at multiple levels to achieve the desired strong and weak scalabilities. As a numerical illustration of this general methodology, a five-compartment susceptible-exposed-infected-recovered-deceased (SEIRD) model of COVID-19 is used to demonstrate the scalability and effectiveness of the proposed solver for a large geographical domain (Southern Ontario). It is possible to predict the infections for a period of three months for a system size of 186 million (using 3200 processes) within 12 hours saving months of computational effort needed for the conventional solvers.},
   author      = {Sudhi P. V. and Victorita Dolean and Pierre Jolivet and Brandon Robinson and Jodi D. Edwards and Tetyana Kendzerska and Abhijit Sarkar},
+  doi   = {https://doi.org/10.3934/mbe.2023655},
   bibtex_show = {true},
   journal     = {Mathematical Biosciences and Engineering},
   number      = {8},
@@ -267,13 +281,15 @@
 }
 
 @inproceedings{Borzooei:2023:HIG,
-  abstract    = {},
+  abstract    = {In this paper, microwave tomographic imaging for rotator cuff tear by numerical modeling and parallel computing is presented. It requires solving an inverse problem by making use of an iterative method based on a minimization algorithm. To this end, efficient parallel algorithms and high-performance computing is utilized that result in an accurate reconstruction of the electrical properties of the propagation medium as well as fast computations. Results demonstrate the possibility to detect different types of tendon tears in a shoulder model.},
   author      = {S. Borzooei and C. Migliaccio and Victorita Dolean and P.-H. Tournier and Christian Pichot},
   bibtex_show = {true},
+  doi = {https://api.semanticscholar.org/CorpusID:2616135732},
+  abbr = {IEEE-APP},
   booktitle   = {IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting},
   pages       = {1879--1880},
   title       = {High-Performance Numerical Modeling for Detection of Rotator Cuff Tear},
-  url         = {https://ieeexplore.ieee.org/abstract/document/10238302},
+  url         = {https://api.semanticscholar.org/CorpusID:261613573},
   year        = {2023}
 }
 
