@@ -43,16 +43,16 @@ ninja.data = [{
           description: "",
           section: "Group_members",handler: () => {
               window.location.href = "/group_members/benjamin-sanderse/";
-            },},{id: "group_members-toto",
-          title: 'Toto',
+            },},{id: "group_members-toto-collab",
+          title: 'Toto Collab',
           description: "",
           section: "Group_members",handler: () => {
-              window.location.href = "/group_members/toto/";
+              window.location.href = "/group_members/toto-collab/";
             },},{id: "group_members-toto-student",
-          title: 'Toto_student',
+          title: 'Toto Student',
           description: "",
           section: "Group_members",handler: () => {
-              window.location.href = "/group_members/toto_student/";
+              window.location.href = "/group_members/toto-student/";
             },},{id: "group_members-victorita-dolean",
           title: 'Victorita Dolean',
           description: "",
