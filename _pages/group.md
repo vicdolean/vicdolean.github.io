@@ -5,12 +5,8 @@ permalink: /group/
 description:
 nav: true
 nav_order: 3
-dropdown: true
+dropdown: false
 children:
-    - title: staff
-      permalink: /group/
-    - title: PhD candidates
-      permalink: /PhD candidates/
 display_categories: [staff, collaborators, phd candidates, master students, bachelor students, former members]
 horizontal: false
 ---
