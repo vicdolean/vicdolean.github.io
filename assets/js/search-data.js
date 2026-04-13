@@ -28,6 +28,11 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather.html";
+            },},{id: "group_members-arris-tijsseling",
+          title: 'Arris Tijsseling',
+          description: "",
+          section: "Group_members",handler: () => {
+              window.location.href = "/group_members/arris-tijsseling/";
             },},{id: "group_members-barry-koren",
           title: 'Barry Koren',
           description: "",
@@ -38,6 +43,16 @@ ninja.data = [{
           description: "",
           section: "Group_members",handler: () => {
               window.location.href = "/group_members/benjamin-sanderse/";
+            },},{id: "group_members-toto",
+          title: 'Toto',
+          description: "",
+          section: "Group_members",handler: () => {
+              window.location.href = "/group_members/toto/";
+            },},{id: "group_members-toto-student",
+          title: 'Toto_student',
+          description: "",
+          section: "Group_members",handler: () => {
+              window.location.href = "/group_members/toto_student/";
             },},{id: "group_members-victorita-dolean",
           title: 'Victorita Dolean',
           description: "",
