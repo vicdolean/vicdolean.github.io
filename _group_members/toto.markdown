@@ -12,5 +12,5 @@ project:
 cv:
 nolink: true
 redirect:
-category: collaborator
+category: collaborators
 ---
