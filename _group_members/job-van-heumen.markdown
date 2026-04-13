@@ -1,13 +1,13 @@
 ---
 layout: page
-first_name: Toto
-last_name: Student
+first_name: Job
+last_name: van Heumen
 university: Eindhoven University of Technology
 department: Mathematics and Computer Science
 address:
-email: a.s.tijsseling@tue.nl
-website: https://www.tue.nl/en/research/researchers/arris-tijsseling
-img: assets/img/group/arris-tijsseling.jpg
+email: j.j.j.v.heumen@tue.nl
+website: 
+img: assets/img/group/job-van-heumen.jpg
 project:
 cv:
 nolink: true
