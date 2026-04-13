@@ -309,7 +309,7 @@
 
 @article{Bootland:2022:OVE,
   abbr = {IMAJNA},
-  abstract    = {},
+  abstract    = {Generalized eigenvalue problems on the overlap(GenEO) is a method for computing an operator-dependent spectral coarse space to be combined with local solves on subdomains to form a robust parallel domain decomposition preconditioner for elliptic PDEs. It has previously been proved, in the self-adjoint and positive-definite case, that this method, when used as a preconditioner for conjugate gradients, yields iteration numbers that are completely independent of the heterogeneity of the coefficient field of the partial differential operator. We extend this theory to the case of convection–diffusion–reaction problems, which may be nonself-adjoint and indefinite, and whose discretizations are solved with preconditioned GMRES. The GenEO coarse space is defined here using a generalized eigenvalue problem based on a self-adjoint and positive-definite subproblem. We prove estimates on GMRES iteration counts that are independent of the variation of the coefficient of the diffusion term in the operator and depend only very mildly on variations of the other coefficients. These are proved under the assumption that the subdomain diameter is sufficiently small and the eigenvalue tolerance for building the coarse space is sufficiently large. While the iteration number estimates do grow as the nonself-adjointness and indefiniteness of the operator increases, practical tests indicate the deterioration is much milder. Thus, we obtain an iterative solver that is efficient in parallel and very effective for a wide range of convection–diffusion–reaction problems.},
   author      = {N. Bootland and Victorita Dolean and I. G. Graham and C. Ma and R. Scheichl},
   bibtex_show = {true},
   doi         = {https://doi.org/10.1093/imanum/drac036},
@@ -320,7 +320,8 @@
 }
 
 @article{Bootland:2022:ANA,
-  abstract    = {computing an operator-dependent spectral coarse space to be combined with local solves on subdomains to form a robust parallel domain decomposition preconditioner for elliptic PDEs. It has previously been proved, in the self-adjoint and positive-definite case, that this method, when used as a preconditioner for conjugate gradients, yields iteration numbers that are completely independent of the heterogeneity of the coefficient field of the partial differential operator. We extend this theory to the case of convection–diffusion–reaction problems, which may be nonself-adjoint and indefinite, and whose discretizations are solved with preconditioned GMRES. The GenEO coarse space is defined here using a generalized eigenvalue problem based on a self-adjoint and positive-definite subproblem. We prove estimates on GMRES iteration counts that are independent of the variation of the coefficient of the diffusion term in the operator and depend only very mildly on variations of the other coefficients. These are proved under the assumption that the subdomain diameter is sufficiently small and the eigenvalue tolerance for building the coarse space is sufficiently large. While the iteration number estimates do grow as the nonself-adjointness and indefiniteness of the operator increases, practical tests indicate the deterioration is much milder. Thus, we obtain an iterative solver that is efficient in parallel and very effective for a wide range of convection–diffusion–reaction problems.},
+  abbr = {ETNA},
+  abstract    = {In this work we study the convergence properties of the one-level parallel Schwarz method with Robin transmission conditions applied to the one-dimensional and two-dimensional Helmholtz and Maxwell's equations. One-level methods are not scalable in general. However, it has recently been proven that when impedance transmission conditions are used in the case of the algorithm being applied to the equations with absorption, then, under certain assumptions, scalability can be achieved and no coarse space is required. We show here that this result is also true for the iterative version of the method at the continuous level for strip-wise decompositions into subdomains that are typically encountered when solving wave-guide problems. The convergence proof relies on the particular block Toeplitz structure of the global iteration matrix. Although non-Hermitian, we prove that its limiting spectrum has a near identical form to that of a Hermitian matrix of the same structure. We illustrate our results with numerical experiments.},
   author      = {N. Bootland and Victorita Dolean and A. Kyriakis and J. Pestana},
   bibtex_show = {true},
   doi         = {https://doi.org/10.1553/etna_vol55s112},
@@ -458,7 +459,8 @@
 }
 
 @article{Tournier:2019:MIC,
-  abstract    = {},
+  abbr = {PARCO},
+  abstract    = {The motivation of this work is the detection of cerebrovascular accidents by microwave tomographic imaging. This requires the solution of an inverse problem relying on a minimization algorithm (for example, gradient-based), where successive iterations consist in repeated solutions of a direct problem. The reconstruction algorithm is extremely computationally intensive and makes use of efficient parallel algorithms and high-performance computing. The feasibility of this type of imaging is conditioned on one hand by an accurate reconstruction of the material properties of the propagation medium and on the other hand by a considerable reduction in simulation time. Fulfilling these two requirements will enable a very rapid and accurate diagnosis. From the mathematical and numerical point of view, this means solving Maxwell’s equations in time-harmonic regime by appropriate domain decomposition methods, which are naturally adapted to parallel architectures.},
   author      = {P.-H. Tournier and I. Aliferis and M. Bonazzoli and M. de Buhan and M. Darbas and Victorita Dolean and F. Hecht and P. Jolivet and I. El Kanfoud and C. Migliaccio and F. Nataf and Ch. Pichot and S. Semenov},
   bibtex_show = {true},
   doi         = {https://doi.org/10.1016/j.parco.2019.02.004},
@@ -470,8 +472,9 @@
   year        = {2019}
 }
 
-@article{Barrenechea:2019:HYB,
-  abstract    = {},
+@article{Barrenechea:2019:HYB,  
+  abbr = {CMAM},
+  abstract    = {Solving the Stokes equation by an optimal domain decomposition method derived algebraically involves the use of nonstandard interface conditions whose discretisation is not trivial. For this reason the use of approximation methods such as hybrid discontinuous Galerkin appears as an appropriate strategy: on the one hand they provide the best compromise in terms of the number of degrees of freedom in between standard continuous and discontinuous Galerkin methods, and on the other hand the degrees of freedom used in the nonstandard interface conditions are naturally defined at the boundary between elements. In this paper, we introduce the coupling between a well chosen discretisation method (hybrid discontinuous Galerkin) and a novel and efficient domain decomposition method to solve the Stokes system. We present the detailed analysis of the hybrid discontinuous Galerkin method for the Stokes problem with nonstandard boundary conditions. The full stability and convergence analysis of the discretisation method is presented, and the results are corroborated by numerical experiments. In addition, the advantage of the new preconditioners over more classical choices is also supported by numerical experiments.},
   author      = {G. Barrenechea and M. Bosy and Victorita Dolean and F. Nataf and Pierre-Henri Tournier},
   bibtex_show = {true},
   doi         = {https://doi.org/10.1515/cmam-2018-0005},
@@ -485,7 +488,8 @@
 }
 
 @article{Bonazzoli:2019:DOM,
-  abstract    = {},
+  abbr = {MCOM},
+  abstract    = {This paper rigorously analyses preconditioners for the time- harmonic Maxwell equations with absorption, where the PDE is discretised using curl-conforming finite-element methods of fixed, arbitrary order and the preconditioner is constructed using additive Schwarz domain decomposition methods. The theory developed here shows that if the absorption is large enough, and if the subdomain and coarse mesh diameters and overlap are chosen appropriately, then the classical two-level overlapping additive Schwarz preconditioner (with PEC boundary conditions on the subdomains) performs optimally—in the sense that GMRES converges in a wavenumber-independent number of iterations—for the problem with absorption. An important feature of the theory is that it allows the coarse space to be built from low-order elements even if the PDE is discretised using high-order elements. It also shows that additive methods with minimal overlap can be robust. Numerical experiments are given that illustrate the theory and its dependence on various parameters. These experiments motivate some extensions of the preconditioners which have better robustness for problems with less absorption, including the propagative case. At the end of the paper we illustrate the performance of these on two substantial applications; the first (a problem with absorption arising from medical imaging) shows the empirical robustness of the preconditioner against heterogeneity, and the second (scattering by a COBRA cavity) shows good scalability of the preconditioner with up to 3,000 processors.},
   author      = {M. Bonazzoli and Victorita Dolean and I. G. Graham and E. A. Spence and P.-H. Tournier},
   bibtex_show = {true},
   doi         = {https://doi.org/10.1090/mcom/3447},
@@ -499,7 +503,8 @@
 }
 
 @article{Claeys:2019:INT,
-  abstract    = {},
+  abbr = {APNUM},
+  abstract    = {Multi-trace formulations (MTFs) are based on a decomposition of the problem domain into subdomains, and thus domain decomposition solvers are of interest. The fully rigorous mathematical MTF can however be daunting for the non-specialist. The first aim of the present contribution is to provide a gentle introduction to MTFs. We introduce these formulations on a simple model problem using concepts familiar to researchers in domain decomposition. This allows us to get a new understanding of MTFs and a natural block Jacobi iteration, for which we determine optimal relaxation parameters. We then show how iterative multi-trace formulation solvers are related to a well known domain decomposition method called optimal Schwarz method: a method which used Dirichlet to Neumann maps in the transmission condition. We finally show that the insight gained from the simple model problem leads to remarkable identities for Calderón projectors and related operators, and the convergence results and optimal choice of the relaxation parameter we obtained is independent of the geometry, the space dimension of the problem, and the precise form of the spatial elliptic operator, like for optimal Schwarz methods. We illustrate our analysis with numerical experiments.},
   author      = {X. Claeys and Victorita Dolean and Martin J. Gander},
   bibtex_show = {true},
   doi         = {https://doi.org/10.1016/j.apnum.2018.07.006},
@@ -512,7 +517,8 @@
 }
 
 @article{Coli:2019:DET,
-  abstract    = {},
+  abbr = {IEEE-JERM},
+  abstract    = {Brain strokes are one of the leading causes of disability and mortality in adults in developed countries. Ischemic stroke (85% of total cases) and hemorrhagic stroke (15%) must be treated with opposing therapies, and thus, the nature of the stroke must be determined quickly in order to apply the appropriate treatment. Recent studies in biomedical imaging have shown that strokes produce variations in the complex electric permittivity of brain tissues, which can be detected by means of microwave tomography. Here, we present some synthetic results obtained with an experimental microwave tomography-based portable system for the early detection and monitoring of brain strokes. The determination of electric permittivity first requires the solution of a coupled forward-inverse problem. We make use of massive parallel computation from domain decomposition method and regularization techniques for optimization methods. Synthetic data are obtained with electromagnetic simulations corrupted by noise, which have been derived from measurements errors of the experimental imaging system. Results demonstrate the possibility to detect hemorrhagic strokes with microwave systems when applying the proposed reconstruction algorithm with edge preserving regularization.},
   author      = {V. L. Coli and P.-H. Tournier and Victorita Dolean and I. El Kanfoud and C. Pichot and C. Migliaccio and L. Blanc-F{\'e}raud},
   bibtex_show = {true},
   journal     = {IEEE Journal of Electromagnetics, RF and Microwaves in Medicine and Biology},
@@ -525,7 +531,8 @@
 }
 
 @article{Dolean:2018:ASY,
-  abstract    = {},
+  abbr = {M2AN},
+  abstract    = {Discretized time harmonic Maxwell’s equations are hard to solve by iterative methods, and the best currently available methods are based on domain decomposition and optimized transmission conditions. Optimized Schwarz methods were the first ones to use such transmission conditions, and this approach turned out to be so fundamentally important that it has been rediscovered over the last years under the name sweeping preconditioners, source transfer, single layer potential method and the method of polarized traces. We show here how one can optimize transmission conditions to take benefit from the jumps in the coefficients of the problem, when they are aligned with the subdomain interface, and obtain methods which converge for two subdomains in certain situations independently of the mesh size, which would not be possible without jumps in the coefficients.},
   author      = {Victorita Dolean and Martin J. Gander and Erwin Veneros},
   bibtex_show = {true},
   doi         = {https://doi.org/10.1051/m2an/2018041},
@@ -539,7 +546,8 @@
 }
 
 @article{Barrenechea:2018:NUM,
-  abstract    = {},
+  abbr = {ETNA},
+  abstract    = {Solving the linear elasticity and Stokes equations by an optimal domain decomposition method derived algebraically involves the use of non-standard interface conditions. The one-level domain decomposition preconditioners are based on the solution of local problems. This has the undesired consequence that the results are not scalable, which means that the number of iterations needed to reach convergence increases with the number of subdomains. This is the reason why in this work we introduce, and test numerically, two-level preconditioners. Such preconditioners use a coarse space in their construction. We consider the nearly incompressible elasticity problems and Stokes equations, and discretise them by using two finite element methods, namely, the hybrid discontinuous Galerkin and Taylor-Hood discretisations.},
   author      = {G. Barrenechea and M. Bosy and Victorita Dolean},
   bibtex_show = {true},
   journal     = {Electronic Transactions on Numerical Analysis},
@@ -551,7 +559,8 @@
 }
 
 @article{Bonazzoli:2018:EXA,
-  abstract    = {},
+  abbr = {CAMWA},
+  abstract    = {In this paper we focus on high order finite element approximations of the electric field combined with suitable preconditioners, to solve the time-harmonic Maxwell’s equations in waveguide configurations. The implementation of high order curl-conforming finite elements is quite delicate, especially in the three-dimensional case. Here, we explicitly describe an implementation strategy, which has been embedded in the open source finite element software FreeFem++ (http://www.freefem.org/ff++/). In particular, we use the inverse of a generalized Vandermonde matrix to build basis functions in duality with the degrees of freedom, resulting in an easy-to-use but powerful interpolation operator. We carefully address the problem of applying the same Vandermonde matrix to possibly differently oriented tetrahedra of the mesh over the computational domain. We investigate the preconditioning for Maxwell’s equations in the time-harmonic regime, which is an underdeveloped issue in the literature, particularly for high order discretizations. In the numerical experiments, we study the effect of varying several parameters on the spectrum of the matrix preconditioned with overlapping Schwarz methods, both for 2d and 3d waveguide configurations.},
   author      = {M. Bonazzoli and Victorita Dolean and F. Hecht and F. Rapetti},
   bibtex_show = {true},
   doi         = {https://doi.org/10.1016/j.camwa.2017.11.013},
@@ -565,7 +574,8 @@
 }
 
 @article{Bonazzoli:2018:PAR,
-  abstract    = {},
+  abbr = {IJNM},
+  abstract    = {This paper combines the use of high-order finite element methods with parallel preconditioners of domain decomposition type for solving electromagnetic problems arising from brain microwave imaging. The numerical algorithms involved in such complex imaging systems are computationally expensive since they require solving the direct problem of Maxwell equations several times. Moreover, wave propagation problems in the high-frequency regime are challenging because a sufficiently high number of unknowns are required to accurately represent the solution. To use these algorithms in practice for brain stroke diagnosis, running time should be reasonable. The method presented in this paper, coupling high-order finite elements and parallel preconditioners, makes it possible to reduce the overall computational cost and simulation time while maintaining accuracy.},
   author      = {M. Bonazzoli and Victorita Dolean and F. Rapetti and P.-H. Tournier},
   bibtex_show = {true},
   doi         = {https://doi.org/10.1002/jnm.2229},
@@ -579,9 +589,11 @@
 }
 
 @incollection{Bonazzoli:2018:TWO,
-  abstract    = {},
+  abbr = {DDMSE24},
+  abstract    = {The construction of fast iterative solvers for the indefinite time-harmonic Maxwell’s system at mid- to high-frequency is a problem of great current interest. Some of the difficulties that arise are similar to those encountered in the case of the mid- to high-frequency Helmholtz equation. Here we investigate how two-level domain-decomposition preconditioners recently proposed for the Helmholtz equation work in the Maxwell case, both from the theoretical and numerical points of view.},
   author      = {M. Bonazzoli and Victorita Dolean and I. G. Graham and E. A. Spence and P.-H. Tournier},
   bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-319-93873-8_12},
   booktitle   = {Domain decomposition methods in science and engineering XXIV},
   pages       = {149--157},
   publisher   = {Springer},
@@ -592,9 +604,11 @@
 }
 
 @incollection{Bonazzoli:2018:HEL,
-  abstract    = {},
+  abbr = {DDMSE24},
+  abstract    = {In this paper we compare numerically two different coarse space definitions for two-level domain decomposition preconditioners for the Helmholtz equation, both in two and three dimensions. While we solve the pure Helmholtz problem without absorption, the preconditioners are built from problems with absorption. In the first method, the coarse space is based on the discretization of the problem with absorption on a coarse mesh, with diameter constrained by the wavenumber. In the second method, the coarse space is built by solving local eigenproblems involving the Dirichlet-to-Neumann (DtN) operator.},
   author      = {M. Bonazzoli and Victorita Dolean and I. G. Graham and E. A. Spence and P.-H. Tournier},
   bibtex_show = {true},
+  doi ={https://doi.org/10.1007/978-3-319-93873-8_11},
   booktitle   = {Domain decomposition methods in science and engineering XXIV},
   pages       = {139--147},
   publisher   = {Springer},
@@ -605,9 +619,11 @@
 }
 
 @article{Tournier:2017:NUM,
-  abstract    = {},
+  abbr = {IEEE-APM},
+  abstract    = {This article deals with microwave tomography for brain stroke imaging using state-of-the-art numerical modeling and massively parallel computing. Iterative microwave tomographic imaging requires the solution of an inverse problem based on a minimization algorithm (e.g., gradient based) with successive solutions of a direct problem such as the accurate modeling of a whole-microwave measurement system. Moreover, a sufficiently high number of unknowns is required to accurately represent the solution. As the system will be used for detecting a brain stroke (ischemic or hemorrhagic) as well as for monitoring during the treatment, the running times for the reconstructions should be reasonable. The method used is based on high-order finite elements, parallel preconditioners from the domain decomposition method and domain-specific language with the opensource FreeFEM++ solver.},
   author      = {P.-H. Tournier and M. Bonazzoli and Victorita Dolean and F. Rapetti and F. Hecht and F. Nataf and I. Aliferis and I. El Kanfoud and C. Migliaccio and M. de Buhan and M. Darbas and S. Semenov and C. Pichot},
   bibtex_show = {true},
+  doi = {https://ieeexplore.ieee.org/document/8014422},
   journal     = {IEEE Antennas and Propagation Magazine},
   number      = {5},
   pages       = {98--110},
@@ -618,9 +634,11 @@
 }
 
 @incollection{Dolean:2017:OPT,
-  abstract    = {},
+  abbr = {DDMSE23},
+  abstract    = {Both the Helmholtz equation and the time-harmonic Maxwell’s equations are difficult to solve by iterative methods in the intermediate to high frequency regime, and domain decomposition methods are among the most promising techniques for this task. We focus here on the case of dissipative and conductive media with strongly heterogeneous coefficients, and develop optimized transmission conditions for this case. We establish a link for the use of such conditions between the case of Helmholtz and Maxwell’s equations, and show that in both cases jumps aligned with the interfaces of the subdomains can improve the convergence of the subdomain iteration.},
   author      = {Victorita Dolean and Martin J. Gander and E. Veneros and H. Zhang},
   bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-319-52389-7_13},
   booktitle   = {Domain decomposition methods in science and engineering XXIII},
   pages       = {145--152},
   publisher   = {Springer},
@@ -631,9 +649,11 @@
 }
 
 @incollection{Bonazzoli:2017:SCH,
-  abstract    = {},
+  abbr = {DDMSE23},
+  abstract    = {We focus on high order edge element approximations of waveguide problems. For the associated linear systems, we analyze the impact of two Schwarz preconditioners, the Optimized Additive Schwarz (OAS) and the Optimized Restricted Additive Schwarz (ORAS), on the convergence of the iterative solver.},
   author      = {M. Bonazzoli and Victorita Dolean and R. Pasquetti and F. Rapetti},
   bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-319-52389-7_10}, 
   booktitle   = {Domain decomposition methods in science and engineering XXIII},
   pages       = {117--124},
   publisher   = {Springer},
@@ -644,9 +664,11 @@
 }
 
 @incollection{Ayala:2017:CLO,
-  abstract    = {},
+  abbr = {DDMSE23},
+  abstract    = {Local multi-trace formulations are a way to express transmission problems. They are based on integral formulations of the solution on each subdomain, and between the subdomains both the known jumps in the traces and the fluxes of the transmission problem are imposed, and thus the method contains multiple traces in its formulation. We show in this paper that it is possible to derive a closed form inverse for local multi-trace operators for an elliptic model problem.},
   author      = {A. Ayala and X. Claeys and Victorita Dolean and Martin J. Gander},
   bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-319-52389-7_9},
   booktitle   = {Domain decomposition methods in science and engineering XXIII},
   pages       = {107--115},
   publisher   = {Springer},
@@ -657,7 +679,8 @@
 }
 
 @article{Dolean:2016:NON,
-  abstract    = {},
+  abbr = {SISC},
+  abstract    = {For linear problems, domain decomposition methods can be used directly as iterative solvers but also as preconditioners for Krylov methods. In practice, Krylov acceleration is almost always used, since the Krylov method finds a much better residual polynomial than the stationary iteration and thus converges much faster. We show in this paper that also for nonlinear problems, domain decomposition methods can be used either directly as iterative solvers or as preconditioners for Newton's method. For the concrete case of the parallel Schwarz method, we show that we obtain a preconditioner we call RASPEN (restricted additive Schwarz preconditioned exact Newton), which is similar to ASPIN (additive Schwarz preconditioned inexact Newton) but with all components directly defined by the iterative method. This has the advantage that RASPEN already converges when used as an iterative solver, in contrast to ASPIN, and we thus get a substantially better preconditioner for Newton's method. The iterative construction also allows us to naturally define a coarse correction using the multigrid full approximation scheme, which leads to a convergent two-level nonlinear iterative domain decomposition method and a two level RASPEN nonlinear preconditioner. We illustrate our findings with numerical results on the Forchheimer equation and a nonlinear diffusion problem.},
   author      = {Victorita Dolean and Martin J. Gander and W. Kheriji and F. Kwok and R. Masson},
   bibtex_show = {true},
   doi         = {https://doi.org/10.1137/15M102887X},
@@ -670,10 +693,12 @@
   year        = {2016}
 }
 
-@incollection{Dolean:2016:SCH,
-  abstract    = {},
+@incollection{Dolean:2016:SCH, 
+  abbr = {DDMSE22},
+  abstract    = {We study non-overlapping Schwarz Methods for solving second order time-harmonic 3D Maxwell equations in heterogeneous media. Choosing the interfaces between the subdomains to be aligned with the discontinuities in the coefficients, we show for a model problem that while the classical Schwarz method is not convergent, optimized transmission conditions dependent on the discontinuities of the coefficients lead to convergent methods. We prove asymptotically that the resulting methods converge in certain cases independently of the mesh parameter, and convergence can even become better as the coefficient jumps increase.},
   author      = {Victorita Dolean and Martin J. Gander and E. Veneros},
   bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-319-18827-0_48},
   booktitle   = {Domain decomposition methods in science and engineering XXII},
   pages       = {471--479},
   publisher   = {Springer},
@@ -684,9 +709,11 @@
 }
 
 @incollection{Dolean:2016:MUL,
-  abstract    = {},
+  abbr = {DDMSE22},
+  abstract    = {Multitrace formulations (MTF) for boundary integral equations (BIE) were developed over the last few years in [1, 2, 4] for the simulation of electromagnetic problems in piecewise constant media, see also [3] for associated boundary integral methods. The MTFs are naturally adapted to the developments of new block preconditioners, as indicated in [5], but very little is known so far about such associated iterative solvers. The goal of our presentation is to give an elementary introduction to MTFs, and also to establish a natural connection with the more classical Dirichlet-Neumann algorithms that are well understood in the domain decomposition literature, see for example [6, 7]. We present for a model problem a convergence analysis for a naturally arising block iterative method associated with the MTF, and also first numerical results to illustrate what performance one can expect from such an iterative solver.},
   author      = {Victorita Dolean and Martin J. Gander},
   bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-319-18827-0_13},
   booktitle   = {Domain decomposition methods in science and engineering XXII},
   pages       = {147--155},
   publisher   = {Springer},
