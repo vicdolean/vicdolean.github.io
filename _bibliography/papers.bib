@@ -294,7 +294,8 @@
 }
 
 @article{Bootland:2022:CAN,
-  abstract    = {},
+  abbr = {MCA},
+  abstract    = {Numerical solutions of heterogeneous Helmholtz problems present various computational challenges, with descriptive theory remaining out of reach for many popular approaches. Robustness and scalability are key for practical and reliable solvers in large-scale applications, especially for large wave number problems. In this work, we explore the use of a GenEO-type coarse space to build a two-level additive Schwarz method applicable to highly indefinite Helmholtz problems. Through a range of numerical tests on a 2D model problem, discretised by finite elements on pollution-free meshes, we observe robust convergence, iteration counts that do not increase with the wave number, and good scalability of our approach. We further provide results showing a favourable comparison with the DtN coarse space. Our numerical study shows promise that our solver methodology can be effective for challenging heterogeneous applications.},
   author      = {N. Bootland and Victorita Dolean},
   bibtex_show = {true},
   doi         = {https://doi.org/10.3390/mca27030035},
@@ -307,6 +308,7 @@
 }
 
 @article{Bootland:2022:OVE,
+  abbr = {IMAJNA},
   abstract    = {},
   author      = {N. Bootland and Victorita Dolean and I. G. Graham and C. Ma and R. Scheichl},
   bibtex_show = {true},
@@ -318,7 +320,7 @@
 }
 
 @article{Bootland:2022:ANA,
-  abstract    = {},
+  abstract    = {computing an operator-dependent spectral coarse space to be combined with local solves on subdomains to form a robust parallel domain decomposition preconditioner for elliptic PDEs. It has previously been proved, in the self-adjoint and positive-definite case, that this method, when used as a preconditioner for conjugate gradients, yields iteration numbers that are completely independent of the heterogeneity of the coefficient field of the partial differential operator. We extend this theory to the case of convection–diffusion–reaction problems, which may be nonself-adjoint and indefinite, and whose discretizations are solved with preconditioned GMRES. The GenEO coarse space is defined here using a generalized eigenvalue problem based on a self-adjoint and positive-definite subproblem. We prove estimates on GMRES iteration counts that are independent of the variation of the coefficient of the diffusion term in the operator and depend only very mildly on variations of the other coefficients. These are proved under the assumption that the subdomain diameter is sufficiently small and the eigenvalue tolerance for building the coarse space is sufficiently large. While the iteration number estimates do grow as the nonself-adjointness and indefiniteness of the operator increases, practical tests indicate the deterioration is much milder. Thus, we obtain an iterative solver that is efficient in parallel and very effective for a wide range of convection–diffusion–reaction problems.},
   author      = {N. Bootland and Victorita Dolean and A. Kyriakis and J. Pestana},
   bibtex_show = {true},
   doi         = {https://doi.org/10.1553/etna_vol55s112},
@@ -331,20 +333,22 @@
 }
 
 @article{Tournier:2022:THR,
-  abstract    = {},
+  abbr = {Geophysics},
+  abstract = {Efficient frequency-domain full-waveform inversion (FWI) of long-offset node data can be designed with a few discrete frequencies, which lead to modest data volumes to be managed during the inversion process. Moreover, attenuation effects can be straightforwardly implemented in the forward problem without computational overhead. However, 3D frequency-domain seismic modeling is challenging because it requires solving a large and sparse linear indefinite system for each frequency with multiple right-hand sides (RHSs). This linear system can be solved by direct or iterative methods. The former allows efficient processing of multiple RHSs but may suffer from limited scalability for very large problems. Iterative methods equipped with a domain-decomposition preconditioner provide a suitable alternative to process large computational domains for sparse-node acquisition. We have investigated the domain-decomposition preconditioner based on the optimized restricted additive Schwarz (ORAS) method, in which a Robin or perfectly matched layer condition is implemented at the boundaries between the subdomains. The preconditioned system is solved by a Krylov subspace method, whereas a block low-rank lower-upper decomposition of the local matrices is performed at a preprocessing stage. Multiple sources are processed in groups with a pseudoblock method. The accuracy, the computational cost, and the scalability of the ORAS solver are assessed against several realistic benchmarks. In terms of discretization, we compare a compact wavelength-adaptive 27-point finite-difference stencil on a regular Cartesian grid with a  finite-element method on -adaptive tetrahedral mesh. Although both schemes have comparable accuracy, the former is more computationally efficient, the latter being beneficial to comply with known boundaries such as bathymetry. The scalability of the method, the block processing of multiple RHSs, and the straightforward implementation of attenuation, which further improves the convergence of the iterative solver, make the method a versatile forward engine for large-scale 3D FWI applications from sparse node data sets.},
   author      = {P.-H. Tournier and P. Jolivet and Victorita Dolean and H. S. Aghamiry and S. Operto and S. Riffo},
   bibtex_show = {true},
   doi         = {https://doi.org/10.1190/geo2021-0702.1},
   journal     = {Geophysics},
   pages       = {1--84},
-  title       = {Three-dimensional finite-difference finite-element frequency-domain wave simulation with multi-level optimized additive Schwarz domain-decomposition preconditioner: A tool for FWI of sparse node datasets},
+  title       = {3D finite-difference and finite-element frequency-domain wave simulation with multilevel optimized additive Schwarz domain-decomposition preconditioner: A tool for full-waveform inversion of sparse node data sets},
   url         = {https://doi.org/10.1190/geo2021-0702.1},
   volume      = {0},
   year        = {2022}
 }
 
 @article{Robinson:2022:COM,
-  abstract    = {},
+  abbr = {BMJ-Open},
+  abstract    = {We propose a 22-compartment epidemiological model that includes compartments not previously considered concurrently, to account for the effects of vaccination, asymptomatic individuals, inadequate access to hospital care, post-acute COVID-19 and recovery with long-term health complications. Additionally, new connections between compartments introduce new dynamics to the system and provide a framework to study the sensitivity of model outputs to several concurrent effects, including temporary immunity, vaccination rate and vaccine effectiveness. Subject to data availability for a given region, we discuss a means by which population demographics (age, comorbidity, socioeconomic status, sex and geographical location) and clinically relevant information (different variants, different vaccines) can be incorporated within the 22-compartment framework. Considering a probabilistic interpretation of the parameters allows the model’s predictions to reflect the current state of uncertainty about the model parameters and model states. We propose the use of a sparse Bayesian learning algorithm for parameter calibration and model selection. This methodology considers a combination of prescribed parameter prior distributions for parameters that are known to be essential to the modelled dynamics and automatic relevance determination priors for parameters whose relevance is questionable. This is useful as it helps prevent overfitting the available epidemiological data when calibrating the parameters of the proposed model. Population-level administrative health data will serve as partial observations of the model states.},
   author      = {B. Robinson and J. D. Edwards and T. Kendzerska and C. L. Pettit and D. Poirel and J. M. Daly and M. Ammi and M. Khalil and P. J. Taillon and R. Sandhu and S. Mills and S. Mulpuru and T. Walker and V. Percival and Victorita Dolean and A. Sarkar},
   bibtex_show = {true},
   journal     = {BMJ Open},
@@ -356,7 +360,8 @@
 }
 
 @article{Bootland:2021:COM,
-  abstract    = {},
+  abbr = {CAMWA},
+  abstract    = {Solving time-harmonic wave propagation problems in the frequency domain and within heterogeneous media brings many mathematical and computational challenges, especially in the high frequency regime. We will focus here on computational challenges and try to identify the best algorithm and numerical strategy for a few well-known benchmark cases arising in applications. The aim is to cover, through numerical experimentation and consideration of the best implementation strategies, the main two-level domain decomposition methods developed in recent years for the Helmholtz equation. The theory for these methods is either out of reach with standard mathematical tools or does not cover all cases of practical interest. More precisely, we will focus on the comparison of three coarse spaces that yield two-level methods: the grid coarse space, DtN coarse space, and GenEO coarse space. We will show that they display different pros and cons, and properties depending on the problem and particular numerical setting.},
   author      = {N. Bootland and Victorita Dolean and P. Jolivet and P.-H. Tournier},
   bibtex_show = {true},
   doi         = {https://doi.org/10.1016/j.camwa.2021.07.011},
@@ -369,9 +374,11 @@
 }
 
 @incollection{Bootland:2021:ONT,
-  abstract    = {},
+  abbr = {ENUMATH2019},
+  abstract    = {We examine the use of the Dirichlet-to-Neumann coarse space within an additive Schwarz method to solve the Helmholtz equation in 2D. In particular, we focus on the selection of how many eigenfunctions should go into the coarse space. We find that wave number independent convergence of a preconditioned iterative method can be achieved in certain special cases with an appropriate and novel choice of threshold in the selection criteria. However, this property is lost in a more general setting, including the heterogeneous problem. Nonetheless, the approach converges in a small number of iterations for the homogeneous problem even for relatively large wave numbers and is robust to the number of subdomains used.},
   author      = {N. Bootland and Victorita Dolean},
   bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-030-55874-1_16},
   booktitle   = {Numerical mathematics and advanced applications --- ENUMATH 2019},
   pages       = {175--184},
   publisher   = {Springer},
@@ -382,7 +389,8 @@
 }
 
 @article{Brunet:2020:NAT,
-  abstract    = {},
+  abbr = {SISC},
+  abstract    = {We study for the first time Schwarz domain decomposition methods for the solution of the Navier equations modeling the propagation of elastic waves. These equations in the time-harmonic regime are difficult to solve by iterative methods, even more so than the Helmholtz equation. We first prove that the classical Schwarz method is not convergent when applied to the Navier equations and can thus not be used as an iterative solver, only as a preconditioner for a Krylov method. We then introduce more natural transmission conditions between the subdomains and show that if the overlap is not too small, this new Schwarz method is convergent. We illustrate our results with numerical experiments, both for situations covered by our technical two subdomain analysis and situations that go far beyond, including many subdomains, cross points, heterogeneous materials in a transmission problem, and Krylov acceleration. Our numerical results show that the Schwarz method with adapted transmission conditions leads systematically to a better solver for the Navier equations than the classical Schwarz method.},
   author      = {R. Brunet and Victorita Dolean and Martin J. Gander},
   bibtex_show = {true},
   doi         = {https://doi.org/10.1137/19M125858X},
@@ -396,28 +404,35 @@
 }
 
 @inproceedings{Dolean:2020:LAR,
-  abstract    = {},
+  abbr = {SEG},
+  abstract    = {Frequency-domain full-waveform inversion (FWI) is suitable for long-offset stationary-recording acquisition, since reliable subsurface models can be reconstructed with a few frequencies and attenuation is easily implemented without computational overhead. In the frequency domain, wave modeling is a Helmholtz-type boundary-value problem which requires to solve a large and sparse system of linear equations per frequency with multiple right-hand sides (sources). This system can be solved with direct or iterative methods. While the former are suitable for FWI application on 3D dense OBC acquisitions covering spatial domains of moderate size, the later should be the approach of choice for sparse node acquisitions covering large domains (more than 50 millions of unknowns). Fast convergence of iterative solvers for Helmholtz problems remains however challenging in high frequency regime due to the non definiteness of the Helmholtz operator, on one side and on the discretization constraints in order to minimize the dispersion error for a given frequency, on the other side, hence requiring efficient preconditioners. In this study, we use the Krylov subspace GMRES iterative solver combined with a two-level domain-decomposition preconditioner. Discretization relies on continuous Lagrange finite elements of order 3 on unstructured tetrahedral meshes to comply with complex geometries and adapt the size of the elements to the local wavelength (h-adaptivity). We assess the accuracy, the convergence and the scalability of our method with the acoustic 3D SEG/EAGE Overthrust model up to a frequency of 20 Hz.},
   author      = {Victorita Dolean and P.-H. Tournier and P. Jolivet and S. Operto},
   bibtex_show = {true},
+  doi = {https://doi.org/10.1190/segam2020-3427414.1},
+  journal     = {SEG Technical Program Expanded Abstracts 2020},
   pages       = {2683--2688},
   title       = {Large-scale frequency-domain seismic wave modeling on h-adaptive tetrahedral meshes with iterative solver and multi-level domain-decomposition preconditioners},
   year        = {2020}
 }
 
 @article{Dolean:2020:ITE,
-  abstract    = {},
+  abbr = {SEG},
+  abstract    = {Frequency-domain full-waveform inversion (FWI) is suitable for long-offset stationary-recording acquisition, since reliable subsurface models can be reconstructed with a few frequencies and attenuation is easily implemented without computational overhead. In the frequency domain, wave modelling is a Helmholtz-type boundary-value problem which requires to solve a large and sparse linear system per frequency with multiple right-hand sides. This system can be solved with direct or iterative methods. While the former are suitable for FWI application on 3D dense OBC acquisitions covering spatial domains of moderate size, the later should be the approach of choice for sparse node acquisitions covering large domains (> 50 millions of unknowns). Fast convergence of iterative solvers for Helmholtz problems remains however challenging due to the non definiteness of the Helmholtz operator, hence requiring efficient preconditioners. Here, we use the Krylov subspace GMRES iterative solver combined with a multi-level domain-decomposition preconditioner. Discretization relies on finite elements on tetrahedral meshes to comply with complex geometries and adapt the size of the elements to the local wavelength (h-adaptivity). We assess the convergence and the scalability of our method with the 3D SEG/EAGE Overthrust model up to a frequency of 20Hz and discuss its efficiency for multi right-hand side processing.},
   author      = {Victorita Dolean and P. Jolivet and P. Tournier and S. Operto},
   bibtex_show = {true},
-  journal     = {2020(1)},
+  doi = {https://doi.org/10.3997/2214-4609.202011328},
+  journal     = {EAGE 2020 Annual Conference & Exhibition Online},
   pages       = {1--5},
   title       = {Iterative frequency-domain seismic wave solvers based on multi-level domain-decomposition preconditioners},
   year        = {2020}
 }
 
 @incollection{Brunet:2020:CAN,
-  abstract    = {},
+  abbr = {DDMSE25},
+  abstract    = {The propagation of waves in elastic media is a problem of undeniable practical importance in geophysics. in several important applications - e.g. seismic exploration or earthquake prediction - one seeks to infer unknown material properties of the earth’s subsurface by sending seismic waves down and measuring the scattered field which comes back, implying the solution of inverse problems.},
   author      = {R. Brunet and Victorita Dolean and Martin J. Gander},
   bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-030-56750-7_49},
   booktitle   = {Domain decomposition methods in science and engineering XXV},
   pages       = {425--432},
   publisher   = {Springer},
@@ -428,9 +443,11 @@
 }
 
 @incollection{Barrenechea:2020:STA,
-  abstract    = {},
+  abbr = {ICOSAHOM2018},
+  abstract    = {In several studies it has been observed that, when using stabilised  elements for both velocity and pressure, the error for the pressure is smaller, or even of a higher order in some cases, than the one obtained when using inf-sup stable  (although no formal proof of either of these facts has been given). This increase in polynomial order requires the introduction of stabilising terms, since the finite element pairs used do not guarantee the inf-sup condition. With this motivation, we apply the stabilisation approach to the hybrid discontinuous Galerkin discretisation for the Stokes problem with non-standard boundary conditions.},
   author      = {G. Barrenechea and M. Bosy and Victorita Dolean},
   bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-030-39647-3_13},
   booktitle   = {Spectral and high order methods for partial differential equations --- ICOSAHOM 2018},
   pages       = {179--189},
   publisher   = {Springer},
