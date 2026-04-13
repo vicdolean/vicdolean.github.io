@@ -724,7 +724,8 @@
 }
 
 @book{Dolean:2015:INT,
-  abstract    = {},
+  abbr = {SIAM Book},
+  abstract    = {The purpose of this book is to offer an overview of the most popular domain decomposition methods for partial differential equations (PDEs). These methods are widely used for numerical simulations in solid mechanics, electromagnetism, flow in porous media, etc., on parallel machines from tens to hundreds of thousands of cores. The appealing feature of domain decomposition methods is that, contrary to direct methods, they are naturally parallel. The authors focus on parallel linear solvers. The authors present all popular algorithms, both at the PDE level and at the discrete level in terms of matrices, along with systematic scripts for sequential implementation in a free open-source finite element package as well as some parallel scripts. Also included is a new coarse space construction (two-level method) that adapts to highly heterogeneous problems.},
   author      = {Victorita Dolean and Pierre Jolivet and Fr{\'e}d{\'e}ric Nataf},
   bibtex_show = {true},
   doi         = {https://doi.org/10.1137/1.9781611974065},
@@ -736,7 +737,8 @@
 }
 
 @article{Conen:2015:ADD,
-  abstract    = {},
+  abbr = {JCAM},
+  abstract    = {This communication gives an addendum to the paper Conen et al. (2014).},
   author      = {L. Conen and Victorita Dolean and R. Krause and F. Nataf},
   bibtex_show = {true},
   doi         = {https://doi.org/10.1016/j.cam.2015.04.031},
@@ -749,7 +751,8 @@
 }
 
 @article{Dolean:2015:EFF,
-  abstract    = {},
+  abbr = {JCP},
+  abstract    = {The time-harmonic Maxwell equations describe the propagation of electromagnetic waves and are therefore fundamental for the simulation of many modern devices we have become used to in everyday life. The numerical solution of these equations is hampered by two fundamental problems: first, in the high frequency regime, very fine meshes need to be used in order to avoid the pollution effect well known for the Helmholtz equation, and second the large scale systems obtained from the vector valued equations in three spatial dimensions need to be solved by iterative methods, since direct factorizations are not feasible any more at that scale. As for the Helmholtz equation, classical iterative methods applied to discretized Maxwell equations have severe convergence problems. We explain in this paper a family of domain decomposition methods based on well chosen transmission conditions. We show that all transmission conditions proposed so far in the literature, both for the first and second order formulation of Maxwell's equations, can be written and optimized in the common framework of optimized Schwarz methods, independently of the first or second order formulation one uses, and the performance of the corresponding algorithms is identical. We use a decomposition into transverse electric and transverse magnetic fields to describe these algorithms, which greatly simplifies the convergence analysis of the methods. We illustrate the performance of our algorithms with large scale numerical simulations.},
   author      = {Victorita Dolean and Martin J. Gander and St{\'e}phane Lanteri and Jin-Fa Lee and Zhen Peng},
   bibtex_show = {true},
   doi         = {https://doi.org/10.1016/j.jcp.2014.09.024},
@@ -762,19 +765,22 @@
 }
 
 @article{ElBouajaji:2015:DIS,
-  abstract    = {},
+  abbr = {ETNA},
+  abstract    = {We show in this paper how to properly discretize optimized Schwarz methods for the time-harmonic Maxwell's equations in two and three spatial dimensions using a discontinuous Galerkin (DG) method. Due to the multiple traces between elements in the DG formulation, it is not clear a priori how the more sophisticated transmission conditions in optimized Schwarz methods should be discretized, and the most natural approach, at convergence of the Schwarz method, does not lead to the monodomain DG solution, which implies that for such discretizations, the DG error estimates do not hold when the Schwarz method has converged. We present here a consistent discretization of the transmission conditions in the framework of a DG weak formulation, for which we prove that the multidomain and monodomain solutions for the Maxwell's equations are the same. We illustrate our results with several numerical experiments of propagation problems in homogeneous and heterogeneous media.},
   author      = {M. El Bouajaji and Victorita Dolean and Martin J. Gander and St{\'e}phane Lanteri and R. Perrussel},
   bibtex_show = {true},
+  doi = {https://etna.ricam.oeaw.ac.at/volumes/2011-2020/vol44/abstract.php?pages=572-592},
   journal     = {Electronic Transactions on Numerical Analysis},
   pages       = {572--592},
   title       = {Discontinuous Galerkin discretizations of optimized Schwarz methods for solving the time-harmonic Maxwell's equations},
-  url         = {https://etna.math.kent.edu/volumes/2011-2020/vol44/abstract.php?vol=44&pages=572-592},
+  url         = {https://etna.ricam.oeaw.ac.at/volumes/2011-2020/vol44/abstract.php?pages=572-592},
   volume      = {44},
   year        = {2015}
 }
 
 @article{Spillane:2014:ABS,
-  abstract    = {},
+  abbr = {Numer. Math.},
+  abstract    = {Coarse spaces are instrumental in obtaining scalability for domain decomposition methods for partial differential equations (PDEs). However, it is known that most popular choices of coarse spaces perform rather weakly in the presence of heterogeneities in the PDE coefficients, especially for systems of PDEs. Here, we introduce in a variational setting a new coarse space that is robust even when there are such heterogeneities. We achieve this by solving local generalized eigenvalue problems in the overlaps of subdomains that isolate the terms responsible for slow convergence. We prove a general theoretical result that rigorously establishes the robustness of the new coarse space and give some numerical examples on two and three dimensional heterogeneous PDEs and systems of PDEs that confirm this property.},
   author      = {N. Spillane and Victorita Dolean and P. Hauret and F. Nataf and C. Pechstein and R. Scheichl},
   bibtex_show = {true},
   doi         = {https://doi.org/10.1007/s00211-013-0576-y},
@@ -788,7 +794,8 @@
 }
 
 @article{Conen:2014:COA,
-  abstract    = {},
+  abbr = {JCAM},
+  abstract    = {The Helmholtz equation governing wave propagation and scattering phenomena is difficult to solve numerically. Its discretization with piecewise linear finite elements results in typically large linear systems of equations. The inherently parallel domain decomposition methods constitute hence a promising class of preconditioners. An essential element of these methods is a good coarse space. Here, the Helmholtz equation presents a particular challenge, as even slight deviations from the optimal choice can be devastating. In this paper, we present a coarse space that is based on local eigenproblems involving the Dirichlet-to-Neumann operator. Our construction is completely automatic, ensuring good convergence rates without the need for parameter tuning. Moreover, it naturally respects local variations in the wave number and is hence suited also for heterogeneous Helmholtz problems. The resulting method is parallel by design and its efficiency is demonstrated on 2D homogeneous and heterogeneous numerical examples.},
   author      = {L. Conen and Victorita Dolean and R. Krause and F. Nataf},
   bibtex_show = {true},
   doi         = {https://doi.org/10.1016/j.cam.2014.03.031},
@@ -801,9 +808,11 @@
 }
 
 @article{Dolean:2014:TWO,
-  abstract    = {},
+  abbr = {OGST},
+  abstract    = {Multiphase, compositional porous media flow models lead to the solution of highly heterogeneous systems of Partial Differential Equations (PDE). We focus on overlapping Schwarz type methods on parallel computers and on multiscale methods. We present a coarse space [Nataf F., Xiang H., Dolean V., Spillane N. (2011) SIAM J. Sci. Comput. 33, 4, 1623-1642] that is robust even when there are such heterogeneities. The two-level domain decomposition approach is compared to multiscale methods.},
   author      = {Victorita Dolean and Fr{\'e}d{\'e}ric Nataf and N. Spillane and H. Xiang},
   bibtex_show = {true},
+  doi = {https://doi.org/10.2516/ogst/2013206},
   journal     = {Oil \& Gas Science and Technology -- Revue d'IFP Energies nouvelles},
   number      = {4},
   pages       = {731--752},
@@ -813,23 +822,12 @@
   year        = {2014}
 }
 
-@incollection{Dolean:2014:OPT,
-  abstract    = {},
-  author      = {Victorita Dolean and Martin J. Gander and St{\'e}phane Lanteri and Jin-Fa Lee and Zhen Peng},
-  bibtex_show = {true},
-  booktitle   = {Domain decomposition methods in science and engineering XXI},
-  pages       = {587--595},
-  publisher   = {Springer},
-  series      = {LNCSE},
-  title       = {Optimized Schwarz methods for curl-curl time-harmonic Maxwell's equations},
-  volume      = {98},
-  year        = {2014}
-}
-
 @incollection{Dolean:2014:OPTM,
-  abstract    = {},
+  abbr = {DDMSE21},
+  abstract    = {We study non-overlapping Schwarz methods for solving time-harmonic Maxwell’s equations in heterogeneous media. We show that the classical Schwarz algorithm is always divergent when coefficient jumps are present along the interface. In the case of transverse magnetic or transverse electric two dimensional formulations, convergence can be achieved in specific configurations only. We then develop optimized Schwarz methods which can take coefficient jumps into account in their transmission conditions. These methods exhibit rapid convergence, and sometimes converge independently of the mesh parameter, even without overlap. We illustrate our analysis with numerical experiments.},
   author      = {Victorita Dolean and Martin J. Gander and E. Veneros},
   bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-319-05789-7_49}, 
   booktitle   = {Domain decomposition methods in science and engineering XXI},
   pages       = {517--525},
   publisher   = {Springer},
@@ -840,9 +838,11 @@
 }
 
 @incollection{Spillane:2014:ACH,
-  abstract    = {},
+  abbr = {DDMSE21},
+  abstract    = {As many DD methods the two level Additive Schwarz method may suffer from a lack of robustness with respect to coefficient variation. This is the case in particular if the partition into is not aligned with all jumps in the coefficients. The theoretical analysis traces this lack of robustness back to the so called stable splitting property. In this work we propose to solve a generalized eigenvalue problem in each subdomain which identifies which vectors are responsible for violating the stable splitting property. These vectors are used to span the coarse space and taken care of by a direct solve while all remaining components behave well. The result is a condition number estimate for the two level method which does not depend on the number of subdomains or any jumps in the coefficients.},
   author      = {N. Spillane and Victorita Dolean and P. Hauret and F. Nataf and C. Pechstein and R. Scheichl},
   bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-319-05789-7_42}, 
   booktitle   = {Domain decomposition methods in science and engineering XXI},
   pages       = {447--455},
   publisher   = {Springer},
@@ -853,9 +853,11 @@
 }
 
 @incollection{ElBouajaji:2014:DGD,
-  abstract    = {},
+  abbr = {DDMSE21},
+  abstract    = {We study here optimized Schwarz domain decomposition methods for solving the time-harmonic Maxwell equations discretized by a discontinuous Galerkin (DG) method. Due to the particularity of the latter, a discretization of a more sophisticated Schwarz method is not straightforward. A strategy of discretization is shown in the framework of a DG weak formulation, and the equivalence between multi-domain and single-domain solutions is proved. The proposed discrete framework is then illustrated by some numerical results through the simulation of two-dimensional propagation problems.},
   author      = {M. El Bouajaji and Victorita Dolean and Martin J. Gander and St{\'e}phane Lanteri and R. Perrussel},
   bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-319-05789-7_18},
   booktitle   = {Domain decomposition methods in science and engineering XXI},
   pages       = {217--225},
   publisher   = {Springer},
