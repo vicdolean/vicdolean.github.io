@@ -43,16 +43,16 @@ ninja.data = [{
           description: "",
           section: "Group_members",handler: () => {
               window.location.href = "/group_members/benjamin-sanderse/";
-            },},{id: "group_members-toto-collab",
-          title: 'Toto Collab',
+            },},{id: "group_members-job-van-heumen",
+          title: 'Job Van Heumen',
           description: "",
           section: "Group_members",handler: () => {
-              window.location.href = "/group_members/toto-collab/";
-            },},{id: "group_members-toto-student",
-          title: 'Toto Student',
+              window.location.href = "/group_members/job-van-heumen/";
+            },},{id: "group_members-michael-abdel-malik",
+          title: 'Michael Abdel Malik',
           description: "",
           section: "Group_members",handler: () => {
-              window.location.href = "/group_members/toto-student/";
+              window.location.href = "/group_members/michael-abdel-malik/";
             },},{id: "group_members-victorita-dolean",
           title: 'Victorita Dolean',
           description: "",
