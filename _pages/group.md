@@ -27,7 +27,7 @@ horizontal: false
 {%- else -%}
 <div class="grid">
   {%- for group_member in sorted_group_members -%}
-    {% include group_members.html %}
+    {% include group_members.liquid %}
   {%- endfor %}
 </div>
 {%- endif -%}
@@ -49,7 +49,7 @@ horizontal: false
   {%- else -%}
   <div class="grid">
     {%- for group_member in sorted_group_members -%}
-      {% include group_members.html %}
+      {% include group_members.liquid %}
     {%- endfor %}
   </div>
   {%- endif -%}
@@ -70,7 +70,7 @@ horizontal: false
   {%- else -%}
   <div class="grid">
     {%- for group_member in sorted_group_members -%}
-      {% include group_members.html %}
+      {% include group_members.liquid %}
     {%- endfor %}
   </div>
   {%- endif -%}
