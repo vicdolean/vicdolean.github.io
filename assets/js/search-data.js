@@ -33,6 +33,11 @@ ninja.data = [{
           description: "",
           section: "Group_members",handler: () => {
               window.location.href = "/group_members/barry-koren/";
+            },},{id: "group_members-benjamin-sanderse",
+          title: 'Benjamin Sanderse',
+          description: "",
+          section: "Group_members",handler: () => {
+              window.location.href = "/group_members/benjamin-sanderse/";
             },},{id: "group_members-victorita-dolean",
           title: 'Victorita Dolean',
           description: "",
