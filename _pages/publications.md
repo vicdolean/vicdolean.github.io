@@ -1,8 +1,8 @@
 ---
 layout: page
 permalink: /publications/
-title: publications
-description: Victorita Dolean's publications.
+title: Victorita Dolean's publications
+description:
 nav: true
 nav_order: 2
 dropdown: false
