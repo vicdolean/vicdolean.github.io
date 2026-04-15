@@ -8,7 +8,7 @@ nav_order: 3
 dropdown: false
 children:
 display_categories: [staff, collaborators, phd candidates, master students, bachelor students, former members]
-horizontal: false
+horizontal: true
 ---
 
 <!-- pages/group_members.md -->
