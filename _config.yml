@@ -314,10 +314,10 @@ scholar:
 # Customize badge behavior in _layouts/bib.liquid
 enable_publication_badges:
   default: true # if true, display badges for all publications (can be overridden for each publication with the bibtex entry keyword "bibtex_show")
-  # altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
-  # dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
-  # google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
-  # inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
+  altmetric: true # Altmetric badge (Customization options: https://badge-docs.altmetric.com/index.html)
+  dimensions: true # Dimensions badge (Customization options: https://badge.dimensions.ai/)
+  google_scholar: true # Google Scholar badge (https://scholar.google.com/intl/en/scholar/citations.html)
+  inspirehep: true # Inspire HEP badge (https://help.inspirehep.net/knowledge-base/citation-metrics/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords:
