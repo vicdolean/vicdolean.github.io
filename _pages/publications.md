@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Victorita Dolean's publications
-description: 
+description:
 nav: true
 nav_order: 2
 dropdown: false
