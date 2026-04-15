@@ -16,13 +16,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/publications/";
           },
-        },{id: "nav-hpsc-group",
-          title: "HPSC group",
-          description: "",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/group/";
-          },
         },{id: "books-the-godfather",
           title: 'The Godfather',
           description: "",
