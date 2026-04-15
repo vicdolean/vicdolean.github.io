@@ -1,0 +1,516 @@
+---
+---
+
+@inproceedings{Borzooei:2024:SVM,
+  abbr = {IEEE-APP},
+  abstract    = {In this paper, a solution for the fast detection of shoulder's tendon injury based on numerical modeling and machine learning (ML) algorithm is proposed. The synthetic data for the ML algorithm are the set of scattering parameters which are produced by solving Maxwell's equations for each transmitting antenna of the microwave imaging (MWI) system. The corresponding data of various healthy and injured models are categorized into two classes. Using support vector machine (SVM) for classification, an accuracy of 100% is achieved.},
+  author      = {S. Borzooei and P.-H. Tournier and Victorita Dolean and C. Migliaccio},
+  bibtex_show = {true},
+  doi   = {https://doi.org/10.1109/AP-S/INC-USNC-URSI52054.2024.10685863},
+  booktitle   = {IEEE International Symposium on Antennas and Propagation and INC/USNC-URSI Radio Science Meeting},
+  pages       = {1511--1512},
+  title       = {A SVM-Based Approach for Detecting Tendon Injury},
+  url         = {https://ieeexplore.ieee.org/abstract/document/10685863},
+  volume      = {8},
+  year        = {2024}
+}
+
+@incollection{Boutilier:2023:TRE,
+  abbr = {FVCA10},
+  abstract    = {For the Poisson equation posed in a planar domain containing a large number of polygonal perforations, we propose a low-dimensional approximation space based on a coarse polygonal partitioning of the domain. Similar to other multi-scale numerical methods, this coarse space is spanned by basis functions that are locally discrete harmonic. We provide an error estimate in the energy norm that only depends on the regularity of the solution over the edges of the coarse skeleton. For a specific edge refinement procedure, this estimate allows us to establish superconvergence of the method, even if the true solution has low general regularity. Combined with the Restricted Additive Schwarz method, the proposed coarse space leads to an efficient two-level iterative linear solver which achieves the fine-scale finite element error in few iterations. The numerical experiment showcases the use of this coarse space over test cases involving singular solutions and realistic urban geometries.},
+  author      = {M. Boutilier and K. Brenner and Victorita Dolean},
+  bibtex_show = {true},
+  booktitle   = {Finite Volumes for Complex Applications X---Volume 1, Elliptic and Parabolic Problems: FVCA10, Strasbourg, France, Invited Contributions},
+  doi         = {https://doi.org/10.1007/978-3-031-40864-9_14},
+  publisher   = {Springer Nature},
+  title       = {Trefftz Approximation Space for Poisson Equation in Perforated Domains},
+  url         = {https://link.springer.com/chapter/10.1007/978-3-031-40864-9_14},
+  year        = {2023}
+}
+
+@incollection{Dolean:2023:OPT,
+  abbr = {DDMSE26},
+  abstract    = {Wave propagation phenomena are ubiquitous in science and engineering. In Geophysics, the magnetotelluric approximation of Maxwell’s equations is an important tool to extract information about the spatial variation of electrical conductivity in the Earth’s subsurface.},
+  author      = {Victorita Dolean and Martin J. Gander and A. Kyriakis},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XXVI},
+  doi         = {https://doi.org/10.1007/978-3-030-95025-5_22},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Optimizing transmission conditions for multiple subdomains in the magnetotelluric approximation of Maxwell's equations},
+  url         = {https://doi.org/10.1007/978-3-030-95025-5_22},
+  volume      = {145},
+  year        = {2023}
+}
+
+@incollection{Bootland:2023:INE,
+  abbr = {DDMSE26},
+  abstract    = {In recent years, domain decomposition based preconditioners have become popular tools to solve the Helmholtz equation. Notorious for causing a variety of convergence issues, the Helmholtz equation remains a challenging PDE to solve numerically. Even for simple model problems, the resulting linear system after discretisation becomes indefinite and tailored iterative solvers are required to obtain the numerical solution efficiently. At the same time, the mesh must be kept fine enough in order to prevent numerical dispersion ‘polluting’ the solution [4]. This leads to very large linear systems, further amplifying the need to develop economical solver methodologies.},
+  author      = {N. Bootland and Victorita Dolean and V. Dwarka and P. Jolivet and C. Vuik},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XXVI},
+  doi         = {https://doi.org/10.1007/978-3-030-95025-5_11},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Inexact subdomain solves using deflated GMRES for Helmholtz problems},
+  url         = {https://doi.org/10.1007/978-3-030-95025-5_11},
+  volume      = {145},
+  year        = {2023}
+}
+
+@incollection{Bootland:2023:GEN,
+  abbr = {DDMSE26},
+  abstract    = {For domain decomposition preconditioners, the use of a coarse correction as a second level is usually required to provide scalability (in the weak sense), such that the iteration count is independent of the number of subdomains, for subdomains of fixed dimension. In addition, it is desirable to guarantee robustness with respect to strong variations in the physical parameters. Achieving scalability and robustness usually relies on sophisticated tools such as spectral coarse spaces [4, 5]. In particular, we can highlight the GenEO coarse space [9], which has been successfully analysed and applied to highly heterogeneous positive definite elliptic problems. This coarse space relies on the solution of local eigenvalue problems on subdomains and the theory in the SPD case is based on the fact that local eigenfunctions form an orthonormal basis with respect to the energy scalar product induced by the bilinear form},
+  author      = {N. Bootland and Victorita Dolean and I. Graham and C. Ma and R. Scheichl},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XXVI},
+  doi         = {https://doi.org/10.1007/978-3-030-95025-5_10},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Geneo coarse spaces for heterogeneous indefinite elliptic problems},
+  volume      = {145},
+  year        = {2023}
+}
+
+@incollection{Bootland:2023:SEV,
+  abbr = {DDMSE26},
+  abstract    = {Why do we need robust solution methods for wave propagation problems? Very often in applications, as for example in seismic inversion, we need to reconstruct the a priori unknown physical properties of an environment from given measurements.},
+  author      = {N. Bootland and Victorita Dolean and P. Jolivet and F. Nataf and S. Operto and P.-H. Tournier},
+  bibtex_show = {true},
+  booktitle   = {Domain decomposition methods in science and engineering XXVI},
+  doi         = {https://doi.org/10.1007/978-3-030-95025-5_2},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Several ways to achieve robustness when solving wave propagation problems},
+  url         = {https://doi.org/10.1007/978-3-030-95025-5_2},
+  volume      = {145},
+  year        = {2023}
+}
+
+@inproceedings{Borzooei:2023:HIG,
+  abstract    = {In this paper, microwave tomographic imaging for rotator cuff tear by numerical modeling and parallel computing is presented. It requires solving an inverse problem by making use of an iterative method based on a minimization algorithm. To this end, efficient parallel algorithms and high-performance computing is utilized that result in an accurate reconstruction of the electrical properties of the propagation medium as well as fast computations. Results demonstrate the possibility to detect different types of tendon tears in a shoulder model.},
+  author      = {S. Borzooei and C. Migliaccio and Victorita Dolean and P.-H. Tournier and Christian Pichot},
+  bibtex_show = {true},
+  doi = {https://api.semanticscholar.org/CorpusID:2616135732},
+  abbr = {IEEE-APP},
+  booktitle   = {IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting},
+  pages       = {1879--1880},
+  title       = {High-Performance Numerical Modeling for Detection of Rotator Cuff Tear},
+  url         = {https://api.semanticscholar.org/CorpusID:261613573},
+  year        = {2023}
+}
+
+@incollection{Bootland:2021:ONT,
+  abbr = {ENUMATH2019},
+  abstract    = {We examine the use of the Dirichlet-to-Neumann coarse space within an additive Schwarz method to solve the Helmholtz equation in 2D. In particular, we focus on the selection of how many eigenfunctions should go into the coarse space. We find that wave number independent convergence of a preconditioned iterative method can be achieved in certain special cases with an appropriate and novel choice of threshold in the selection criteria. However, this property is lost in a more general setting, including the heterogeneous problem. Nonetheless, the approach converges in a small number of iterations for the homogeneous problem even for relatively large wave numbers and is robust to the number of subdomains used.},
+  author      = {N. Bootland and Victorita Dolean},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-030-55874-1_16},
+  booktitle   = {Numerical mathematics and advanced applications --- ENUMATH 2019},
+  pages       = {175--184},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {On the Dirichlet-to-Neumann coarse space for solving the Helmholtz problem using domain decomposition},
+  volume      = {139},
+  year        = {2021}
+}
+
+@inproceedings{Dolean:2020:LAR,
+  abbr = {SEG},
+  abstract    = {Frequency-domain full-waveform inversion (FWI) is suitable for long-offset stationary-recording acquisition, since reliable subsurface models can be reconstructed with a few frequencies and attenuation is easily implemented without computational overhead. In the frequency domain, wave modeling is a Helmholtz-type boundary-value problem which requires to solve a large and sparse system of linear equations per frequency with multiple right-hand sides (sources). This system can be solved with direct or iterative methods. While the former are suitable for FWI application on 3D dense OBC acquisitions covering spatial domains of moderate size, the later should be the approach of choice for sparse node acquisitions covering large domains (more than 50 millions of unknowns). Fast convergence of iterative solvers for Helmholtz problems remains however challenging in high frequency regime due to the non definiteness of the Helmholtz operator, on one side and on the discretization constraints in order to minimize the dispersion error for a given frequency, on the other side, hence requiring efficient preconditioners. In this study, we use the Krylov subspace GMRES iterative solver combined with a two-level domain-decomposition preconditioner. Discretization relies on continuous Lagrange finite elements of order 3 on unstructured tetrahedral meshes to comply with complex geometries and adapt the size of the elements to the local wavelength (h-adaptivity). We assess the accuracy, the convergence and the scalability of our method with the acoustic 3D SEG/EAGE Overthrust model up to a frequency of 20 Hz.},
+  author      = {Victorita Dolean and P.-H. Tournier and P. Jolivet and S. Operto},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1190/segam2020-3427414.1},
+  journal     = {SEG Technical Program Expanded Abstracts 2020},
+  pages       = {2683--2688},
+  title       = {Large-scale frequency-domain seismic wave modeling on h-adaptive tetrahedral meshes with iterative solver and multi-level domain-decomposition preconditioners},
+  year        = {2020}
+}
+
+@incollection{Brunet:2020:CAN,
+  abbr = {DDMSE25},
+  abstract    = {The propagation of waves in elastic media is a problem of undeniable practical importance in geophysics. in several important applications - e.g. seismic exploration or earthquake prediction - one seeks to infer unknown material properties of the earth’s subsurface by sending seismic waves down and measuring the scattered field which comes back, implying the solution of inverse problems.},
+  author      = {R. Brunet and Victorita Dolean and Martin J. Gander},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-030-56750-7_49},
+  booktitle   = {Domain decomposition methods in science and engineering XXV},
+  pages       = {425--432},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Can classical Schwarz methods for time-harmonic elastic waves converge?},
+  volume      = {138},
+  year        = {2020}
+}
+
+@incollection{Barrenechea:2020:STA,
+  abbr = {ICOSAHOM2018},
+  abstract    = {In several studies it has been observed that, when using stabilised  elements for both velocity and pressure, the error for the pressure is smaller, or even of a higher order in some cases, than the one obtained when using inf-sup stable  (although no formal proof of either of these facts has been given). This increase in polynomial order requires the introduction of stabilising terms, since the finite element pairs used do not guarantee the inf-sup condition. With this motivation, we apply the stabilisation approach to the hybrid discontinuous Galerkin discretisation for the Stokes problem with non-standard boundary conditions.},
+  author      = {G. Barrenechea and M. Bosy and Victorita Dolean},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-030-39647-3_13},
+  booktitle   = {Spectral and high order methods for partial differential equations --- ICOSAHOM 2018},
+  pages       = {179--189},
+  publisher   = {Springer},
+  series      = {Lecture Notes in Computational Science and Engineering},
+  title       = {Stabilised hybrid discontinuous Galerkin methods for the Stokes problem with non-standard boundary conditions},
+  volume      = {134},
+  year        = {2020}
+}
+
+@incollection{Bonazzoli:2018:TWO,
+  abbr = {DDMSE24},
+  abstract    = {The construction of fast iterative solvers for the indefinite time-harmonic Maxwell’s system at mid- to high-frequency is a problem of great current interest. Some of the difficulties that arise are similar to those encountered in the case of the mid- to high-frequency Helmholtz equation. Here we investigate how two-level domain-decomposition preconditioners recently proposed for the Helmholtz equation work in the Maxwell case, both from the theoretical and numerical points of view.},
+  author      = {M. Bonazzoli and Victorita Dolean and I. G. Graham and E. A. Spence and P.-H. Tournier},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-319-93873-8_12},
+  booktitle   = {Domain decomposition methods in science and engineering XXIV},
+  pages       = {149--157},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {A two-level domain-decomposition preconditioner for the time-harmonic Maxwell's equations},
+  volume      = {125},
+  year        = {2018}
+}
+
+@incollection{Bonazzoli:2018:HEL,
+  abbr = {DDMSE24},
+  abstract    = {In this paper we compare numerically two different coarse space definitions for two-level domain decomposition preconditioners for the Helmholtz equation, both in two and three dimensions. While we solve the pure Helmholtz problem without absorption, the preconditioners are built from problems with absorption. In the first method, the coarse space is based on the discretization of the problem with absorption on a coarse mesh, with diameter constrained by the wavenumber. In the second method, the coarse space is built by solving local eigenproblems involving the Dirichlet-to-Neumann (DtN) operator.},
+  author      = {M. Bonazzoli and Victorita Dolean and I. G. Graham and E. A. Spence and P.-H. Tournier},
+  bibtex_show = {true},
+  doi ={https://doi.org/10.1007/978-3-319-93873-8_11},
+  booktitle   = {Domain decomposition methods in science and engineering XXIV},
+  pages       = {139--147},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Two-level preconditioners for the Helmholtz equation},
+  volume      = {125},
+  year        = {2018}
+}
+
+@incollection{Dolean:2017:OPT,
+  abbr = {DDMSE23},
+  abstract    = {Both the Helmholtz equation and the time-harmonic Maxwell’s equations are difficult to solve by iterative methods in the intermediate to high frequency regime, and domain decomposition methods are among the most promising techniques for this task. We focus here on the case of dissipative and conductive media with strongly heterogeneous coefficients, and develop optimized transmission conditions for this case. We establish a link for the use of such conditions between the case of Helmholtz and Maxwell’s equations, and show that in both cases jumps aligned with the interfaces of the subdomains can improve the convergence of the subdomain iteration.},
+  author      = {Victorita Dolean and Martin J. Gander and E. Veneros and H. Zhang},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-319-52389-7_13},
+  booktitle   = {Domain decomposition methods in science and engineering XXIII},
+  pages       = {145--152},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Optimized Schwarz methods for heterogeneous Helmholtz and Maxwell's equations},
+  volume      = {116},
+  year        = {2017}
+}
+
+@incollection{Bonazzoli:2017:SCH,
+  abbr = {DDMSE23},
+  abstract    = {We focus on high order edge element approximations of waveguide problems. For the associated linear systems, we analyze the impact of two Schwarz preconditioners, the Optimized Additive Schwarz (OAS) and the Optimized Restricted Additive Schwarz (ORAS), on the convergence of the iterative solver.},
+  author      = {M. Bonazzoli and Victorita Dolean and R. Pasquetti and F. Rapetti},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-319-52389-7_10}, 
+  booktitle   = {Domain decomposition methods in science and engineering XXIII},
+  pages       = {117--124},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Schwarz preconditioning for high order edge element discretizations of the time-harmonic Maxwell's equations},
+  volume      = {116},
+  year        = {2017}
+}
+
+@incollection{Ayala:2017:CLO,
+  abbr = {DDMSE23},
+  abstract    = {Local multi-trace formulations are a way to express transmission problems. They are based on integral formulations of the solution on each subdomain, and between the subdomains both the known jumps in the traces and the fluxes of the transmission problem are imposed, and thus the method contains multiple traces in its formulation. We show in this paper that it is possible to derive a closed form inverse for local multi-trace operators for an elliptic model problem.},
+  author      = {A. Ayala and X. Claeys and Victorita Dolean and Martin J. Gander},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-319-52389-7_9},
+  booktitle   = {Domain decomposition methods in science and engineering XXIII},
+  pages       = {107--115},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Closed form inverse of local multi-trace operators},
+  volume      = {116},
+  year        = {2017}
+}
+
+@incollection{Dolean:2016:SCH, 
+  abbr = {DDMSE22},
+  abstract    = {We study non-overlapping Schwarz Methods for solving second order time-harmonic 3D Maxwell equations in heterogeneous media. Choosing the interfaces between the subdomains to be aligned with the discontinuities in the coefficients, we show for a model problem that while the classical Schwarz method is not convergent, optimized transmission conditions dependent on the discontinuities of the coefficients lead to convergent methods. We prove asymptotically that the resulting methods converge in certain cases independently of the mesh parameter, and convergence can even become better as the coefficient jumps increase.},
+  author      = {Victorita Dolean and Martin J. Gander and E. Veneros},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-319-18827-0_48},
+  booktitle   = {Domain decomposition methods in science and engineering XXII},
+  pages       = {471--479},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Schwarz methods for second order Maxwell equations in 3D with coefficient jumps},
+  volume      = {104},
+  year        = {2016}
+}
+
+@incollection{Dolean:2016:MUL,
+  abbr = {DDMSE22},
+  abstract    = {Multitrace formulations (MTF) for boundary integral equations (BIE) were developed over the last few years in [1, 2, 4] for the simulation of electromagnetic problems in piecewise constant media, see also [3] for associated boundary integral methods. The MTFs are naturally adapted to the developments of new block preconditioners, as indicated in [5], but very little is known so far about such associated iterative solvers. The goal of our presentation is to give an elementary introduction to MTFs, and also to establish a natural connection with the more classical Dirichlet-Neumann algorithms that are well understood in the domain decomposition literature, see for example [6, 7]. We present for a model problem a convergence analysis for a naturally arising block iterative method associated with the MTF, and also first numerical results to illustrate what performance one can expect from such an iterative solver.},
+  author      = {Victorita Dolean and Martin J. Gander},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-319-18827-0_13},
+  booktitle   = {Domain decomposition methods in science and engineering XXII},
+  pages       = {147--155},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Multitrace formulations and Dirichlet-Neumann algorithms},
+  volume      = {104},
+  year        = {2016}
+}
+
+@incollection{Dolean:2014:OPTM,
+  abbr = {DDMSE21},
+  abstract    = {We study non-overlapping Schwarz methods for solving time-harmonic Maxwell’s equations in heterogeneous media. We show that the classical Schwarz algorithm is always divergent when coefficient jumps are present along the interface. In the case of transverse magnetic or transverse electric two dimensional formulations, convergence can be achieved in specific configurations only. We then develop optimized Schwarz methods which can take coefficient jumps into account in their transmission conditions. These methods exhibit rapid convergence, and sometimes converge independently of the mesh parameter, even without overlap. We illustrate our analysis with numerical experiments.},
+  author      = {Victorita Dolean and Martin J. Gander and E. Veneros},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-319-05789-7_49}, 
+  booktitle   = {Domain decomposition methods in science and engineering XXI},
+  pages       = {517--525},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Optimized Schwarz methods for Maxwell equations with discontinuous coefficients},
+  volume      = {98},
+  year        = {2014}
+}
+
+@incollection{Spillane:2014:ACH,
+  abbr = {DDMSE21},
+  abstract    = {As many DD methods the two level Additive Schwarz method may suffer from a lack of robustness with respect to coefficient variation. This is the case in particular if the partition into is not aligned with all jumps in the coefficients. The theoretical analysis traces this lack of robustness back to the so called stable splitting property. In this work we propose to solve a generalized eigenvalue problem in each subdomain which identifies which vectors are responsible for violating the stable splitting property. These vectors are used to span the coarse space and taken care of by a direct solve while all remaining components behave well. The result is a condition number estimate for the two level method which does not depend on the number of subdomains or any jumps in the coefficients.},
+  author      = {N. Spillane and Victorita Dolean and P. Hauret and F. Nataf and C. Pechstein and R. Scheichl},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-319-05789-7_42}, 
+  booktitle   = {Domain decomposition methods in science and engineering XXI},
+  pages       = {447--455},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Achieving robustness through coarse space enrichment in the two level Schwarz framework},
+  volume      = {98},
+  year        = {2014}
+}
+
+@incollection{ElBouajaji:2014:DGD,
+  abbr = {DDMSE21},
+  abstract    = {We study here optimized Schwarz domain decomposition methods for solving the time-harmonic Maxwell equations discretized by a discontinuous Galerkin (DG) method. Due to the particularity of the latter, a discretization of a more sophisticated Schwarz method is not straightforward. A strategy of discretization is shown in the framework of a DG weak formulation, and the equivalence between multi-domain and single-domain solutions is proved. The proposed discrete framework is then illustrated by some numerical results through the simulation of two-dimensional propagation problems.},
+  author      = {M. El Bouajaji and Victorita Dolean and Martin J. Gander and St{\'e}phane Lanteri and R. Perrussel},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-319-05789-7_18},
+  booktitle   = {Domain decomposition methods in science and engineering XXI},
+  pages       = {217--225},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {DG discretization of optimized Schwarz methods for Maxwell's equations},
+  volume      = {98},
+  year        = {2014}
+}
+
+@incollection{ElBouajaji:2013:COM,
+  abbr = {DDMSE20},
+  abstract    = {Transmission conditions between subdomains have a substantial influence on the convergence of iterative domain decomposition algorithms. For Maxwell’s equations, transmission conditionswhich lead to rapidly converging algorithms have been developed both for the curl-curl formulation of Maxwell’s equation, see [1–3], and also for first order formulations, see [6, 7]. These methods have well found their way into applications, see for example [9] and the references therein. It turns out that good transmission conditions are approximations of transparent boundary conditions.},
+  author      = {M. El Bouajaji and Victorita Dolean and Martin J. Gander and St{\'e}phane Lanteri},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-642-35275-1_31},
+  booktitle   = {Domain decomposition methods in science and engineering XX},
+  pages       = {271--278},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Comparison of a one and two parameter family of transmission conditions for Maxwell's equations with damping},
+  volume      = {91},
+  year        = {2013}
+}
+
+@incollection{Dolean:2013:TWO,
+  abbr = {DDMSE20},
+  abstract    = {Coarse space correction is essential to achieve algorithmic scalability in domain decomposition methods. Our goal here is to build a robust coarse space for Schwarz– type preconditioners for elliptic problems with highly heterogeneous coefficients when the discontinuities are not just across but also along subdomain interfaces, where classical results break down [3, 6, 9, 15].},
+  author      = {Victorita Dolean and Fr{\'e}d{\'e}ric Nataf and R. Scheichl and N. Spillane},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-642-35275-1_8},
+  booktitle   = {Domain decomposition methods in science and engineering XX},
+  pages       = {87--94},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {A two-level Schwarz preconditioner for heterogeneous problems},
+  volume      = {91},
+  year        = {2013}
+}
+
+@incollection{Cluzeau:2013:SYM,
+  abbr = {DDMSE20},
+  abstract    = {Some algorithmic aspects of systems of PDEs based simulations can be better clarified by means of symbolic computation techniques. This is very important since numerical simulations heavily rely on solving systems of PDEs. For the large-scale problems we deal with in today’s standard applications, it is necessary to rely on iterative Krylov methods that are scalable (i.e., weakly dependent on the number of degrees on freedom and number of subdomains) and have limited memory requirements.},
+  author      = {T. Cluzeau and Victorita Dolean and Fr{\'e}d{\'e}ric Nataf and A. Quadrat},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-642-35275-1_3}, 
+  booktitle   = {Domain decomposition methods in science and engineering XX},
+  pages       = {27--38},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Symbolic techniques for domain decomposition methods},
+  volume      = {91},
+  year        = {2013}
+}
+
+@incollection{Dolean:2011:HYB,
+  abbr = {ICOSAHOM09},
+  abstract    = {In the recent years, there has been an increasing interest in discontinuous Galerkin time domain (DGTD) methods for the numerical modeling of electromagnetic wave propagation. Such methods most often rely on explicit time integration schemes which are constrained by a stability condition that can be very restrictive on highly refined meshes. In this paper, we report on some efforts to design a hybrid explicit–implicit DGTD method for solving the time domain Maxwell equations on locally refined simplicial meshes. The proposed method consists in applying an implicit time integration scheme locally in the refined regions of the mesh while preserving an explicit time scheme in the complementary part.},
+  author      = {Victorita Dolean and H. Fahs and L. Fezoui and S. Lanteri},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-642-15337-2_13},
+  booktitle   = {Spectral and high order methods for partial differential equations},
+  pages       = {163--170},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Hybrid explicit-implicit time integration for grid-induced stiffness in a DGTD method for time domain electromagnetics},
+  volume      = {76},
+  year        = {2011}
+}
+
+@incollection{Descombes:2011:SCH,
+  abbr = {DDMSE19},
+  abstract    = {Schwarz waveform relaxation methods have been studied for a wide range of scalar linear partial differential equations (PDEs) of parabolic and hyperbolic type. They are based on a space-time decomposition of the computational domain and the subdomain iteration uses an overlapping decomposition in space. There are only few convergence studies for non-linear PDEs. We analyze in this paper the convergence of Schwarz waveform relaxation applied to systems of semi-linear reaction-diffusion equations. We show that the algorithm converges linearly under certain conditions over long time intervals. We illustrate our results, and further possible convergence behavior, with numerical experiments.},
+  author      = {S. Descombes and Victorita Dolean and Martin J. Gander},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-642-11304-8_49}, 
+  booktitle   = {Domain decomposition methods in science and engineering XIX},
+  pages       = {423--430},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Schwarz waveform relaxation methods for systems of semi-linear reaction-diffusion equations},
+  volume      = {78},
+  year        = {2011}
+}
+
+@incollection{Dolean:2011:OPT,
+  abbr = {DDMSE19},
+  abstract    = {The study of optimized Schwarz methods for Maxwell’s equations started with the Helmholtz equation, see [2–4, 11]. For the rot-rot formulation of Maxwell’s equations, optimized Schwarz methods were developed in [1], and for the more general form in [9, 10]. An entire hierarchy of families of optimized Schwarz methods was analyzed in [8], see also [5] for discontinuous Galerkin discretizations and large scale experiments. We present in this paper a first analysis of optimized Schwarz methods for Maxwell’s equations with non-zero electric conductivity. This is an important case for real applications, and requires a new, and fundamentally different optimization of the transmission conditions. We illustrate our analysis with numerical experiments.},
+  author      = {Victorita Dolean and M. El Bouajaji and M. J. Gander and S. Lanteri},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-642-11304-8_30},
+  booktitle   = {Domain decomposition methods in science and engineering XIX},
+  pages       = {269--276},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Optimized Schwarz methods for Maxwell's equations with non-zero electric conductivity},
+  volume      = {78},
+  year        = {2011}
+}
+
+@incollection{Dolean:2011:CAN,
+  abbr = {DDMSE19},
+  abstract    = {Schwarz domain decomposition methods can be analyzed both at the continuous and discrete level. For consistent discretizations, one would naturally expect that the discretized method performs as predicted by the continuous analysis. We show in this short note for two model problems that this is not always the case, and that the discretization can both increase and decrease the convergence speed predicted by the continuous analysis.},
+  author      = {Victorita Dolean and M. J. Gander},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-642-11304-8_11}, 
+  booktitle   = {Domain decomposition methods in science and engineering XIX},
+  pages       = {117--124},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Can the discretization modify the performance of Schwarz methods?},
+  volume      = {78},
+  year        = {2011}
+}
+
+@incollection{Dolean:2011:DOM,
+  abbr = {DDMSE19},
+  abstract    = {We are interested here in the numerical modeling of time-harmonic electromagnetic wave propagation problems in irregularly shaped domains and heterogeneous media. In this context, we are naturally led to consider volume discretization methods (i.e. finite element method) as opposed to surface discretization methods (i.e. boundary element method). Most of the related existing work deals with the second order form of the time-harmonic Maxwell equations discretized by a conforming finite element method [14]. More recently, discontinuous Galerkin (DG) methods have also been considered for this purpose. While the DG method keeps almost all the advantages of a conforming finite element method (large spectrum of applications, complex geometries, etc.), the DG method has other nice properties which explain the renewed interest it gains in various domains in scientific computing: easy extension to higher order interpolation (one may increase the degree of the polynomials in the whole mesh as easily as for spectral methods and this can also be done locally), no global mass matrix to invert when solving time-domain systems of partial differential equations using an explicit time discretization scheme, easy handling of complex meshes (the mesh may be a classical conforming finite element mesh, a non-conforming one or even a mesh made of various types of elements), natural treatment of discontinuous solutions and coefficient heterogeneities and nice parallelization properties.},
+  author      = {Victorita Dolean and M. El Bouajaji and M. J. Gander and S. Lanteri and R. Perrussel},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-642-11304-8_2},
+  booktitle   = {Domain decomposition methods in science and engineering XIX},
+  pages       = {15--26},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Domain decomposition methods for electromagnetic wave propagation problems in heterogeneous media and complex domains},
+  volume      = {78},
+  year        = {2011}
+}
+
+@incollection{Dolean:2009:NEU,
+  abbr = {DDMSE18},
+  abstract    = {In this paper we recall a new domain decomposition method for the Stokes problem obtained via the Smith factorization. From the theoretical point of view, this domain decomposition method is optimal in the sense that it converges in two iterations for a decomposition into two equal domains. Previous results illustrated the fast convergence of the proposed algorithm in some cases. Our algorithm has shown a more robust behavior than Neumann-Neumann or FETI type methods for particular decompositions; as far as general decompositions are concerned, the performances of the three algorithms are similar. Nevertheless, the computations of the singular values of the interface preconditioned problem have shown that one needs a coarse space whose dimension is less than the one needed for the Neumann-Neumann algorithm. In this work we present a new strategy in order to improve the convergence of the new algorithm in the presence of cross points.},
+  author      = {Victorita Dolean and Fr{\'e}d{\'e}ric Nataf and G. Rapin},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-642-02677-5_16}, 
+  booktitle   = {Domain decomposition methods in science and engineering XVIII},
+  pages       = {161--168},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {A domain decomposition preconditioner of Neumann-Neumann type for the Stokes equations},
+  volume      = {70},
+  year        = {2009}
+}
+
+@incollection{Dolean:2008:PMU,
+  abbr = {DDMSE17},
+  abstract    = {Spectral element approximations based on triangular elements and on the so-called Fekete points of the triangle have been recently developed. p-multigrid methods offer an interesting way to resolve efficiently the resulting ill-conditioned algebraic systems. For elliptic problems, it is shown that a well chosen restriction operator and a good set up of the coarse grid matrices may lead to valuable results, even with a standard Gauss-Seidel smoother.},
+  author      = {Victorita Dolean and R. Pasquetti and F. Rapetti},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-540-75199-1_61}, 
+  booktitle   = {Domain decomposition methods in science and engineering XVII},
+  pages       = {485--492},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {p-multigrid for Fekete spectral element method},
+  volume      = {60},
+  year        = {2008}
+}
+
+@incollection{Dolean:2008:HOW,
+  abbr = {DDMSE17},
+  abstract    = {In this paper we demonstrate that the Smith factorization is a powerful tool to derive new domain decomposition methods for vector valued problems. Here, the factorization is applied to the two-dimensional Stokes system. The key idea is the transformation of the Stokes problem into a scalar bi-harmonic problem. We show how a proposed domain decomposition method for the bi-harmonic problem leads to an algorithm for the Stokes equations which inherits the convergence behavior of the scalar problem.},
+  author      = {Victorita Dolean and Fr{\'e}d{\'e}ric Nataf and G. Rapin},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-540-75199-1_60},
+  booktitle   = {Domain decomposition methods in science and engineering XVII},
+  pages       = {477--484},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {How to use the Smith factorization for domain decomposition methods applied to the Stokes equations},
+  volume      = {60},
+  year        = {2008}
+}
+
+@incollection{Dolean:2008:WHY,
+  abbr = {DDMSE17},
+  abstract    = {Overlap is essential for the classical Schwarz method to be convergent when solving elliptic problems. Over the last decade, it was however observed that when solving systems of hyperbolic partial differential equations, the classical Schwarz method can be convergent even without overlap. We show that the classical Schwarz method without overlap applied to the Cauchy-Riemann equations which represent the discretization in time of such a system, is equivalent to an optimized Schwarz method for a related elliptic problem, and thus must be convergent, since optimized Schwarz methods are well known to be convergent without overlap.},
+  author      = {Victorita Dolean and Martin J. Gander},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-540-75199-1_59}, 
+  booktitle   = {Domain decomposition methods in science and engineering XVII},
+  pages       = {467--475},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {Why classical Schwarz methods applied to certain hyperbolic systems converge even without overlap},
+  volume      = {60},
+  year        = {2008}
+}
+
+@incollection{Dolean:2008:NEW,
+  abbr = {DDMSE17},
+  abstract    = {In this work we design a new domain decomposition method for the Euler equations in 2 dimensions. The starting point is the equivalence with a third order scalar equation to whom we can apply an algorithm inspired from the Robin-Robin preconditioner for the convection-diffusion equation [1]. Afterwards we translate it into an algorithm for the initial system and prove that at the continuous level and for a decomposition into 2 sub-domains, it converges in 2 iterations. This property cannot be conserved strictly at discrete level and for arbitrary domain decompositions but we still have numerical results which confirm a very good stability with respect to the various parameters of the problem (mesh size, Mach number, …).},
+  author      = {Victorita Dolean and Fr{\'e}d{\'e}ric Nataf},
+  bibtex_show = {true},
+  doi = {https://doi.org/10.1007/978-3-540-75199-1_40},
+  booktitle   = {Domain decomposition methods in science and engineering XVII},
+  pages       = {331--338},
+  publisher   = {Springer},
+  series      = {LNCSE},
+  title       = {A new domain decomposition method for the compressible Euler equations using Smith factorization},
+  volume      = {60},
+  year        = {2008}
+}
+
+@incollection{Dolean:2002:NON,
+  abbr = {ASFD},
+  abstract    = {In this work we present an overview of some classical and new domain decomposition methods for the resolution of the Euler equations. The classical Schwarz methods are formulated and analyzed in the framework of first order hyperbolic systems and the differences with respect to the scalar problems are presented. This kind of algorithms behave quite well for bigger Mach numbers but we can further improve their performances in the case of lower Mach numbers. There are two possible ways to achieve this goal. The first one implies the use of the optimized interface conditions depending on a few parameters that generalize the classical ones. The second is inspired from the Robin-Robin preconditioner for the convection-diffusion equation by using the equivalence via the Smith factorization with a third order scalar equation.},
+  author      = {Victorita Dolean and S. Lanteri and Fr{\'e}d{\'e}ric Nataf},
+  bibtex_show = {true},
+  doi={https://doi.org/10.1007/978-3-7643-7742-7_5},
+  booktitle   = {Domain decomposition methods in science and engineering (Lyon, 2000)},
+  pages       = {455--462},
+  publisher   = {Internat. Center Numer. Methods Eng. (CIMNE)},
+  title       = {Nonoverlapping domain decomposition algorithms for the system of Euler equations},
+  year        = {2002}
+}
