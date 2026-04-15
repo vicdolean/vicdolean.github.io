@@ -9,9 +9,9 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-victorita-dolean-39-s-publications",
-          title: "Victorita Dolean&#39;s publications",
-          description: "",
+  },{id: "nav-publications",
+          title: "publications",
+          description: "Victorita Dolean&#39;s publications",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
