@@ -308,7 +308,7 @@ scholar:
     proceedings: book
     inproceedings: article
     incollection: article
-  type_order: [book,article]
+  type_order: [book, article]
 
 # Display different badges withs stats for your publications
 # Customize badge behavior in _layouts/bib.liquid

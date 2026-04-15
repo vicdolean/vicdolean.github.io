@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Victorita Dolean's publications
-description:
+description: balh 
 nav: true
 nav_order: 2
 dropdown: false
@@ -14,7 +14,7 @@ dropdown: false
 
 {% include bib_search.liquid %}
 
-<div class="publications">
+<div class="toto">
 
 {% bibliography %}
 
