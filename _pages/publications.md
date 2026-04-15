@@ -7,11 +7,11 @@ nav: true
 nav_order: 2
 dropdown: true
 children:
-    - title: books
-      permalink: /publications_books/
-    - title: divider
-    - title: papers
-      permalink: /publications_papers/
-    - title: proceedings
-      permalink: /publications_proceedings/
+  - title: books
+    permalink: /publications_books/
+  - title: divider
+  - title: papers
+    permalink: /publications_papers/
+  - title: proceedings
+    permalink: /publications_proceedings/
 ---
