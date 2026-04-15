@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-06'
+  last_updated: '2026-04-15'
 papers:
   ZzHAiHkAAAAJ:-f6ydRqryjwC:
     citations: 7
@@ -34,7 +34,7 @@ papers:
     title: Are Deep Learning Based Hybrid PDE Solvers Reliable? Why Training Paradigms and Update Strategies Matter
     year: '2026'
   ZzHAiHkAAAAJ:3MwzVuqRcA0C:
-    citations: 27
+    citations: 28
     title: Overlapping Schwarz methods with GenEO coarse spaces for indefinite and nonself-adjoint problems
     year: '2022'
   ZzHAiHkAAAAJ:3fE2CSJIrl8C:
@@ -230,7 +230,7 @@ papers:
     title: 'ELM-FBPINNs: An Efficient Multilevel Random Feature Method'
     year: '2026'
   ZzHAiHkAAAAJ:Nw_I7GeUguwC:
-    citations: 123
+    citations: 124
     title: Multilevel domain decomposition-based architectures for physics-informed neural networks
     year: '2024'
   ZzHAiHkAAAAJ:O3NaXMp0MMsC:
@@ -350,7 +350,7 @@ papers:
     title: Optimized Schwarz algorithms for solving time-harmonic Maxwell's equations discretized by a discontinuous Galerkin method
     year: '2008'
   ZzHAiHkAAAAJ:_FxGoFyzp5QC:
-    citations: 56
+    citations: 57
     title: A two level domain decomposition preconditioner based on local Dirichlet-to-Neumann maps
     year: '2010'
   ZzHAiHkAAAAJ:_kc_bZDykSQC:
@@ -410,7 +410,7 @@ papers:
     title: Domain decomposition and high order methods for the solution of partial differential systems of equations. Application to fluid dynamics and electromagnetism
     year: '2009'
   ZzHAiHkAAAAJ:dhFuZR0502QC:
-    citations: 73
+    citations: 74
     title: Optimized Schwarz methods for the time-harmonic Maxwell equations with damping
     year: '2012'
   ZzHAiHkAAAAJ:e84hm74t-eoC:
@@ -634,7 +634,7 @@ papers:
     title: High performance domain decomposition methods on massively parallel architectures with freefem++
     year: '2012'
   ZzHAiHkAAAAJ:yD5IFk8b50cC:
-    citations: 816
+    citations: 817
     title: 'An introduction to domain decomposition methods: algorithms, theory, and parallel implementation'
     year: '2015'
   ZzHAiHkAAAAJ:yIeBiWEAh44C:
