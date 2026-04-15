@@ -17,21 +17,22 @@ horizontal: false
   {%- assign categorized_group_members = site.group_members | where: "category", "lead" -%}
   {%- assign sorted_group_members = categorized_group_members | sort: "last_name" %}
   {% if page.horizontal -%}
-<div class="container">
-  <div class="row row-cols-2">
-  {%- for group_member in sorted_group_members -%}
-    {% include group_members_horizontal.html %}
-  {%- endfor %}
+  <div class="container">
+    <div class="row row-cols-2">
+      {%- for group_member in sorted_group_members -%}
+      {% include group_members_horizontal.html %}
+      {%- endfor %}
+    </div>
   </div>
-</div>
-{%- else -%}
-<div class="grid">
-  {%- for group_member in sorted_group_members -%}
+  {%- else -%}
+  <div class="grid">
+    {%- for group_member in sorted_group_members -%}
     {% include group_members.liquid %}
-  {%- endfor %}
-</div>
-{%- endif -%}
-{%- if site.enable_group_categories and page.display_categories %}
+    {%- endfor %}
+  </div>
+  {%- endif -%}
+
+  {%- if site.enable_group_categories and page.display_categories %}
   <!-- Display categorized group_members -->
   {%- for category in page.display_categories %}
   <h2 class="category">{{ category }}</h2>
@@ -54,9 +55,8 @@ horizontal: false
   </div>
   {%- endif -%}
   {% endfor %}
-
-{%- else -%}
-<!-- Display group_members without categories -->
+  {%- else -%}
+  <!-- Display group_members without categories -->
   {%- assign sorted_group_members = site.group_members | sort: "importance" -%}
   <!-- Generate cards for each group_member -->
   {% if page.horizontal -%}
