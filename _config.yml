@@ -305,9 +305,9 @@ scholar:
   group_by: type, year
   group_order: ascending,descending
   type_aliases:
-     proceedings: book
-     inproceedings: article
-     incollection: article
+    proceedings: book
+    inproceedings: article
+    incollection: article
   type_order: [book,article]
 
 # Display different badges withs stats for your publications
