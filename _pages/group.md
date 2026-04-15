@@ -5,10 +5,10 @@ permalink: /group/
 description:
 nav: true
 nav_order: 3
-dropdown: false
+dropdown: true
 children:
 display_categories: [staff, collaborators, phd candidates, master students, bachelor students, former members]
-horizontal: true
+horizontal: false
 ---
 
 <!-- pages/group_members.md -->
