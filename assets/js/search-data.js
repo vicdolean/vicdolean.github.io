@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-victorita-dolean-39-s-publications",
           title: "Victorita Dolean&#39;s publications",
-          description: "",
+          description: "balh",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
