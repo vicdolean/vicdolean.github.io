@@ -6,7 +6,7 @@ university: Eindhoven University of Technology
 department: Mathematics and Computer Science
 address:
 email: j.j.j.v.heumen@tue.nl
-website: 
+website:
 img: assets/img/group/job-van-heumen.jpg
 project:
 cv:

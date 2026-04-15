@@ -32,9 +32,12 @@ horizontal: false
   </div>
   {%- endif -%}
 
-  {%- if site.enable_group_categories and page.display_categories %}
+{%- if site.enable_group_categories and page.display_categories %}
+
   <!-- Display categorized group_members -->
-  {%- for category in page.display_categories %}
+
+{%- for category in page.display_categories %}
+
   <h2 class="category">{{ category }}</h2>
   {%- assign categorized_group_members = site.group_members | where: "category", category -%}
   {%- assign sorted_group_members = categorized_group_members | sort: "last_name" %}
