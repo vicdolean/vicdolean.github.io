@@ -415,23 +415,23 @@ ul.task-list input[type="checkbox"] {
   text-align: center;
 
   .contact-icons {
-    font-size: 4rem;
+    font-size: 3rem;
 
     a {
       img {
-        width: 3.2rem;
-        height: 3.2rem;
+        width: 2.2rem;
+        height: 2.2rem;
         margin-bottom: 1rem;
       }
 
       svg {
-        width: 3.5rem;
-        height: 4rem;
+        width: 2.5rem;
+        height: 3rem;
         margin-bottom: 0.5rem;
 
         image {
-          width: 3.5rem;
-          height: 3.5rem;
+          width: 2.5rem;
+          height: 2.5rem;
         }
       }
 
@@ -712,10 +712,68 @@ footer.sticky-bottom {
   }
 }
 
+// Group members
+
+.group_members {
+  a {
+    text-decoration: none;
+
+    &:hover {
+      .card-title {
+        color: var(--global-theme-color);
+      }
+    }
+  }
+
+  .card {
+    img {
+      height: 100%;
+    }
+
+    figure {
+      margin: 0 0 0;
+    }
+
+    .card-text {
+      margin-bottom: 4px;
+    }
+  }
+
+  .card-item {
+    width: auto;
+    margin-bottom: 10px;
+
+    .row {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  .grid {
+    margin-bottom: 0rem;
+  }
+
+  .grid-sizer,
+  .grid-item {
+    width: 380px;
+    margin-bottom: 10px;
+  }
+
+  h2.category {
+    color: var(--global-text-color-light);
+    font-size: 1.5rem;
+    border-bottom: 1px solid var(--global-divider-color);
+    padding-top: 0.5rem;
+    margin-top: 0rem;
+    margin-bottom: 0.5rem;
+    text-align: right;
+  }
+}
+
 // Publications
 
 .publications {
-  margin-top: 2rem;
+  margin-top: 0rem;
 
   h1 {
     color: var(--global-theme-color);
@@ -734,10 +792,12 @@ footer.sticky-bottom {
   }
 
   h2.bibliography {
-    color: var(--global-divider-color);
+    color: var(--global-theme-color);
     border-top: 1px solid var(--global-divider-color);
-    padding-top: 1rem;
-    margin-top: 2rem;
+    padding-top: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: -2rem;
+    font-size: 1.5rem;
     text-align: right;
   }
 
@@ -745,14 +805,19 @@ footer.sticky-bottom {
     list-style: none;
     padding: 0;
     margin-top: 0;
+    font-size: 0.75rem;
 
     li {
-      margin-bottom: 1rem;
+      margin-bottom: 0.75rem;
 
       .preview {
+        width: 100%;
+        min-width: 80px;
+        max-width: 200px;
       }
 
       .abbr {
+        height: 2rem;
         margin-bottom: 0.5rem;
 
         abbr {
