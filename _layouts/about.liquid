@@ -40,13 +40,12 @@ layout: default
 
     <div class="clearfix">
       {{ content }}
-    
       <!-- Social -->
-      {% if page.profile.social %}
+      {% if page.social_after_content %}
         <div class="social">
-          <div class="contact-icons">{% social_links %}</div>
-
-          <div class="contact-note">{{ site.contact_note }}</div>
+          <span class="contact-icons text-center">
+            {% include social.html %}
+          </span>
         </div>
       {% endif %}
     </div>

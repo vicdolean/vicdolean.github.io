@@ -14,8 +14,8 @@ profile:
     <p>CASA, HPSC </p>
     <p>NL-5612 AE, Eindhoven</p>
     <p>Room MF5097</p></p>
-  social: true # includes social icons in the profile
 
+social_after_content: true # includes social icons after main content
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: false # includes social icons at the bottom of the page
 
