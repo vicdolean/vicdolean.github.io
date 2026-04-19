@@ -696,47 +696,11 @@ footer.sticky-bottom {
     padding-bottom: 1rem;
   }
 
-  // .grid-sizer,
-  // .grid-item {
-  //   width: 250px;
-  //   margin-bottom: 10px;
-  // }
-.grid-item {
-  margin-bottom: 10px;
-  h1, h2, h3, h4, h5, h6 {
-    color: $black-color;
+  .grid-sizer,
+  .grid-item {
+    width: 250px;
+    margin-bottom: 10px;
   }
-  .card {
-    border: 1px solid var(--global-bg-color);
-
-    .card-title {
-      // color: $black-color;
-      font-size: 1.25rem;
-    }
-
-    .card-body {
-      margin-bottom: 0rem;
-      padding: 1.0rem;
-    }
-
-    .card-text {
-      font-size: 0.75rem;
-      margin-bottom: 0rem;
-    }
-  }
-  a {
-    text-decoration: none;
-    &:hover {
-      h1, h2, h3, h4, h5, h6 {
-        color: var(--global-theme-color); // var(--global-hover-color);
-      }
-      .card {
-        border: 1px solid var(--global-hover-color);
-      }
-    }
-  }
-}
-
 
   h2.category {
     color: var(--global-divider-color);
