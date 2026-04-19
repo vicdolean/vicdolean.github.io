@@ -20,6 +20,7 @@ horizontal: false
   <div class="container">
     <div class="row row-cols-2">
       {%- for group_member in sorted_group_members -%}
+      <h2>Toto 1.1 !! </h2>
       {% include group_members_horizontal.html %}
       {%- endfor %}
     </div>
@@ -27,6 +28,7 @@ horizontal: false
   {%- else -%}
   <div class="grid">
     {%- for group_member in sorted_group_members -%}
+    <h2>Toto 1.2 !! </h2>
     {% include group_members.liquid %}
     {%- endfor %}
   </div>
@@ -46,6 +48,7 @@ horizontal: false
   <div class="container">
     <div class="row row-cols-2">
     {%- for group_member in sorted_group_members -%}
+      <h2>Toto 2.1 !! </h2>
       {% include group_members_horizontal.html %}
     {%- endfor %}
     </div>
@@ -53,7 +56,7 @@ horizontal: false
   {%- else -%}
   <div class="grid">
     {%- for group_member in sorted_group_members -%}
-      <h2>Toto !! </h2>
+      <h2>Toto 2.2 !! </h2>
       {% include group_members.liquid %}
     {%- endfor %}
   </div>
@@ -67,6 +70,7 @@ horizontal: false
   <div class="container">
     <div class="row row-cols-2">
     {%- for group_member in sorted_group_members -%}
+      <h2>Toto 3.1 !! </h2>
       {% include group_members_horizontal.html %}
     {%- endfor %}
     </div>
@@ -74,6 +78,7 @@ horizontal: false
   {%- else -%}
   <div class="grid">
     {%- for group_member in sorted_group_members -%}
+      <h2>Toto 3.2 !! </h2>
       {% include group_members.liquid %}
     {%- endfor %}
   </div>
