@@ -53,6 +53,7 @@ horizontal: false
   {%- else -%}
   <div class="grid">
     {%- for group_member in sorted_group_members -%}
+      <h2>Toto !! </h2>
       {% include group_members.liquid %}
     {%- endfor %}
   </div>
