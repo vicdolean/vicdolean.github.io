@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-15'
+  last_updated: '2026-04-17'
 papers:
   ZzHAiHkAAAAJ:-f6ydRqryjwC:
     citations: 7
@@ -126,9 +126,13 @@ papers:
     title: 'Nonlinear preconditioning: How to use a nonlinear Schwarz method to precondition Newton''s method'
     year: '2016'
   ZzHAiHkAAAAJ:G36d5HCDkJYC:
-    citations: 4
+    citations: 5
     title: Robust methods for multiscale coarse approximations of diffusion models in perforated domains
     year: '2024'
+  ZzHAiHkAAAAJ:GJVTs2krol4C:
+    citations: 0
+    title: Nonlinear Multilevel Solution Strategies for Diffusive Wave Flood Models in Perforated Domains
+    year: Unknown Year
   ZzHAiHkAAAAJ:Gb6Hms-Uo9kC:
     citations: 0
     title: A robust and adaptive GenEO-type domain decomposition preconditioner for H (curl) problems in general non-convex three-dimensional geometries
@@ -230,7 +234,7 @@ papers:
     title: 'ELM-FBPINNs: An Efficient Multilevel Random Feature Method'
     year: '2026'
   ZzHAiHkAAAAJ:Nw_I7GeUguwC:
-    citations: 124
+    citations: 122
     title: Multilevel domain decomposition-based architectures for physics-informed neural networks
     year: '2024'
   ZzHAiHkAAAAJ:O3NaXMp0MMsC:
@@ -520,7 +524,7 @@ papers:
   ZzHAiHkAAAAJ:pUxgyZctzPYC:
     citations: 0
     title: Modal analysis of a domain decomposition method for Maxwell's equations in a waveguide
-    year: '2025'
+    year: '2026'
   ZzHAiHkAAAAJ:pqnbT2bcN3wC:
     citations: 3
     title: A coarse space construction based on local dtn maps
@@ -634,7 +638,7 @@ papers:
     title: High performance domain decomposition methods on massively parallel architectures with freefem++
     year: '2012'
   ZzHAiHkAAAAJ:yD5IFk8b50cC:
-    citations: 817
+    citations: 816
     title: 'An introduction to domain decomposition methods: algorithms, theory, and parallel implementation'
     year: '2015'
   ZzHAiHkAAAAJ:yIeBiWEAh44C:
