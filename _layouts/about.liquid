@@ -36,17 +36,18 @@ layout: default
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}
       </div>
-      <!-- Social -->
-      {% if page.profile.social %}
-        <div class="social">
-          <div class="contact-icons">{% social_links %}</div>
-
-          <div class="contact-note">{{ site.contact_note }}</div>
-        </div>
-      {% endif %}
     {% endif %}
 
     <div class="clearfix">{{ content }}</div>
+
+    <!-- Social -->
+    {% if page.profile.social %}
+      <div class="social">
+        <div class="contact-icons">{% social_links %}</div>
+
+        <div class="contact-note">{{ site.contact_note }}</div>
+      </div>
+    {% endif %}
 
     <!-- News -->
     {% if page.announcements and page.announcements.enabled %}
