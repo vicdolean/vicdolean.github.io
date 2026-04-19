@@ -156,11 +156,11 @@ collections:
   news:
     defaults:
       layout: post
-    output: false
+    output: true
   projects:
-    output: false
+    output: true
   teachings:
-    output: false
+    output: true
   group_members:
     output: true
     permalink: /group_members/:path/
