@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-04-17'
+  last_updated: '2026-04-24'
 papers:
   ZzHAiHkAAAAJ:-f6ydRqryjwC:
     citations: 7
@@ -18,7 +18,7 @@ papers:
     title: Trefftz Approximation Space for Poisson Equation in Perforated Domains
     year: '2023'
   ZzHAiHkAAAAJ:1EqfMoDn7-AC:
-    citations: 1
+    citations: 2
     title: An Iterative Block Matrix Inversion (IBMI) Algorithm for Symmetric Positive Definite Matrices with Applications to Covariance Matrices
     year: '2025'
   ZzHAiHkAAAAJ:2P1L_qKh6hAC:
@@ -122,7 +122,7 @@ papers:
     title: Natural domain decomposition algorithms for the solution of time-harmonic elastic waves
     year: '2020'
   ZzHAiHkAAAAJ:EUQCXRtRnyEC:
-    citations: 139
+    citations: 140
     title: 'Nonlinear preconditioning: How to use a nonlinear Schwarz method to precondition Newton''s method'
     year: '2016'
   ZzHAiHkAAAAJ:G36d5HCDkJYC:
@@ -201,32 +201,28 @@ papers:
     citations: 4
     title: Can DtN and GenEO coarse spaces be sufficiently robust for heterogeneous Helmholtz problems?
     year: '2022'
+  ZzHAiHkAAAAJ:MGPUR4WVBMEC:
+    citations: 0
+    title: CEMRACS 2023-Scientific machine learning
+    year: '2025'
   ZzHAiHkAAAAJ:MXK_kJrjxJIC:
     citations: 3
     title: Why can classical Schwarz methods applied to hyperbolic systems converge even without overlap?
     year: '2006'
   ZzHAiHkAAAAJ:N6_Y7JlWxwsC:
-    citations: 2
+    citations: 4
     title: Local feature filtering for scalable and well-conditioned domain-decomposed random feature methods
     year: '2026'
   ZzHAiHkAAAAJ:NMxIlDl6LWMC:
     citations: 299
     title: Abstract robust coarse spaces for systems of PDEs via generalized eigenproblems in the overlaps
     year: '2014'
-  ZzHAiHkAAAAJ:NU-BerS4NX4C:
-    citations: 0
-    title: "Wavenumber explicit estimates of the Schwarz preconditioner with \u0394-GenEO coarse space for the indefinite Helmholtz problem"
-    year: '2025'
   ZzHAiHkAAAAJ:NaGl4SEjCO4C:
     citations: 10
     title: "Optimized Schwarz methods for curl-curl time-harmonic Maxwell\u2019s equations"
     year: '2014'
-  ZzHAiHkAAAAJ:Nnq8S6OXqDYC:
-    citations: 0
-    title: Fast Multiscale PDE Solvers via Multilevel Domain Decomposition and Random Features
-    year: Unknown Year
   ZzHAiHkAAAAJ:NtCmTCuxid4C:
-    citations: 81
+    citations: 84
     title: Detection of simulated brain strokes using microwave tomography
     year: '2019'
   ZzHAiHkAAAAJ:Nufq_to8ts0C:
@@ -234,7 +230,7 @@ papers:
     title: 'ELM-FBPINNs: An Efficient Multilevel Random Feature Method'
     year: '2026'
   ZzHAiHkAAAAJ:Nw_I7GeUguwC:
-    citations: 122
+    citations: 124
     title: Multilevel domain decomposition-based architectures for physics-informed neural networks
     year: '2024'
   ZzHAiHkAAAAJ:O3NaXMp0MMsC:
@@ -322,7 +318,7 @@ papers:
     title: Several ways to achieve robustness when solving wave propagation problems
     year: '2023'
   ZzHAiHkAAAAJ:X5YyAB84Iw4C:
-    citations: 34
+    citations: 35
     title: Finite basis physics-informed neural networks as a Schwarz domain decomposition method
     year: '2022'
   ZzHAiHkAAAAJ:XDrR66g3YHsC:
@@ -498,13 +494,17 @@ papers:
     title: "Effective transmission conditions for domain decomposition methods applied to the time-harmonic curl\u2013curl Maxwell's equations"
     year: '2015'
   ZzHAiHkAAAAJ:lbI08cpqPnQC:
-    citations: 1
+    citations: 2
     title: 'Microwave imaging of brain strokes: Numerical and experimental error modeling'
     year: '2017'
   ZzHAiHkAAAAJ:ldfaerwXgEUC:
     citations: 3
     title: Discontinuous Galerkin discretizations of optimized Schwarz methods for solving the time-harmonic Maxwell equations
     year: '2014'
+  ZzHAiHkAAAAJ:mVC4hKzE2FoC:
+    citations: 0
+    title: Fast Multiscale PDE Solvers via Multilevel Domain Decomposition and Random Features
+    year: '2026'
   ZzHAiHkAAAAJ:oYLFIHfuHKwC:
     citations: 0
     title: A SVM-based approach for detecting tendon Injury
@@ -638,7 +638,7 @@ papers:
     title: High performance domain decomposition methods on massively parallel architectures with freefem++
     year: '2012'
   ZzHAiHkAAAAJ:yD5IFk8b50cC:
-    citations: 816
+    citations: 819
     title: 'An introduction to domain decomposition methods: algorithms, theory, and parallel implementation'
     year: '2015'
   ZzHAiHkAAAAJ:yIeBiWEAh44C:
