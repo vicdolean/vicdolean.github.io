@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-05-13'
+  last_updated: '2026-05-15'
 papers:
   ZzHAiHkAAAAJ:-f6ydRqryjwC:
     citations: 7
@@ -101,6 +101,10 @@ papers:
     citations: 6
     title: Scalable computational algorithms for geospatial COVID-19 spread using high performance computing
     year: '2023'
+  ZzHAiHkAAAAJ:CCeGMaHljPEC:
+    citations: 0
+    title: Machine Learning for Scientific Computing and Numerical Analysis
+    year: '2026'
   ZzHAiHkAAAAJ:CRzUtm-VnGAC:
     citations: 0
     title: with Non-standard Boundary Conditions
@@ -210,7 +214,7 @@ papers:
     title: Why can classical Schwarz methods applied to hyperbolic systems converge even without overlap?
     year: '2006'
   ZzHAiHkAAAAJ:N6_Y7JlWxwsC:
-    citations: 4
+    citations: 5
     title: Local feature filtering for scalable and well-conditioned domain-decomposed random feature methods
     year: '2026'
   ZzHAiHkAAAAJ:NMxIlDl6LWMC:
@@ -230,7 +234,7 @@ papers:
     title: 'ELM-FBPINNs: An Efficient Multilevel Random Feature Method'
     year: '2026'
   ZzHAiHkAAAAJ:Nw_I7GeUguwC:
-    citations: 133
+    citations: 134
     title: Multilevel domain decomposition-based architectures for physics-informed neural networks
     year: '2024'
   ZzHAiHkAAAAJ:O3NaXMp0MMsC:
@@ -318,7 +322,7 @@ papers:
     title: Several ways to achieve robustness when solving wave propagation problems
     year: '2023'
   ZzHAiHkAAAAJ:X5YyAB84Iw4C:
-    citations: 36
+    citations: 37
     title: Finite basis physics-informed neural networks as a Schwarz domain decomposition method
     year: '2022'
   ZzHAiHkAAAAJ:XDrR66g3YHsC:
@@ -638,7 +642,7 @@ papers:
     title: High performance domain decomposition methods on massively parallel architectures with freefem++
     year: '2012'
   ZzHAiHkAAAAJ:yD5IFk8b50cC:
-    citations: 824
+    citations: 826
     title: 'An introduction to domain decomposition methods: algorithms, theory, and parallel implementation'
     year: '2015'
   ZzHAiHkAAAAJ:yIeBiWEAh44C:
