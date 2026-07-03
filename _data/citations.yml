@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-06-17'
+  last_updated: '2026-07-03'
 papers:
   ZzHAiHkAAAAJ:-f6ydRqryjwC:
     citations: 7
@@ -30,11 +30,11 @@ papers:
     title: Optimized interface conditions for domain decomposition methods in fluid dynamics
     year: '2002'
   ZzHAiHkAAAAJ:3BvdIg-l-ZAC:
-    citations: 1
+    citations: 2
     title: Are Deep Learning Based Hybrid PDE Solvers Reliable? Why Training Paradigms and Update Strategies Matter
     year: '2026'
   ZzHAiHkAAAAJ:3MwzVuqRcA0C:
-    citations: 31
+    citations: 32
     title: Overlapping Schwarz methods with GenEO coarse spaces for indefinite and nonself-adjoint problems
     year: '2022'
   ZzHAiHkAAAAJ:3fE2CSJIrl8C:
@@ -126,7 +126,7 @@ papers:
     title: Natural domain decomposition algorithms for the solution of time-harmonic elastic waves
     year: '2020'
   ZzHAiHkAAAAJ:EUQCXRtRnyEC:
-    citations: 145
+    citations: 149
     title: 'Nonlinear preconditioning: How to use a nonlinear Schwarz method to precondition Newton''s method'
     year: '2016'
   ZzHAiHkAAAAJ:G36d5HCDkJYC:
@@ -154,7 +154,7 @@ papers:
     title: "Parallel preconditioners for high\u2010order discretizations arising from full system modeling for brain microwave imaging"
     year: '2018'
   ZzHAiHkAAAAJ:I9gX6wnfuA8C:
-    citations: 10
+    citations: 12
     title: 'ELM-FBPINNs: an efficient multilevel random feature method'
     year: '2026'
   ZzHAiHkAAAAJ:IT1MJ6E3JesC:
@@ -174,7 +174,7 @@ papers:
     title: Symbolic methods for developing new domain decomposition algorithms
     year: '2012'
   ZzHAiHkAAAAJ:J_g5lzvAfSwC:
-    citations: 80
+    citations: 81
     title: A coarse space for heterogeneous Helmholtz problems based on the Dirichlet-to-Neumann operator
     year: '2014'
   ZzHAiHkAAAAJ:K4-iKlO5MD4C:
@@ -198,7 +198,7 @@ papers:
     title: Space for Solving the Helmholtz Problem Using Domain Decomposition
     year: '2021'
   ZzHAiHkAAAAJ:LkGwnXOMwfcC:
-    citations: 126
+    citations: 128
     title: A coarse space construction based on local Dirichlet-to-Neumann maps
     year: '2011'
   ZzHAiHkAAAAJ:M05iB0D1s5AC:
@@ -222,11 +222,11 @@ papers:
     title: Why can classical Schwarz methods applied to hyperbolic systems converge even without overlap?
     year: '2006'
   ZzHAiHkAAAAJ:N6_Y7JlWxwsC:
-    citations: 5
+    citations: 6
     title: Local feature filtering for scalable and well-conditioned domain-decomposed random feature methods
     year: '2026'
   ZzHAiHkAAAAJ:NMxIlDl6LWMC:
-    citations: 304
+    citations: 310
     title: Abstract robust coarse spaces for systems of PDEs via generalized eigenproblems in the overlaps
     year: '2014'
   ZzHAiHkAAAAJ:NaGl4SEjCO4C:
@@ -238,7 +238,7 @@ papers:
     title: Detection of simulated brain strokes using microwave tomography
     year: '2019'
   ZzHAiHkAAAAJ:Nw_I7GeUguwC:
-    citations: 140
+    citations: 146
     title: Multilevel domain decomposition-based architectures for physics-informed neural networks
     year: '2024'
   ZzHAiHkAAAAJ:O3NaXMp0MMsC:
@@ -322,15 +322,15 @@ papers:
     title: Numerical assessment of two-level domain decomposition preconditioners for incompressible Stokes and elasticity equations
     year: '2017'
   ZzHAiHkAAAAJ:X4-KO54GjGYC:
-    citations: 4
+    citations: 5
     title: Several ways to achieve robustness when solving wave propagation problems
     year: '2023'
   ZzHAiHkAAAAJ:X5YyAB84Iw4C:
-    citations: 38
+    citations: 39
     title: Finite basis physics-informed neural networks as a Schwarz domain decomposition method
     year: '2022'
   ZzHAiHkAAAAJ:XDrR66g3YHsC:
-    citations: 14
+    citations: 15
     title: Hybrid Discontinuous Galerkin Discretisation and Domain Decomposition Preconditioners for the Stokes Problem
     year: '2018'
   ZzHAiHkAAAAJ:Y0pCki6q_DkC:
@@ -406,7 +406,7 @@ papers:
     title: A domain decomposition method for solving the three-dimensional time-harmonic Maxwell equations discretized by discontinuous Galerkin methods
     year: '2008'
   ZzHAiHkAAAAJ:d4tt_xEv1X8C:
-    citations: 9
+    citations: 10
     title: Travel times and ray paths for acoustic and elastic waves in generally anisotropic media
     year: '2023'
   ZzHAiHkAAAAJ:dfsIfKJdRG4C:
@@ -485,6 +485,10 @@ papers:
     citations: 4
     title: A Trefftz-like coarse space for the two-level Schwarz method on perforated domains
     year: '2022'
+  ZzHAiHkAAAAJ:j8pvxH-kN2QC:
+    citations: 0
+    title: Domain Decomposition Methods in Science and Engineering XXVIII
+    year: '2026'
   ZzHAiHkAAAAJ:kNdYIx-mwKoC:
     citations: 1
     title: A non-overlapping domain decomposition method for solving the Navier-Stokes equations on unstructured triangular meshes
@@ -534,7 +538,7 @@ papers:
     title: A coarse space construction based on local dtn maps
     year: '2010'
   ZzHAiHkAAAAJ:q1zXlPLtbUIC:
-    citations: 25
+    citations: 26
     title: Is 3D frequency-domain FWI of full-azimuth/long-offset OBN data feasible? The Gorgon data FWI case study
     year: '2023'
   ZzHAiHkAAAAJ:qPeb-qHga9sC:
@@ -578,7 +582,7 @@ papers:
     title: "Optimizing transmission conditions for multiple subdomains in the magnetotelluric approximation of Maxwell\u2019s equations"
     year: '2023'
   ZzHAiHkAAAAJ:txeM2kYbVNMC:
-    citations: 46
+    citations: 47
     title: A comparison of coarse spaces for Helmholtz problems in the high frequency regime
     year: '2021'
   ZzHAiHkAAAAJ:u-x6o8ySG0sC:
@@ -646,7 +650,7 @@ papers:
     title: High performance domain decomposition methods on massively parallel architectures with freefem++
     year: '2012'
   ZzHAiHkAAAAJ:yD5IFk8b50cC:
-    citations: 835
+    citations: 844
     title: 'An introduction to domain decomposition methods: algorithms, theory, and parallel implementation'
     year: '2015'
   ZzHAiHkAAAAJ:yIeBiWEAh44C:
