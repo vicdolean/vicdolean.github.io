@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-06'
+  last_updated: '2026-07-08'
 papers:
   ZzHAiHkAAAAJ:-f6ydRqryjwC:
     citations: 7
@@ -238,7 +238,7 @@ papers:
     title: Detection of simulated brain strokes using microwave tomography
     year: '2019'
   ZzHAiHkAAAAJ:Nw_I7GeUguwC:
-    citations: 147
+    citations: 148
     title: Multilevel domain decomposition-based architectures for physics-informed neural networks
     year: '2024'
   ZzHAiHkAAAAJ:O3NaXMp0MMsC:
@@ -414,7 +414,7 @@ papers:
     title: Domain decomposition and high order methods for the solution of partial differential systems of equations. Application to fluid dynamics and electromagnetism
     year: '2009'
   ZzHAiHkAAAAJ:dhFuZR0502QC:
-    citations: 75
+    citations: 76
     title: Optimized Schwarz methods for the time-harmonic Maxwell equations with damping
     year: '2012'
   ZzHAiHkAAAAJ:e84hm74t-eoC:
@@ -538,7 +538,7 @@ papers:
     title: A coarse space construction based on local dtn maps
     year: '2010'
   ZzHAiHkAAAAJ:q1zXlPLtbUIC:
-    citations: 26
+    citations: 27
     title: Is 3D frequency-domain FWI of full-azimuth/long-offset OBN data feasible? The Gorgon data FWI case study
     year: '2023'
   ZzHAiHkAAAAJ:qPeb-qHga9sC:
@@ -650,7 +650,7 @@ papers:
     title: High performance domain decomposition methods on massively parallel architectures with freefem++
     year: '2012'
   ZzHAiHkAAAAJ:yD5IFk8b50cC:
-    citations: 846
+    citations: 847
     title: 'An introduction to domain decomposition methods: algorithms, theory, and parallel implementation'
     year: '2015'
   ZzHAiHkAAAAJ:yIeBiWEAh44C:
