@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-07-08'
+  last_updated: '2026-07-27'
 papers:
   ZzHAiHkAAAAJ:-f6ydRqryjwC:
     citations: 7
@@ -48,7 +48,7 @@ papers:
   ZzHAiHkAAAAJ:4TOpqqG69KYC:
     citations: 0
     title: Domain decomposition algorithms for the compressible Euler equations
-    year: '2005'
+    year: '2007'
   ZzHAiHkAAAAJ:5LPo_wSKItgC:
     citations: 0
     title: Neural network-driven domain decomposition for efficient solutions to the Helmholtz equation
@@ -76,11 +76,11 @@ papers:
   ZzHAiHkAAAAJ:9yKSN-GCB0IC:
     citations: 53
     title: Solution of the time-harmonic Maxwell equations using discontinuous Galerkin methods
-    year: '2008'
+    year: '2006'
   ZzHAiHkAAAAJ:AFXcoJnoRH0C:
     citations: 4
     title: 'Achieving wavenumber robustness in domain decomposition for heterogeneous Helmholtz equation: an overview of spectral coarse spaces'
-    year: '2025'
+    year: '2026'
   ZzHAiHkAAAAJ:AFmTUeZ1pmEC:
     citations: 2
     title: Recent advances in adaptive coarse spaces and availability in open source libraries
@@ -126,7 +126,7 @@ papers:
     title: Natural domain decomposition algorithms for the solution of time-harmonic elastic waves
     year: '2020'
   ZzHAiHkAAAAJ:EUQCXRtRnyEC:
-    citations: 150
+    citations: 151
     title: 'Nonlinear preconditioning: How to use a nonlinear Schwarz method to precondition Newton''s method'
     year: '2016'
   ZzHAiHkAAAAJ:G36d5HCDkJYC:
@@ -146,7 +146,7 @@ papers:
     title: Resolution of the timeharmonic Maxwell equations using discontinuous Galerkin methods and domain decomposition algorithms
     year: '2006'
   ZzHAiHkAAAAJ:HqhvjgTjE9cC:
-    citations: 3
+    citations: 4
     title: 'Spectral coarse spaces based on indefinite operators: the -GenEO method'
     year: '2026'
   ZzHAiHkAAAAJ:I8rxH6phXEkC:
@@ -154,11 +154,11 @@ papers:
     title: "Parallel preconditioners for high\u2010order discretizations arising from full system modeling for brain microwave imaging"
     year: '2018'
   ZzHAiHkAAAAJ:I9gX6wnfuA8C:
-    citations: 14
+    citations: 13
     title: 'ELM-FBPINNs: an efficient multilevel random feature method'
     year: '2026'
   ZzHAiHkAAAAJ:IT1MJ6E3JesC:
-    citations: 0
+    citations: 1
     title: When can a neural operator replace a coarse solve? Architectural principles for two-level preconditioning
     year: '2026'
   ZzHAiHkAAAAJ:IWHjjKOFINEC:
@@ -178,7 +178,7 @@ papers:
     title: A coarse space for heterogeneous Helmholtz problems based on the Dirichlet-to-Neumann operator
     year: '2014'
   ZzHAiHkAAAAJ:K4-iKlO5MD4C:
-    citations: 5
+    citations: 6
     title: Can Symmetric Positive Definite (SPD) coarse spaces perform well for indefinite Helmholtz problems?
     year: '2026'
   ZzHAiHkAAAAJ:KTwcwpFFj4wC:
@@ -222,11 +222,11 @@ papers:
     title: Why can classical Schwarz methods applied to hyperbolic systems converge even without overlap?
     year: '2006'
   ZzHAiHkAAAAJ:N6_Y7JlWxwsC:
-    citations: 6
+    citations: 7
     title: Local feature filtering for scalable and well-conditioned domain-decomposed random feature methods
     year: '2026'
   ZzHAiHkAAAAJ:NMxIlDl6LWMC:
-    citations: 310
+    citations: 316
     title: Abstract robust coarse spaces for systems of PDEs via generalized eigenproblems in the overlaps
     year: '2014'
   ZzHAiHkAAAAJ:NaGl4SEjCO4C:
@@ -238,7 +238,7 @@ papers:
     title: Detection of simulated brain strokes using microwave tomography
     year: '2019'
   ZzHAiHkAAAAJ:Nw_I7GeUguwC:
-    citations: 148
+    citations: 152
     title: Multilevel domain decomposition-based architectures for physics-informed neural networks
     year: '2024'
   ZzHAiHkAAAAJ:O3NaXMp0MMsC:
@@ -250,9 +250,9 @@ papers:
     title: Microwave tomographic imaging of shoulder injury
     year: '2023'
   ZzHAiHkAAAAJ:PVqtIyvKoSUC:
-    citations: 6
+    citations: 7
     title: Efficient approximation of high-frequency Helmholtz solutions by Gaussian coherent states
-    year: '2022'
+    year: '2024'
   ZzHAiHkAAAAJ:QKtdBID3u5MC:
     citations: 0
     title: Investigation of Microwave Quantitative Imaging Vs. Machine Learning for Shoulder Injury Detection
@@ -278,7 +278,7 @@ papers:
     title: New constructions of domain decomposition methods for systems of PDEs
     year: '2005'
   ZzHAiHkAAAAJ:U0iAMwwPxtsC:
-    citations: 77
+    citations: 78
     title: Domain decomposition preconditioning for the high-frequency time-harmonic Maxwell equations with absorption
     year: '2019'
   ZzHAiHkAAAAJ:ULOm3_A8WrAC:
@@ -320,7 +320,7 @@ papers:
   ZzHAiHkAAAAJ:WWeOtg8bX_EC:
     citations: 1
     title: Numerical assessment of two-level domain decomposition preconditioners for incompressible Stokes and elasticity equations
-    year: '2017'
+    year: '2018'
   ZzHAiHkAAAAJ:X4-KO54GjGYC:
     citations: 5
     title: Several ways to achieve robustness when solving wave propagation problems
@@ -350,7 +350,7 @@ papers:
     title: "M\xE9thodes de type Galerkin discontinu pour la r\xE9solution num\xE9rique des \xE9quations de Maxwell en r\xE9gime fr\xE9quentiel"
     year: '2006'
   ZzHAiHkAAAAJ:YPNY0knpFBYC:
-    citations: 49
+    citations: 50
     title: Microwave tomographic imaging of cerebrovascular accidents by using high-performance computing
     year: '2019'
   ZzHAiHkAAAAJ:YsMSGLbcyi4C:
@@ -406,7 +406,7 @@ papers:
     title: A domain decomposition method for solving the three-dimensional time-harmonic Maxwell equations discretized by discontinuous Galerkin methods
     year: '2008'
   ZzHAiHkAAAAJ:d4tt_xEv1X8C:
-    citations: 10
+    citations: 11
     title: Travel times and ray paths for acoustic and elastic waves in generally anisotropic media
     year: '2023'
   ZzHAiHkAAAAJ:dfsIfKJdRG4C:
@@ -538,8 +538,8 @@ papers:
     title: A coarse space construction based on local dtn maps
     year: '2010'
   ZzHAiHkAAAAJ:q1zXlPLtbUIC:
-    citations: 27
-    title: Is 3D frequency-domain FWI of full-azimuth/long-offset OBN data feasible? The Gorgon data FWI case study
+    citations: 28
+    title: Is 3D frequency-domain FWI of full-azimuth/long-offset OBN data feasible? The Gorgon case study
     year: '2023'
   ZzHAiHkAAAAJ:qPeb-qHga9sC:
     citations: 1
@@ -590,11 +590,11 @@ papers:
     title: Locally implicit discontinuous Galerkin method for time domain electromagnetics
     year: '2010'
   ZzHAiHkAAAAJ:u5HHmVD_uO8C:
-    citations: 206
-    title: Optimized Schwarz methods for Maxwell's equations
-    year: '2009'
+    citations: 207
+    title: Optimized Schwarz methods for Maxwell equations
+    year: '2006'
   ZzHAiHkAAAAJ:uAPFzskPt0AC:
-    citations: 11
+    citations: 14
     title: 'Comprehensive compartmental model and calibration algorithm for the study of clinical implications of the population-level spread of COVID-19: a study protocol'
     year: '2022'
   ZzHAiHkAAAAJ:uUvzmPk0f8oC:
@@ -650,7 +650,7 @@ papers:
     title: High performance domain decomposition methods on massively parallel architectures with freefem++
     year: '2012'
   ZzHAiHkAAAAJ:yD5IFk8b50cC:
-    citations: 847
+    citations: 850
     title: 'An introduction to domain decomposition methods: algorithms, theory, and parallel implementation'
     year: '2015'
   ZzHAiHkAAAAJ:yIeBiWEAh44C:
