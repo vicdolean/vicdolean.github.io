@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-05'
+  last_updated: '2026-08-12'
 papers:
   ZzHAiHkAAAAJ:-f6ydRqryjwC:
     citations: 7
@@ -10,7 +10,7 @@ papers:
     title: An unconditionally stable discontinuous Galerkin method for solving the 2-D time-domain Maxwell equations on unstructured triangular meshes
     year: '2008'
   ZzHAiHkAAAAJ:0sTkTiv_uMkC:
-    citations: 8
+    citations: 9
     title: "Asymptotic analysis of optimized Schwarz methods for Maxwell\u2019s equations with discontinuous coefficients"
     year: '2018'
   ZzHAiHkAAAAJ:17ZO-CJnx_8C:
@@ -122,7 +122,7 @@ papers:
     title: "3D finite-difference and finite-element frequency-domain wave simulation with multilevel optimized additive Schwarz domain-decomposition preconditioner: A tool for full \u2026"
     year: '2022'
   ZzHAiHkAAAAJ:E7VqQtBCVmcC:
-    citations: 11
+    citations: 12
     title: Natural domain decomposition algorithms for the solution of time-harmonic elastic waves
     year: '2020'
   ZzHAiHkAAAAJ:EUQCXRtRnyEC:
@@ -150,7 +150,7 @@ papers:
     title: "Parallel preconditioners for high\u2010order discretizations arising from full system modeling for brain microwave imaging"
     year: '2018'
   ZzHAiHkAAAAJ:I9gX6wnfuA8C:
-    citations: 14
+    citations: 15
     title: 'ELM-FBPINNs: an efficient multilevel random feature method'
     year: '2026'
   ZzHAiHkAAAAJ:IHkkN1K1AlAC:
@@ -198,7 +198,7 @@ papers:
     title: Space for Solving the Helmholtz Problem Using Domain Decomposition
     year: '2021'
   ZzHAiHkAAAAJ:LkGwnXOMwfcC:
-    citations: 133
+    citations: 134
     title: A coarse space construction based on local Dirichlet-to-Neumann maps
     year: '2011'
   ZzHAiHkAAAAJ:M05iB0D1s5AC:
@@ -226,7 +226,7 @@ papers:
     title: Local feature filtering for scalable and well-conditioned domain-decomposed random feature methods
     year: '2026'
   ZzHAiHkAAAAJ:NMxIlDl6LWMC:
-    citations: 321
+    citations: 322
     title: Abstract robust coarse spaces for systems of PDEs via generalized eigenproblems in the overlaps
     year: '2014'
   ZzHAiHkAAAAJ:NaGl4SEjCO4C:
@@ -238,7 +238,7 @@ papers:
     title: Detection of simulated brain strokes using microwave tomography
     year: '2019'
   ZzHAiHkAAAAJ:Nw_I7GeUguwC:
-    citations: 154
+    citations: 156
     title: Multilevel domain decomposition-based architectures for physics-informed neural networks
     year: '2024'
   ZzHAiHkAAAAJ:O3NaXMp0MMsC:
@@ -326,7 +326,7 @@ papers:
     title: Several ways to achieve robustness when solving wave propagation problems
     year: '2023'
   ZzHAiHkAAAAJ:X5YyAB84Iw4C:
-    citations: 38
+    citations: 39
     title: Finite basis physics-informed neural networks as a Schwarz domain decomposition method
     year: '2022'
   ZzHAiHkAAAAJ:XDrR66g3YHsC:
@@ -402,7 +402,7 @@ papers:
     title: A domain decomposition method for solving the three-dimensional time-harmonic Maxwell equations discretized by discontinuous Galerkin methods
     year: '2008'
   ZzHAiHkAAAAJ:d4tt_xEv1X8C:
-    citations: 11
+    citations: 12
     title: Travel times and ray paths for acoustic and elastic waves in generally anisotropic media
     year: '2023'
   ZzHAiHkAAAAJ:dfsIfKJdRG4C:
@@ -410,7 +410,7 @@ papers:
     title: Domain decomposition and high order methods for the solution of partial differential systems of equations. Application to fluid dynamics and electromagnetism
     year: '2009'
   ZzHAiHkAAAAJ:dhFuZR0502QC:
-    citations: 78
+    citations: 79
     title: Optimized Schwarz methods for the time-harmonic Maxwell equations with damping
     year: '2012'
   ZzHAiHkAAAAJ:e84hm74t-eoC:
@@ -526,7 +526,7 @@ papers:
     title: Preconditioning of GMRES for Helmholtz problems with quasimodes
     year: '2025'
   ZzHAiHkAAAAJ:pRWBApOjXDcC:
-    citations: 0
+    citations: 1
     title: Ultrasonic travel-time tomography for approximating the local elastic tensor in complex media
     year: '2025'
   ZzHAiHkAAAAJ:pUxgyZctzPYC:
@@ -590,7 +590,7 @@ papers:
     title: Locally implicit discontinuous Galerkin method for time domain electromagnetics
     year: '2010'
   ZzHAiHkAAAAJ:u5HHmVD_uO8C:
-    citations: 208
+    citations: 209
     title: Optimized Schwarz methods for Maxwell's equations
     year: '2009'
   ZzHAiHkAAAAJ:uAPFzskPt0AC:
@@ -650,7 +650,7 @@ papers:
     title: High performance domain decomposition methods on massively parallel architectures with freefem++
     year: '2012'
   ZzHAiHkAAAAJ:yD5IFk8b50cC:
-    citations: 852
+    citations: 854
     title: 'An introduction to domain decomposition methods: algorithms, theory, and parallel implementation'
     year: '2015'
   ZzHAiHkAAAAJ:yIeBiWEAh44C:
