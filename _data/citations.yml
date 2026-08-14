@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-12'
+  last_updated: '2026-08-14'
 papers:
   ZzHAiHkAAAAJ:-f6ydRqryjwC:
     citations: 7
@@ -18,7 +18,7 @@ papers:
     title: Trefftz Approximation Space for Poisson Equation in Perforated Domains
     year: '2023'
   ZzHAiHkAAAAJ:1EqfMoDn7-AC:
-    citations: 2
+    citations: 3
     title: An Iterative Block Matrix Inversion (IBMI) Algorithm for Symmetric Positive Definite Matrices with Applications to Covariance Matrices
     year: '2025'
   ZzHAiHkAAAAJ:2P1L_qKh6hAC:
@@ -650,7 +650,7 @@ papers:
     title: High performance domain decomposition methods on massively parallel architectures with freefem++
     year: '2012'
   ZzHAiHkAAAAJ:yD5IFk8b50cC:
-    citations: 854
+    citations: 855
     title: 'An introduction to domain decomposition methods: algorithms, theory, and parallel implementation'
     year: '2015'
   ZzHAiHkAAAAJ:yIeBiWEAh44C:
