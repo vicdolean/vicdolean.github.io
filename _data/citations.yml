@@ -1,5 +1,5 @@
 metadata:
-  last_updated: '2026-08-14'
+  last_updated: '2026-08-17'
 papers:
   ZzHAiHkAAAAJ:-f6ydRqryjwC:
     citations: 7
@@ -78,7 +78,7 @@ papers:
     title: Solution of the time-harmonic Maxwell equations using discontinuous Galerkin methods
     year: '2008'
   ZzHAiHkAAAAJ:AFXcoJnoRH0C:
-    citations: 5
+    citations: 6
     title: 'Achieving wavenumber robustness in domain decomposition for heterogeneous Helmholtz equation: an overview of spectral coarse spaces'
     year: '2026'
   ZzHAiHkAAAAJ:AFmTUeZ1pmEC:
@@ -142,7 +142,7 @@ papers:
     title: Resolution of the timeharmonic Maxwell equations using discontinuous Galerkin methods and domain decomposition algorithms
     year: '2006'
   ZzHAiHkAAAAJ:HqhvjgTjE9cC:
-    citations: 4
+    citations: 5
     title: 'Spectral coarse spaces based on indefinite operators: the -GenEO method'
     year: '2026'
   ZzHAiHkAAAAJ:I8rxH6phXEkC:
@@ -150,7 +150,7 @@ papers:
     title: "Parallel preconditioners for high\u2010order discretizations arising from full system modeling for brain microwave imaging"
     year: '2018'
   ZzHAiHkAAAAJ:I9gX6wnfuA8C:
-    citations: 15
+    citations: 16
     title: 'ELM-FBPINNs: an efficient multilevel random feature method'
     year: '2026'
   ZzHAiHkAAAAJ:IHkkN1K1AlAC:
@@ -222,11 +222,11 @@ papers:
     title: Why can classical Schwarz methods applied to hyperbolic systems converge even without overlap?
     year: '2006'
   ZzHAiHkAAAAJ:N6_Y7JlWxwsC:
-    citations: 6
+    citations: 7
     title: Local feature filtering for scalable and well-conditioned domain-decomposed random feature methods
     year: '2026'
   ZzHAiHkAAAAJ:NMxIlDl6LWMC:
-    citations: 322
+    citations: 323
     title: Abstract robust coarse spaces for systems of PDEs via generalized eigenproblems in the overlaps
     year: '2014'
   ZzHAiHkAAAAJ:NaGl4SEjCO4C:
@@ -461,10 +461,6 @@ papers:
     citations: 8
     title: Symbolic techniques for domain decomposition methods
     year: '2013'
-  ZzHAiHkAAAAJ:iKswqCX-FLkC:
-    citations: 0
-    title: Hybrid Quantum-Classical Algorithms for Satellite Swarm Optimization in Non-Terrestrial Networks
-    year: '2025'
   ZzHAiHkAAAAJ:i_7YvbSbtFEC:
     citations: 4
     title: "An efficient, high order finite element method for the time-harmonic Maxwell\u2019s equations"
@@ -566,7 +562,7 @@ papers:
     title: "A two-level domain-decomposition preconditioner for the time-harmonic Maxwell\u2019s equations"
     year: '2017'
   ZzHAiHkAAAAJ:rOcdG6UcVlcC:
-    citations: 158
+    citations: 159
     title: 'Numerical modeling and high-speed parallel computing: New perspectives on tomographic microwave imaging for brain stroke detection and monitoring'
     year: '2017'
   ZzHAiHkAAAAJ:roLk4NBRz8UC:
@@ -650,7 +646,7 @@ papers:
     title: High performance domain decomposition methods on massively parallel architectures with freefem++
     year: '2012'
   ZzHAiHkAAAAJ:yD5IFk8b50cC:
-    citations: 855
+    citations: 857
     title: 'An introduction to domain decomposition methods: algorithms, theory, and parallel implementation'
     year: '2015'
   ZzHAiHkAAAAJ:yIeBiWEAh44C:
